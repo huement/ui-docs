@@ -1,0 +1,230 @@
+extends ../../layout/templates
+
+append ExtraHeader
+  //-  Custom styles for this template
+  link(href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900&display=swap", rel="stylesheet")
+  link(href= path + "www/blog.css", rel="stylesheet")
+  style.
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    .b-example-divider {
+      height: 3rem;
+      background-color: rgba(0, 0, 0, .1);
+      border: solid rgba(0, 0, 0, .15);
+      border-width: 1px 0;
+      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
+
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
+
+    .bi {
+      vertical-align: -.125em;
+      fill: currentColor;
+    }
+
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
+
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+
+
+append config
+    - var title = "Blog Template"
+    - var metaDesc = "Grid Based Blog Template. Sticky Cool!"
+    - var parent = 'templates'
+    - var slug = 'blog'
+
+
+block content
+  .container
+    header.blog-header.lh-1.py-3
+      .row.flex-nowrap.justify-content-between.align-items-center
+        .col-4.pt-1
+          a.link-secondary(href="#") Subscribe
+        .col-4.text-center
+          a.blog-header-logo.text-dark(href="#") Large
+        .col-4.make-flex.justify-content-end.align-items-center
+          a.link-secondary(href="#", aria-label="Search")
+            svg.mx-3(xmlns="http://www.w3.org/2000/svg", width="20", height="20", fill="none", stroke="currentColor", stroke-linecap="round", stroke-linejoin="round", stroke-width="2", role="img", viewBox="0 0 24 24")
+              title Search
+              circle(cx="10.5", cy="10.5", r="7.5")
+              path(d="M21 21l-5.2-5.2")
+          a.btn.btn-sm.btn-outline-secondary(href="#") Sign up
+    .nav-scroller.py-1.mb-2
+      nav.nav.make-flex.justify-content-between
+        a.p-2.link-secondary(href="#") World
+        a.p-2.link-secondary(href="#") U.S.
+        a.p-2.link-secondary(href="#") Technology
+        a.p-2.link-secondary(href="#") Design
+        a.p-2.link-secondary(href="#") Culture
+        a.p-2.link-secondary(href="#") Business
+        a.p-2.link-secondary(href="#") Politics
+        a.p-2.link-secondary(href="#") Opinion
+        a.p-2.link-secondary(href="#") Science
+        a.p-2.link-secondary(href="#") Health
+        a.p-2.link-secondary(href="#") Style
+        a.p-2.link-secondary(href="#") Travel
+
+  main.container
+    .p-4.p-md-5.mb-4.rounded.text-bg-dark
+      .col-md-6.px-0
+        h1.display-4.fst-italic Title of a longer featured blog post
+        p.lead.my-3 Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.
+        p.lead.mb-0
+          a.text-white.fw-bold(href="#") Continue reading...
+
+    .row.mb-2
+      .col-md-6
+        .row.g-0.border.rounded.overflow-hidden.flex-md-row.mb-4.shadow-sm.h-md-250.position-relative
+          .col.p-4.make-flex.flex-column.position-static
+            strong.make-inline-block.mb-2.text-primary World
+            h3.mb-0 Featured post
+            .mb-1.text-medium Nov 12
+            p.card-text.mb-auto This is a wider card with supporting text below as a natural lead-in to additional content.
+            a.btn.btn-link(href="#") Continue reading
+          .col-auto.make-none.make-lg-block
+            svg.bd-placeholder-img(width="200", height="250", xmlns="http://www.w3.org/2000/svg", role="img", aria-label="Placeholder: Thumbnail", preserveAspectRatio="xMidYMid slice", focusable="false")
+              title Placeholder
+              rect(width="100%", height="100%", fill="#55595c")
+              text(x="50%", y="50%", fill="#eceeef", dy=".3em") Thumbnail
+      .col-md-6
+        .row.g-0.border.rounded.overflow-hidden.flex-md-row.mb-4.shadow-sm.h-md-250.position-relative
+          .col.p-4.make-flex.flex-column.position-static
+            strong.make-inline-block.mb-2.text-success Design
+            h3.mb-0 Post title
+            .mb-1.text-medium Nov 11
+            p.mb-auto This is a wider card with supporting text below as a natural lead-in to additional content.
+            a.stretched-link(href="#") Continue reading
+          .col-auto.make-none.make-lg-block
+            svg.bd-placeholder-img(width="200", height="250", xmlns="http://www.w3.org/2000/svg", role="img", aria-label="Placeholder: Thumbnail", preserveAspectRatio="xMidYMid slice", focusable="false")
+              title Placeholder
+              rect(width="100%", height="100%", fill="#55595c")
+              text(x="50%", y="50%", fill="#eceeef", dy=".3em") Thumbnail
+
+    .row.g-5
+      .col-md-8
+        h3.pb-4.mb-4.fst-italic.border-bottom
+          | From the Firehose
+
+        article.blog-post
+          h2.blog-post-title.mb-1 Sample blog post
+          p.blog-post-meta
+            | January 1, 2021 by
+            a(href="#") Mark
+          p This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic typography, lists, tables, images, code, and more are all supported as expected.
+          hr
+          p This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.
+          h2 Blockquotes
+          p This is an example blockquote in action:
+          blockquote.blockquote
+            p Quoted text goes here.
+          p This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.
+          h3 Example lists
+          p This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout. This is an example unordered list:
+          ul
+            li First list item
+            li Second list item with a longer description
+            li Third list item to close it out
+          p And this is an ordered list:
+          ol
+            li First list item
+            li Second list item with a longer description
+            li Third list item to close it out
+          p And this is a definition list:
+          dl
+            dt HyperText Markup Language (HTML)
+            dd The language used to describe and define the content of a Web page
+            dt Cascading Style Sheets (CSS)
+            dd Used to describe the appearance of Web content
+            dt JavaScript (JS)
+            dd The programming language used to build advanced Web sites and applications
+          h3 Sub-heading
+          p This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.
+          pre
+            code Example code block
+          p This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.
+
+        nav.blog-pagination(aria-label="Pagination")
+          a.btn.btn-outline-primary.rounded-pill(href="#") Older
+          a.btn.btn-outline-secondary.rounded-pill.disabled Newer
+
+      .col-md-4
+        .position-sticky(style="top: 2rem;")
+          .p-4.mb-3.make-bg-light.rounded
+            h4.fst-italic About
+            p.mb-0 Customize this section to tell your visitors a little bit about your publication, writers, content, or something else entirely. Totally up to you.
+          .p-4
+            h4.fst-italic Archives
+            ol.list-unstyled.mb-0
+              li
+                a(href="#") March 2021
+              li
+                a(href="#") February 2021
+              li
+                a(href="#") January 2021
+              li
+                a(href="#") December 2020
+              li
+                a(href="#") November 2020
+              li
+                a(href="#") October 2020
+              li
+                a(href="#") September 2020
+              li
+                a(href="#") August 2020
+              li
+                a(href="#") July 2020
+              li
+                a(href="#") June 2020
+              li
+                a(href="#") May 2020
+              li
+                a(href="#") April 2020
+          .p-4
+            h4.fst-italic Elsewhere
+            ol.list-unstyled
+              li
+                a(href="#") GitHub
+              li
+                a(href="#") Twitter
+              li
+                a(href="#") Facebook
+
+  footer.blog-footer
+    p
+      | Blog template built for
+      a(href="https://getbootstrap.com/") Bootstrap
+      |  by
+      a(href="https://twitter.com/mdo") @mdo
+      | .
+    p
+      a(href="#") Back to top

@@ -1,0 +1,44 @@
+extends ../../layout/doc
+
+append config
+  - var icon = "gear"
+  - var metaDesc = 'The responsive layout provides fixed-width and fluid-width containers.'
+  - var parent = 'layout'
+  - var slug = 'container'
+  - var title = 'Containers - Layout - Mojo Framework'
+
+
+block content
+  +docs-heading('container', 'Container')
+
+  p.doc-intro
+    | Blank container shows key featured content or information.
+
+  hr.my-3
+
+  h3.mt-5 Containers
+  p
+    | Additional classes added in Bootstrap v4.4 allow containers that are 100% wide until a particular breakpoint. v5 adds a new
+    code xxl
+    |  breakpoint.
+
+  .container.themed-container.text-center .container
+  .container-sm.themed-container.text-center .container-sm
+  .container-md.themed-container.text-center .container-md
+  .container-lg.themed-container.text-center .container-lg
+  .container-xl.themed-container.text-center .container-xl
+  .container-xxl.themed-container.text-center .container-xxl
+  .container-fluid.themed-container.text-center .container-fluid
+
+  .vr-block.vr-block-lg
+
+  :highlightify(lang="html")
+    <div class="container themed-container text-center">.container</div>
+    <div class="container-sm themed-container text-center">.container-sm</div>
+    <div class="container-md themed-container text-center">.container-md</div>
+    <div class="container-lg themed-container text-center">.container-lg</div>
+    <div class="container-xl themed-container text-center">.container-xl</div>
+    <div class="container-xxl themed-container text-center">.container-xxl</div>
+    <div class="container-fluid themed-container text-center">.container-fluid</div>
+
+  .vr-block.vr-block-lg

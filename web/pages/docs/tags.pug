@@ -1,0 +1,60 @@
+extends ../../layout/doc
+
+append config
+  - var icon = "gear"
+  - var slug = 'tags'
+  - var parent = 'components'
+  - var title = 'Tags - Components - Mojo Framework'
+  - var metaDesc = 'Tags are complex entities in small blocks.'
+
+block content
+  +docs-heading('tags', 'Tags')
+
+  p.doc-intro
+    | Tags are complex entities in small blocks.
+
+  .docs-demo.container
+    .row
+      .col-12
+        span.tag
+          | Crime
+        span.tag
+          | Drama
+        span.tag
+          | Biography
+          a.btn.btn-clear(href="#" aria-label="Close" role="button")
+        span.tag
+          | Mystery
+          a.btn.btn-clear(href="#" aria-label="Close" role="button")
+
+  .docs-demo.container
+    .row
+      .col-12
+        .tag
+          figure.avatar.avatar-sm(data-initial="TS" style="background-color: #5755d9;")
+          | Tony Stark
+        .tag
+          img.avatar.avatar-sm(src="../imgs/jolly.svg" alt="Thor Odinson")
+          | Thor Odinson
+        .tag
+          img.avatar.avatar-sm(src="../imgs/jolly.svg" alt="Steve Rogers")
+          | Steve Rogers
+
+  p
+    | Add a container element with the #[code tag] class.
+    | And add child text element, buttons or avatars with the #[code avatar] class.
+
+
+  :highlightify(lang="html")
+    <span class="tag">Crime</span>
+
+    <span class="tag">
+      Biography
+      <a href="#" class="btn btn-clear" aria-label="Close" role="button"></a>
+    </span>
+
+    <div class="tag">
+      <img src="img/avatar-1.png" class="avatar avatar-sm">
+      Yan Zhu
+      <a href="#" class="btn btn-clear" aria-label="Close" role="button"></a>
+    </div>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en.US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta property="og:url" content="https://huement.github.io/ui/">
+    <meta property="og:type" content="website">
+    <meta property="description" content="Documentation and examples for typography, including global settings, headings, body text, lists, and more.">
+    <meta property="og:title" content="Typography - Style Guide - Mojo Framework">
+    <meta property="og:image" content="https://huement.github.io/ui/imgs/Logo.png">
+    <meta property="og:description" content="Documentation and examples for typography, including global settings, headings, body text, lists, and more.">
+    <meta property="og:site_name" content="Typography - Style Guide - Mojo Framework - v0.5.0">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@huement/ui">
+    <meta name="twitter:creator" content="@huement/ui">
+    <meta name="twitter:title" content="Typography - Style Guide - Mojo Framework">
+    <meta name="twitter:description" content="Documentation and examples for typography, including global settings, headings, body text, lists, and more.">
+    <meta name="twitter:image" content="https://huement.github.io/ui/imgs/Logo.png">
+    <meta charset="UTF-8">
+    <title>Typography - Style Guide - Mojo Framework</title>
+    <meta name="description" content="Documentation and examples for typography, including global settings, headings, body text, lists, and more.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="../favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../favicon/favicon-16x16.png" sizes="16x16">
+    <link href="../favicon/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <!-- [if lt IE 9]><script language="javascript" type="text/javascript" src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <link rel="stylesheet" href="../mojo.css?token=0.5.0" type="text/css" id="hui_css">
+    <link rel="stylesheet" href="../hi/icons.css?token=0.5.0" type="text/css" id="hui_icons">
+    <link rel="stylesheet" href="../css/docs.css" type="text/css" id="docs_css">
+  </head>
+  <body class="no-javascript">
+    <script>document.body.classList.remove('no-javascript');</script>
+    <div class="mojo docs-container container-fluid docPage">
+      <div class="row">
+        <div class="col-sm-4 col-md-3 sidebar">
+          <div class="side-container">
+            <div class="logo-container"><img class="logo img-fluid" src="../imgs/Logo.png"/></div>
+            <div class="build-container">
+              <div class="row g-0 mx-0 text-center">
+                <div class="col">
+                  <p class="build-label">Latest Build</p>
+                  <p class="build-version">0.5.0 Mon Sep 23 2024</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="docs-nav">
+            <div class="accordion-container">
+              <div class="accordion">
+                <input id="accordion-getting-started" type="checkbox" name="docs-accordion-checkbox" hidden=""/>
+                <label class="accordion-header c-hand" for="accordion-getting-started"><i class="hui hui-document-down mr-1"></i>getting-started</label>
+                <div class="accordion-body">
+                  <ul class="menu menu-nav">
+                    <li class="menu-item"><a href="../docs/installation.html">Installation</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/tokens.html">Tokens</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion">
+                <input id="accordion-style-guide" type="checkbox" name="docs-accordion-checkbox" hidden="" checked="checked"/>
+                <label class="accordion-header c-hand" for="accordion-style-guide"><i class="hui hui-document-down mr-1"></i>style-guide</label>
+                <div class="accordion-body">
+                  <ul class="menu menu-nav">
+                    <li class="menu-item"><a href="../docs/colors.html">Colors</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/templates.html">Templates</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/type-heading.html">Type-heading</a>
+                    </li>
+                    <li class="menu-item"><a class="active" href="../docs/typography.html">Typography</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/vert-rhythm.html">Vert-rhythm</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion">
+                <input id="accordion-layout" type="checkbox" name="docs-accordion-checkbox" hidden=""/>
+                <label class="accordion-header c-hand" for="accordion-layout"><i class="hui hui-document-down mr-1"></i>layout</label>
+                <div class="accordion-body">
+                  <ul class="menu menu-nav">
+                    <li class="menu-item"><a href="../docs/bs5-grid.html">Bs5-grid</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/containers.html">Containers</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/empty.html">Empty</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/gutters.html">Gutters</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/navbar.html">Navbar</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/off-canvas.html">Off-canvas</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/responsive.html">Responsive</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/tables.html">Tables</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion">
+                <input id="accordion-components" type="checkbox" name="docs-accordion-checkbox" hidden=""/>
+                <label class="accordion-header c-hand" for="accordion-components"><i class="hui hui-document-down mr-1"></i>components</label>
+                <div class="accordion-body">
+                  <ul class="menu menu-nav">
+                    <li class="menu-item"><a href="../docs/accordions.html">Accordions</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/alerts.html">Alerts</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/badges.html">Badges</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/buttons.html">Buttons</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/cards.html">Cards</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/dropdown.html">Dropdown</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/forms.html">Forms</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/hero.html">Hero</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/icons.html">Icons</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/images.html">Images</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/labels.html">Labels</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/lists.html">Lists</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/menu.html">Menu</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/modal.html">Modal</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/panels.html">Panels</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/snaps.html">Snaps</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/tabs.html">Tabs</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/tags.html">Tags</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/tiles.html">Tiles</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion">
+                <input id="accordion-utilities" type="checkbox" name="docs-accordion-checkbox" hidden=""/>
+                <label class="accordion-header c-hand" for="accordion-utilities"><i class="hui hui-document-down mr-1"></i>utilities</label>
+                <div class="accordion-body">
+                  <ul class="menu menu-nav">
+                    <li class="menu-item"><a href="../docs/_blank.html">_blank</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/cursors.html">Cursors</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/display.html">Display</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/divider.html">Divider</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/functions.html">Functions</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/loading.html">Loading</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/position.html">Position</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/shapes.html">Shapes</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/text.html">Text</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-8 col-md-9 main-content">
+          <div class="container  docs-content" id="content">
+            <div class="main-area px-xs-0 px-sm-0 px-md-2 px-lg-3 px-xl-3 px-xx-4">
+              <div class="docbar docbar-dark">
+                <div class="docbar-section">
+                  <button class="btn btn-dark m-1 btn-sm"><i class="hui hui-bacon-cheeseburger"></i></button>
+                </div>
+                <div class="docbar-section" style="flex: 2 0 0">
+                  <input class="form-input input-sm mr-2" type="text" placeholder="search"/>
+                  <div class="btns d-flex"><a class="text-white btn btn-sm mr-2 ml-1 btn-dark" href="https://github.com/huement/ui">Github</a><a class="text-white btn btn-sm mr-2 ml-1 btn-secondary" href="/index.html">@hui</a><a class="text-white btn btn-sm mr-2 ml-1 btn-primary" href="http://localhost">Huement</a>
+                  </div>
+                </div>
+              </div>
+              <div class="vr-block">&nbsp;</div>
+              <div class="head-block" id="typography">
+                <h1 class="s-title">Typography<a class="anchor" href="#typography" aria-hidden="true">#</a></h1>
+              </div>
+              <p class="doc-intro">Likely the most important aspect of any site is the typography. It makes up every element, is the most prevelant, and is the biggest conveyor of information. It should receive the most care and dedication until every letter is perfect.</p><h2>Lead</h2>
+<p>Make a paragraph stand out by adding <code>.lead</code>.</p>
+              <div class='documentation-content padded'><div class='mojo-docblock'><span class='mojo-doclabel'>EXAMPLE</span><div class="preview-wrapper"><div class="mojo-preview "><p class="lead">
+  This is a lead paragraph. It stands out from regular paragraphs.
+</p>
+</div></div><div class='mojo-highlight'><pre class="code" data-lang="html"><code>&lt;p <span class="hljs-built_in">class</span>=<span class="hljs-string">"lead"</span>&gt;
+  This <span class="hljs-keyword">is</span> a lead <span class="hljs-built_in">paragraph</span>. It stands out <span class="hljs-keyword">from</span> regular <span class="hljs-built_in">paragraphs</span>.
+&lt;/p&gt;
+</code></pre></div></div></div><h2>Inline text elements</h2>
+<p>Styling for common inline HTML5 elements.</p>
+              <div class='documentation-content padded'><div class='mojo-docblock'><span class='mojo-doclabel'>EXAMPLE</span><div class="preview-wrapper"><div class="mojo-preview "><p>You can use the mark tag to <mark>highlight</mark> text.</p>
+<p><del>This line of text is meant to be treated as deleted text.</del></p>
+<p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+<p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+<p><u>This line of text will render as underlined</u></p>
+<p><small>This line of text is meant to be treated as fine print.</small></p>
+<p><strong>This line rendered as bold text.</strong></p>
+<p><em>This line rendered as italicized text.</em></p>
+</div></div><div class='mojo-highlight'><pre class="code" data-lang="html"><code><span class="hljs-symbol">&lt;p&gt;</span>You can use the <span class="hljs-keyword">mark</span> <span class="hljs-keyword">tag</span> <span class="hljs-keyword">to</span> <span class="hljs-symbol">&lt;mark&gt;</span><span class="hljs-keyword">highlight</span>&lt;/<span class="hljs-keyword">mark</span>&gt; text.&lt;/<span class="hljs-keyword">p</span>&gt;
+<span class="hljs-symbol">&lt;p&gt;</span><span class="hljs-symbol">&lt;del&gt;</span>This <span class="hljs-built_in">line</span> of text <span class="hljs-keyword">is</span> meant <span class="hljs-keyword">to</span> <span class="hljs-keyword">be</span> treated <span class="hljs-keyword">as</span> deleted text.&lt;/del&gt;&lt;/<span class="hljs-keyword">p</span>&gt;
+<span class="hljs-symbol">&lt;p&gt;</span><span class="hljs-symbol">&lt;s&gt;</span>This <span class="hljs-built_in">line</span> of text <span class="hljs-keyword">is</span> meant <span class="hljs-keyword">to</span> <span class="hljs-keyword">be</span> treated <span class="hljs-keyword">as</span> <span class="hljs-keyword">no</span> longer accurate.&lt;/s&gt;&lt;/<span class="hljs-keyword">p</span>&gt;
+<span class="hljs-symbol">&lt;p&gt;</span><span class="hljs-symbol">&lt;ins&gt;</span>This <span class="hljs-built_in">line</span> of text <span class="hljs-keyword">is</span> meant <span class="hljs-keyword">to</span> <span class="hljs-keyword">be</span> treated <span class="hljs-keyword">as</span> <span class="hljs-keyword">an</span> addition <span class="hljs-keyword">to</span> the document.&lt;/ins&gt;&lt;/<span class="hljs-keyword">p</span>&gt;
+<span class="hljs-symbol">&lt;p&gt;</span><span class="hljs-symbol">&lt;u&gt;</span>This <span class="hljs-built_in">line</span> of text will render <span class="hljs-keyword">as</span> underlined&lt;/<span class="hljs-keyword">u</span>&gt;&lt;/<span class="hljs-keyword">p</span>&gt;
+<span class="hljs-symbol">&lt;p&gt;</span><span class="hljs-symbol">&lt;small&gt;</span>This <span class="hljs-built_in">line</span> of text <span class="hljs-keyword">is</span> meant <span class="hljs-keyword">to</span> <span class="hljs-keyword">be</span> treated <span class="hljs-keyword">as</span> fine <span class="hljs-keyword">print</span>.&lt;/small&gt;&lt;/<span class="hljs-keyword">p</span>&gt;
+<span class="hljs-symbol">&lt;p&gt;</span><span class="hljs-symbol">&lt;strong&gt;</span>This <span class="hljs-built_in">line</span> rendered <span class="hljs-keyword">as</span> bold text.&lt;/strong&gt;&lt;/<span class="hljs-keyword">p</span>&gt;
+<span class="hljs-symbol">&lt;p&gt;</span><span class="hljs-symbol">&lt;em&gt;</span>This <span class="hljs-built_in">line</span> rendered <span class="hljs-keyword">as</span> italicized text.&lt;/<span class="hljs-keyword">em</span>&gt;&lt;/<span class="hljs-keyword">p</span>&gt;
+</code></pre></div></div></div><p><code>.mark</code> and <code>.small</code> classes are also available to apply the same styles as <code>&lt;mark&gt;</code> and <code>&lt;small&gt;</code> while avoiding any unwanted semantic implications that the tags would bring.</p>
+<p>While not shown above, feel free to use <code>&lt;b&gt;</code> and <code>&lt;i&gt;</code> in HTML5. <code>&lt;b&gt;</code> is meant to highlight words or phrases without conveying additional importance while <code>&lt;i&gt;</code> is mostly for voice, technical terms, etc.</p>
+<h2>Text utilities</h2>
+<p>Change text alignment, transform, style, weight, and color with our <a href="/utilities/text">text utilities</a> and <a href="/utilities/colors">color utilities</a>.</p>
+<h2>Abbreviations</h2>
+<p>Stylized implementation of HTML's <code>&lt;abbr&gt;</code> element for abbreviations and acronyms to show the expanded version on hover. Abbreviations have a default underline and gain a help cursor to provide additional context on hover and to users of assistive technologies.</p>
+<p>Add <code>.initialism</code> to an abbreviation for a slightly smaller font-size.</p>
+              <div class='documentation-content padded'><div class='mojo-docblock'><span class='mojo-doclabel'>EXAMPLE</span><div class="preview-wrapper"><div class="mojo-preview "><p><abbr title="attribute">attr</abbr></p>
+<p><abbr title="HyperText Markup Language" class="initialism">HTML</abbr></p>
+</div></div><div class='mojo-highlight'><pre class="code" data-lang="html"><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">abbr</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"attribute"</span>&gt;</span>attr<span class="hljs-tag">&lt;/<span class="hljs-name">abbr</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">abbr</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"HyperText Markup Language"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"initialism"</span>&gt;</span>HTML<span class="hljs-tag">&lt;/<span class="hljs-name">abbr</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+</code></pre></div></div></div><h2>Blockquotes</h2>
+<p>For quoting blocks of content from another source within your document. Wrap <code>&lt;blockquote class=&quot;blockquote&quot;&gt;</code> around any &lt;abbr title=&quot;HyperText Markup Language&quot;&gt;HTML&lt;/abbr&gt; as the quote.</p>
+              <div class='documentation-content padded'><div class='mojo-docblock'><span class='mojo-doclabel'>EXAMPLE</span><div class="preview-wrapper"><div class="mojo-preview "><blockquote class="blockquote">
+  <p class="mb-0">A well-known quote, contained in a blockquote element.</p>
+</blockquote></div></div><div class='mojo-highlight'><pre class="code" data-lang="html"><code>&lt;<span class="hljs-selector-tag">blockquote</span> class=<span class="hljs-string">"blockquote"</span>&gt;
+  &lt;<span class="hljs-selector-tag">p</span> class=<span class="hljs-string">"mb-0"</span>&gt;A well-known <span class="hljs-selector-tag">quote</span>, contained <span class="hljs-keyword">in</span> <span class="hljs-selector-tag">a</span> <span class="hljs-selector-tag">blockquote</span> element.&lt;/p&gt;
+&lt;/blockquote&gt;</code></pre></div></div></div>
+            </div>
+          </div>
+          <div class="vr-block vr-block-lg"></div><!-- Mojo Footer -->
+          <footer class="footer make-background-highlight-light" role="contentinfo" style="background-image:url(../imgs/SceneL@2x.png)" alt="GrungeElement">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-4 offset-md-2"><img class="img-fluid" src="../imgs/MadeWithLove.png" alt="HeartLogo"></div>
+                <div class="col-4 offset-md-2">
+                  <div class="social-wrap">
+                    <ul class="social-icons">
+                      <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                      <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                      <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                      <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div><!-- URL  -->
+  </body>
+</html>

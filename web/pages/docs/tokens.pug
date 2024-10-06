@@ -1,0 +1,61 @@
+extends ../../layout/doc
+
+append config
+  - var icon = "gear"
+  - var metaDesc = 'Design Tokens are used to create a style dictionary which themes Mojo before any code changed are needed.'
+  - var parent = 'getting-started'
+  - var slug = 'tokens'
+  - var title = 'Design Tokens - Getting Started - Mojo Framework'
+  - var showRobot = true
+  - var prismjs = true
+
+append scriptsJS
+  script(src=path+"www/js/docs-tokens-es6-compiled.js?stamp=" + stamp, type="module")
+
+block content
+  +docs-heading('design-tokens', 'Design Tokens')
+
+  p.doc-intro
+    | Design Tokens play an important role in Mojo. Tweaking them allows for that perfect look and harmony.
+    | One major way Design Tokens are used, is to create a style dictionary which themes Mojo before any code changed are needed.
+
+  p Using the included CLI Tools, you  can easily generate and apply the changed #[strong Design Tokens] to the Mojo framework. At the core, the tools help you create and/or update a simple JSON file that holds the initial values, which are then used to compute a theme the framework.
+
+  p
+    | Below is a preview of the default tokens file. If you want to customize Mojo, simple make changes to this file, and then run the CLI tool, #[code cli/bin/mojo.js] and you will have fresh SCSS files with which to rebuild the framework to your new specifications.
+
+  .vr-block.vr-block-two
+
+  .row.gx-5
+      .col-xs-12.col-sm-6
+        #code-printout.token-form-wrapper.p-3
+          h4.token-title Custom Chords
+          div.token-form.bg-dark
+            pre
+              code.downloadJSON
+
+      .col-xs-12.col-sm-6
+        #code-explained.token-form-wrapper.p-3
+          table.table
+            thead.thead-dark
+              tr
+                th(scope="col") #
+                th(scope="col") First
+                th(scope="col") Last
+                th(scope="col") Handle
+            tbody
+              tr
+                th(scope="row") 1
+                td Mark
+                td Otto
+                td @mdo
+              tr
+                th(scope="row") 2
+                td Jacob
+                td Thornton
+                td @fat
+              tr
+                th(scope="row") 3
+                td Larry
+                td the Bird
+                td @twitter

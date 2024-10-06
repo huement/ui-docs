@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en.US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta property="og:url" content="https://huement.github.io/ui/">
+    <meta property="og:type" content="website">
+    <meta property="description" content="Cool starter kit for showing off various components">
+    <meta property="og:title" content="@huement/ui Kitchen Sink">
+    <meta property="og:image" content="https://huement.github.io/ui/imgs/Logo.png">
+    <meta property="og:description" content="Cool starter kit for showing off various components">
+    <meta property="og:site_name" content="@huement/ui Kitchen Sink - v0.5.0">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@huement/ui">
+    <meta name="twitter:creator" content="@huement/ui">
+    <meta name="twitter:title" content="@huement/ui Kitchen Sink">
+    <meta name="twitter:description" content="Cool starter kit for showing off various components">
+    <meta name="twitter:image" content="https://huement.github.io/ui/imgs/Logo.png">
+    <meta charset="UTF-8">
+    <title>@huement/ui Kitchen Sink</title>
+    <meta name="description" content="Cool starter kit for showing off various components">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="../favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../favicon/favicon-16x16.png" sizes="16x16">
+    <link href="../favicon/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <!-- [if lt IE 9]><script language="javascript" type="text/javascript" src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <link rel="stylesheet" href="../mojo.css?token=0.5.0" type="text/css" id="hui_css">
+    <link rel="stylesheet" href="../hi/icons.css?token=0.5.0" type="text/css" id="hui_icons">
+    <link rel="stylesheet" href="../css/pages.css?stamp=0.5.0" type="text/css" id="page_css">
+    <link rel="stylesheet" href="../css/docs.css" type="text/css" id="docs_css">
+  </head>
+  <body class="no-javascript">
+    <script>document.body.classList.remove('no-javascript');</script>
+    <div class="mojo docs-container container-fluid docPage">
+      <div class="row">
+        <div class="col-sm-4 col-md-3 sidebar">
+          <div class="side-container">
+            <div class="logo-container"><img class="logo img-fluid" src="../imgs/Logo.png"/></div>
+            <div class="build-container">
+              <div class="row g-0 mx-0 text-center">
+                <div class="col">
+                  <p class="build-label">Latest Build</p>
+                  <p class="build-version">0.5.0 Mon Sep 23 2024</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="docs-nav">
+            <div class="accordion-container">
+              <div class="accordion">
+                <input id="accordion-getting-started" type="checkbox" name="docs-accordion-checkbox" hidden=""/>
+                <label class="accordion-header c-hand" for="accordion-getting-started"><i class="hui hui-document-down mr-1"></i>getting-started</label>
+                <div class="accordion-body">
+                  <ul class="menu menu-nav">
+                    <li class="menu-item"><a href="../docs/installation.html">Installation</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/tokens.html">Tokens</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion">
+                <input id="accordion-style-guide" type="checkbox" name="docs-accordion-checkbox" hidden="" checked="checked"/>
+                <label class="accordion-header c-hand" for="accordion-style-guide"><i class="hui hui-document-down mr-1"></i>style-guide</label>
+                <div class="accordion-body">
+                  <ul class="menu menu-nav">
+                    <li class="menu-item"><a href="../docs/colors.html">Colors</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/templates.html">Templates</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/type-heading.html">Type-heading</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/typography.html">Typography</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/vert-rhythm.html">Vert-rhythm</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion">
+                <input id="accordion-layout" type="checkbox" name="docs-accordion-checkbox" hidden=""/>
+                <label class="accordion-header c-hand" for="accordion-layout"><i class="hui hui-document-down mr-1"></i>layout</label>
+                <div class="accordion-body">
+                  <ul class="menu menu-nav">
+                    <li class="menu-item"><a href="../docs/bs5-grid.html">Bs5-grid</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/containers.html">Containers</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/empty.html">Empty</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/gutters.html">Gutters</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/navbar.html">Navbar</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/off-canvas.html">Off-canvas</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/responsive.html">Responsive</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/tables.html">Tables</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion">
+                <input id="accordion-components" type="checkbox" name="docs-accordion-checkbox" hidden=""/>
+                <label class="accordion-header c-hand" for="accordion-components"><i class="hui hui-document-down mr-1"></i>components</label>
+                <div class="accordion-body">
+                  <ul class="menu menu-nav">
+                    <li class="menu-item"><a href="../docs/accordions.html">Accordions</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/alerts.html">Alerts</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/badges.html">Badges</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/buttons.html">Buttons</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/cards.html">Cards</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/dropdown.html">Dropdown</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/forms.html">Forms</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/hero.html">Hero</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/icons.html">Icons</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/images.html">Images</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/labels.html">Labels</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/lists.html">Lists</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/menu.html">Menu</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/modal.html">Modal</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/panels.html">Panels</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/snaps.html">Snaps</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/tabs.html">Tabs</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/tags.html">Tags</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/tiles.html">Tiles</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion">
+                <input id="accordion-utilities" type="checkbox" name="docs-accordion-checkbox" hidden=""/>
+                <label class="accordion-header c-hand" for="accordion-utilities"><i class="hui hui-document-down mr-1"></i>utilities</label>
+                <div class="accordion-body">
+                  <ul class="menu menu-nav">
+                    <li class="menu-item"><a href="../docs/_blank.html">_blank</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/cursors.html">Cursors</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/display.html">Display</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/divider.html">Divider</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/functions.html">Functions</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/loading.html">Loading</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/position.html">Position</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/shapes.html">Shapes</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/text.html">Text</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-8 col-md-9 main-content">
+          <div class="container  docs-content" id="content">
+            <div class="main-area px-xs-0 px-sm-0 px-md-2 px-lg-3 px-xl-3 px-xx-4">
+              <div class="docbar docbar-dark">
+                <div class="docbar-section">
+                  <button class="btn btn-dark m-1 btn-sm"><i class="hui hui-bacon-cheeseburger"></i></button>
+                </div>
+                <div class="docbar-section" style="flex: 2 0 0">
+                  <input class="form-input input-sm mr-2" type="text" placeholder="search"/>
+                  <div class="btns d-flex"><a class="text-white btn btn-sm mr-2 ml-1 btn-dark" href="https://github.com/huement/ui">Github</a><a class="text-white btn btn-sm mr-2 ml-1 btn-secondary" href="/index.html">@hui</a><a class="text-white btn btn-sm mr-2 ml-1 btn-primary" href="http://localhost">Huement</a>
+                  </div>
+                </div>
+              </div>
+              <div class="vr-block">&nbsp;</div>
+              <div class="container main-content">
+                <div class="row">
+                  <div class="col-12">
+                    <nav class="navbar navbar-light navbar-expand-lg bg-primary">
+                      <div class="container-fluid"><a class="navbar-brand" href="#">@huement/ui</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="hui hui-bacon-cheeseburger"></i></button>
+                        <div class="overlay d-flex d-lg-none"></div>
+                        <div class="order-lg-2 bg-primary d-lg-flex w-100 sidebar pb-3 pb-lg-0" id="navbarSupportedContent">
+                          <ul class="navbar-nav ml-lg-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><i class="hui hui-saturn-orbit"></i></a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                                </a>
+                              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                  <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Another Link</a></li>
+                            <li class="nav-item"><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a></li>
+                          </ul>
+                          <form class="d-flex">
+                            <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                          </form>
+                        </div>
+                      </div>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+              <div class="container-xxl">
+                <div class="row mt-3">
+                  <div class="col-4">
+                    <div class="mt-3 mb-3">
+                      <p>Hello this is body text, Documentation and examples for common text utilities to control alignment, wrapping, weight, and more.</p>
+                    </div>
+                    <div class="mt-5 mb-5">
+                      <button class="btn btn-primary" type="button">Primary</button>
+                      <button class="btn btn-secondary" type="button">Secondary</button>
+                      <button class="btn btn-success" type="button">Success</button>
+                      <button class="btn btn-danger" type="button">Danger</button>
+                      <button class="btn btn-warning" type="button">Warning</button>
+                      <button class="btn btn-info" type="button">Info</button>
+                      <button class="btn btn-light" type="button">Light</button>
+                      <button class="btn btn-dark" type="button">Dark</button>
+                      <button class="btn btn-link" type="button">Link</button>
+                    </div>
+                    <div class="mt-5 mb-5">
+                      <button class="btn btn-outline-primary" type="button">Primary</button>
+                      <button class="btn btn-outline-secondary" type="button">Secondary</button>
+                      <button class="btn btn-outline-success" type="button">Success</button>
+                      <button class="btn btn-outline-danger" type="button">Danger</button>
+                      <button class="btn btn-outline-warning" type="button">Warning</button>
+                      <button class="btn btn-outline-info" type="button">Info</button>
+                      <button class="btn btn-outline-light" type="button">Light</button>
+                      <button class="btn btn-outline-dark" type="button">Dark</button>
+                    </div>
+                    <div class="mt-3 mb-3">
+                      <p class="fs-1">.fs-1 text</p>
+                      <p class="fs-2">.fs-2 text</p>
+                      <p class="fs-3">.fs-3 text</p>
+                      <p class="fs-4">.fs-4 text</p>
+                      <p class="fs-5">.fs-5 text</p>
+                      <p class="fs-6">.fs-6 text</p>
+                    </div>
+                    <div class="mt-5 mb-3">
+                      <div class="btn-group" role="group" aria-label="Basic example">
+                        <button class="btn btn-primary" type="button">Left</button>
+                        <button class="btn btn-primary" type="button">Middle</button>
+                        <button class="btn btn-primary" type="button">Right</button>
+                      </div>
+                    </div>
+                    <div class="mt-3 mb-3">
+                      <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                        <button class="btn btn-danger" type="button">Left</button>
+                        <button class="btn btn-warning" type="button">Middle</button>
+                        <button class="btn btn-success" type="button">Right</button>
+                      </div>
+                    </div>
+                    <div class="mt-3 mb-3">
+                      <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                        <button class="btn btn-primary" type="button">1</button>
+                        <button class="btn btn-primary" type="button">2</button>
+                      </div>
+                      <div class="btn-group" role="group">
+                        <button class="btn btn-primary dropdown-toggle" id="btnGroupDrop1" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropdown
+                          
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                          <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                          <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="mt-5 mb-3">
+                      <div class="row d-flex d-block">
+                        <div class="col-3 p-4 border border-primary me-2 my-2"></div>
+                        <div class="col-3 p-4 border border-secondary me-2 my-2"></div>
+                        <div class="col-3 p-4 border border-success me-2 my-2"></div>
+                        <div class="col-3 p-4 border border-danger me-2 my-2"></div>
+                        <div class="col-3 p-4 border border-warning me-2 my-2"></div>
+                        <div class="col-3 p-4 border border-info me-2 my-2"></div>
+                        <div class="col-3 p-4 border border-light me-2 my-2"></div>
+                        <div class="col-3 p-4 border border-dark me-2 my-2"></div>
+                        <div class="col-3 p-4 border border-white me-2 my-2"></div>
+                      </div>
+                    </div>
+                    <div class="mt-3 mb-3">
+                      <div class="row d-flex d-block">
+                        <div class="col-3 p-4 border border-1 me-2 my-2"></div>
+                        <div class="col-3 p-4 border border-2 me-2 my-2"></div>
+                        <div class="col-3 p-4 border border-3 me-2 my-2"></div>
+                        <div class="col-3 p-4 border border-4 me-2 my-2"></div>
+                        <div class="col-3 p-4 border border-5 me-2 my-2"></div>
+                      </div>
+                    </div>
+                    <div class="mt-3 mb-3">
+                      <table class="table table-bordered border-primary">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="mt-3 mb-3">
+                      <div class="alert alert-primary" role="alert">
+                        A simple primary alert—check it out!
+                        
+                      </div>
+                      <div class="alert alert-secondary" role="alert">
+                        A simple secondary alert—check it out!
+                        
+                      </div>
+                      <div class="alert alert-success" role="alert">
+                        A simple success alert—check it out!
+                        
+                      </div>
+                      <div class="alert alert-danger" role="alert">
+                        A simple danger alert—check it out!
+                        
+                      </div>
+                      <div class="alert alert-warning" role="alert">
+                        A simple warning alert—check it out!
+                        
+                      </div>
+                      <div class="alert alert-info" role="alert">
+                        A simple info alert—check it out!
+                        
+                      </div>
+                      <div class="alert alert-light" role="alert">
+                        A simple light alert—check it out!
+                        
+                      </div>
+                      <div class="alert alert-dark" role="alert">
+                        A simple dark alert—check it out!
+                        
+                      </div>
+                    </div>
+                    <div class="mt-3 mb-3">
+                      <h1 class="display-1">Display 1</h1>
+                      <h1 class="display-2">Display 2</h1>
+                      <h1 class="display-3">Display 3</h1>
+                      <h1 class="display-4">Display 4</h1>
+                      <h1 class="display-5">Display 5</h1>
+                      <h1 class="display-6">Display 6</h1>
+                    </div>
+                    <div class="my-3">
+                      <p class="my-3">Accordion Example</p>
+                      <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                          <div class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Accordion Item #1
+                              
+                            </button>
+                          </div>
+                          <div class="accordion-collapse collapse show" id="collapseOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body"><strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the<code>.accordion-body</code>, though the transition does limit overflow.</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <div class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              Accordion Item #2
+                              
+                            </button>
+                          </div>
+                          <div class="accordion-collapse collapse" id="collapseTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body"><strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the<code>.accordion-body</code>, though the transition does limit overflow.</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <div class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              Accordion Item #3
+                              
+                            </button>
+                          </div>
+                          <div class="accordion-collapse collapse" id="collapseThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body"><strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the<code>.accordion-body</code>, though the transition does limit overflow.</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mt-3 mb-3">
+                      <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item active" aria-current="page">Home</li>
+                        </ol>
+                      </nav>
+                      <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="#">Home</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">Library</li>
+                        </ol>
+                      </nav>
+                      <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="#">Home</a></li>
+                          <li class="breadcrumb-item"><a href="#">Library</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">Data 13</li>
+                        </ol>
+                      </nav>
+                    </div>
+                    <div class="mt-3 mb-3">
+                      <button class="btn-close" type="button" aria-label="Close"></button>
+                    </div>
+                    <div class="mt-3 mb-3">
+                      <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+                      </nav>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="mt-3 mb-3"><span class="badge bg-primary">Primary</span><span class="badge bg-secondary">Secondary</span><span class="badge bg-success">Success</span><span class="badge bg-danger">Danger</span><span class="badge bg-warning text-dark">Warning</span><span class="badge bg-info text-dark">Info</span><span class="badge bg-light text-dark">Light</span><span class="badge bg-dark">Dark</span></div>
+                    <div class="mt-3 mb-3"><span class="badge rounded-pill bg-primary">Primary</span><span class="badge rounded-pill bg-secondary">Secondary</span><span class="badge rounded-pill bg-success">Success</span><span class="badge rounded-pill bg-danger">Danger</span><span class="badge rounded-pill bg-warning text-dark">Warning</span><span class="badge rounded-pill bg-info text-dark">Info</span><span class="badge rounded-pill bg-light text-dark">Light</span><span class="badge rounded-pill bg-dark">Dark</span></div>
+                    <div class="mt-3 mb-3">
+                      <div class="card text-white bg-primary mb-3">
+                        <div class="card-header">Header</div>
+                        <div class="card-body">
+                          <h5 class="card-title">Primary card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                      <div class="card text-white bg-secondary mb-3">
+                        <div class="card-header">Header</div>
+                        <div class="card-body">
+                          <h5 class="card-title">Secondary card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                      <div class="card text-white bg-success mb-3">
+                        <div class="card-header">Header</div>
+                        <div class="card-body">
+                          <h5 class="card-title">Success card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                      <div class="card text-white bg-danger mb-3">
+                        <div class="card-header">Header</div>
+                        <div class="card-body">
+                          <h5 class="card-title">Danger card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                      <div class="card text-dark bg-warning mb-3">
+                        <div class="card-header">Header</div>
+                        <div class="card-body">
+                          <h5 class="card-title">Warning card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                      <div class="card text-dark bg-info mb-3">
+                        <div class="card-header">Header</div>
+                        <div class="card-body">
+                          <h5 class="card-title">Info card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                      <div class="card text-dark bg-light mb-3">
+                        <div class="card-header">Header</div>
+                        <div class="card-body">
+                          <h5 class="card-title">Light card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                      <div class="card text-white bg-dark mb-3">
+                        <div class="card-header">Header</div>
+                        <div class="card-body">
+                          <h5 class="card-title">Dark card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container container-xxl">
+                <div class="row mt-3 mb-3">
+                  <div class="col-12">
+                    <section class="hero">
+                      <div class="hero-body">
+                        <p class="title">
+                          Hero title
+                          
+                        </p>
+                        <p class="subtitle">
+                          Hero subtitle
+                          
+                        </p>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </div>
+              <section class="hero mt-5 mb-5">
+                <div class="hero-body">
+                  <p class="title">
+                    Hero title
+                    
+                  </p>
+                  <p class="subtitle">Hero subtitle</p>
+                </div>
+              </section>
+            </div>
+          </div>
+          <div class="vr-block vr-block-lg"></div><!-- Mojo Footer -->
+          <footer class="footer make-background-highlight-light" role="contentinfo" style="background-image:url(../imgs/SceneL@2x.png)" alt="GrungeElement">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-4 offset-md-2"><img class="img-fluid" src="../imgs/MadeWithLove.png" alt="HeartLogo"></div>
+                <div class="col-4 offset-md-2">
+                  <div class="social-wrap">
+                    <ul class="social-icons">
+                      <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                      <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                      <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                      <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div><!-- URL  -->
+    <script src="../js/bundle.js" type="module"></script>
+  </body>
+</html>

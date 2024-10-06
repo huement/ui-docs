@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en.US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta property="og:url" content="https://huement.github.io/ui/">
+    <meta property="og:type" content="website">
+    <meta property="description" content="Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.">
+    <meta property="og:title" content="Alerts - Components - Mojo Framework">
+    <meta property="og:image" content="https://huement.github.io/ui/imgs/Logo.png">
+    <meta property="og:description" content="Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.">
+    <meta property="og:site_name" content="Alerts - Components - Mojo Framework - v0.5.0">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@huement/ui">
+    <meta name="twitter:creator" content="@huement/ui">
+    <meta name="twitter:title" content="Alerts - Components - Mojo Framework">
+    <meta name="twitter:description" content="Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.">
+    <meta name="twitter:image" content="https://huement.github.io/ui/imgs/Logo.png">
+    <meta charset="UTF-8">
+    <title>Alerts - Components - Mojo Framework</title>
+    <meta name="description" content="Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="../favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../favicon/favicon-16x16.png" sizes="16x16">
+    <link href="../favicon/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <!-- [if lt IE 9]><script language="javascript" type="text/javascript" src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <link rel="stylesheet" href="../mojo.css?token=0.5.0" type="text/css" id="hui_css">
+    <link rel="stylesheet" href="../hi/icons.css?token=0.5.0" type="text/css" id="hui_icons">
+    <link rel="stylesheet" href="../css/docs.css" type="text/css" id="docs_css">
+  </head>
+  <body class="no-javascript">
+    <script>document.body.classList.remove('no-javascript');</script>
+    <div class="mojo docs-container container-fluid docPage">
+      <div class="row">
+        <div class="col-sm-4 col-md-3 sidebar">
+          <div class="side-container">
+            <div class="logo-container"><img class="logo img-fluid" src="../imgs/Logo.png"/></div>
+            <div class="build-container">
+              <div class="row g-0 mx-0 text-center">
+                <div class="col">
+                  <p class="build-label">Latest Build</p>
+                  <p class="build-version">0.5.0 Mon Sep 23 2024</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="docs-nav">
+            <div class="accordion-container">
+              <div class="accordion">
+                <input id="accordion-getting-started" type="checkbox" name="docs-accordion-checkbox" hidden=""/>
+                <label class="accordion-header c-hand" for="accordion-getting-started"><i class="hui hui-document-down mr-1"></i>getting-started</label>
+                <div class="accordion-body">
+                  <ul class="menu menu-nav">
+                    <li class="menu-item"><a href="../docs/installation.html">Installation</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/tokens.html">Tokens</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion">
+                <input id="accordion-style-guide" type="checkbox" name="docs-accordion-checkbox" hidden=""/>
+                <label class="accordion-header c-hand" for="accordion-style-guide"><i class="hui hui-document-down mr-1"></i>style-guide</label>
+                <div class="accordion-body">
+                  <ul class="menu menu-nav">
+                    <li class="menu-item"><a href="../docs/colors.html">Colors</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/templates.html">Templates</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/type-heading.html">Type-heading</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/typography.html">Typography</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/vert-rhythm.html">Vert-rhythm</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion">
+                <input id="accordion-layout" type="checkbox" name="docs-accordion-checkbox" hidden=""/>
+                <label class="accordion-header c-hand" for="accordion-layout"><i class="hui hui-document-down mr-1"></i>layout</label>
+                <div class="accordion-body">
+                  <ul class="menu menu-nav">
+                    <li class="menu-item"><a href="../docs/bs5-grid.html">Bs5-grid</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/containers.html">Containers</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/empty.html">Empty</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/gutters.html">Gutters</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/navbar.html">Navbar</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/off-canvas.html">Off-canvas</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/responsive.html">Responsive</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/tables.html">Tables</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion">
+                <input id="accordion-components" type="checkbox" name="docs-accordion-checkbox" hidden="" checked="checked"/>
+                <label class="accordion-header c-hand" for="accordion-components"><i class="hui hui-document-down mr-1"></i>components</label>
+                <div class="accordion-body">
+                  <ul class="menu menu-nav">
+                    <li class="menu-item"><a href="../docs/accordions.html">Accordions</a>
+                    </li>
+                    <li class="menu-item"><a class="active" href="../docs/alerts.html">Alerts</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/badges.html">Badges</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/buttons.html">Buttons</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/cards.html">Cards</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/dropdown.html">Dropdown</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/forms.html">Forms</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/hero.html">Hero</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/icons.html">Icons</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/images.html">Images</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/labels.html">Labels</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/lists.html">Lists</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/menu.html">Menu</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/modal.html">Modal</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/panels.html">Panels</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/snaps.html">Snaps</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/tabs.html">Tabs</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/tags.html">Tags</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/tiles.html">Tiles</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion">
+                <input id="accordion-utilities" type="checkbox" name="docs-accordion-checkbox" hidden=""/>
+                <label class="accordion-header c-hand" for="accordion-utilities"><i class="hui hui-document-down mr-1"></i>utilities</label>
+                <div class="accordion-body">
+                  <ul class="menu menu-nav">
+                    <li class="menu-item"><a href="../docs/_blank.html">_blank</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/cursors.html">Cursors</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/display.html">Display</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/divider.html">Divider</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/functions.html">Functions</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/loading.html">Loading</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/position.html">Position</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/shapes.html">Shapes</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/text.html">Text</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-8 col-md-9 main-content">
+          <div class="container  docs-content" id="content">
+            <div class="main-area px-xs-0 px-sm-0 px-md-2 px-lg-3 px-xl-3 px-xx-4">
+              <div class="docbar docbar-dark">
+                <div class="docbar-section">
+                  <button class="btn btn-dark m-1 btn-sm"><i class="hui hui-bacon-cheeseburger"></i></button>
+                </div>
+                <div class="docbar-section" style="flex: 2 0 0">
+                  <input class="form-input input-sm mr-2" type="text" placeholder="search"/>
+                  <div class="btns d-flex"><a class="text-white btn btn-sm mr-2 ml-1 btn-dark" href="https://github.com/huement/ui">Github</a><a class="text-white btn btn-sm mr-2 ml-1 btn-secondary" href="/index.html">@hui</a><a class="text-white btn btn-sm mr-2 ml-1 btn-primary" href="http://localhost">Huement</a>
+                  </div>
+                </div>
+              </div>
+              <div class="vr-block">&nbsp;</div>
+              <div class="head-block" id="alerts">
+                <h1 class="s-title">Alerts<a class="anchor" href="#alerts" aria-hidden="true">#</a></h1>
+              </div>
+              <p class="doc-intro">Alerts are available for any length of text, as well as an optional close button. For proper styling, use one of the eight <strong>required</strong> contextual classes (e.g.,  <code>`.alert-success`</code>). For inline dismissal, use the<a href="#dismissing">alerts JavaScript plugin</a>.</p><div class='documentation-content '><div class='mojo-docblock'><span class='mojo-doclabel'>EXAMPLE</span><div class="preview-wrapper"><div class="mojo-preview "><div class="alert alert-danger" role="alert">
+  A simple `danger` alert—check it out!
+</div>
+</div></div><div class='mojo-highlight'><pre class="code" data-lang="html"><code>&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"alert alert-danger"</span> role=<span class="hljs-string">"alert"</span>&gt;
+  A simple `danger` alert—check <span class="hljs-keyword">it</span> out!
+&lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre></div></div></div>
+              <h2 class="s-subtitle" id="live-example">Live Example<a class="anchor" href="#live-example" aria-hidden="true">#</a></h2>
+              <div class="docs-demo">
+                <p>Click the button below to show an alert (hidden with inline styles to start), then dismiss (and destroy) it with the built-in close button.</p>
+              </div><div class='documentation-content '><div class='mojo-docblock'><span class='mojo-doclabel'>EXAMPLE</span><div class="preview-wrapper"><div class="mojo-preview "><div id="liveAlertPlaceholder"></div>
+<button type="button" class="btn btn-primary" id="liveAlertBtn">Show live alert</button>
+</div></div><div class='mojo-highlight'><pre class="code" data-lang="html"><code>&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">id</span>=<span class="hljs-string">"liveAlertPlaceholder"</span>&gt;&lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;button type=<span class="hljs-string">"button"</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"btn btn-primary"</span> <span class="hljs-built_in">id</span>=<span class="hljs-string">"liveAlertBtn"</span>&gt;Show live alert&lt;/button&gt;
+</code></pre></div></div></div>
+              <div class="docs-demo">
+                <p>We use the following JavaScript to trigger our live alert demo:</p>
+              </div><pre class='code ' data-lang='js'><code>const alertPlaceholder = document.getElementById(<span class="hljs-string">'liveAlertPlaceholder'</span>)
+
+const alert = (message, <span class="hljs-keyword">type</span>) =&gt; {
+  const <span class="hljs-keyword">wrapper</span> = document.createElement(<span class="hljs-string">'div'</span>)
+  <span class="hljs-keyword">wrapper</span>.innerHTML = [
+    `&lt;div <span class="hljs-keyword">class</span>="alert alert-${type} alert-dismissible" <span class="hljs-keyword">role</span>="alert"&gt;`,
+    `   &lt;div&gt;${message}&lt;/div&gt;`,
+    <span class="hljs-string">'   &lt;button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"&gt;&lt;/button&gt;'</span>,
+    <span class="hljs-string">'&lt;/div&gt;'</span>
+  ].<span class="hljs-keyword">join</span>(<span class="hljs-string">''</span>)
+
+  alertPlaceholder.append(<span class="hljs-keyword">wrapper</span>)
+}
+
+const alertTrigger = document.getElementById(<span class="hljs-string">'liveAlertBtn'</span>)
+<span class="hljs-keyword">if</span> (alertTrigger) {
+  alertTrigger.addEventListener(<span class="hljs-string">'click'</span>, () =&gt; {
+    alert(<span class="hljs-string">'Nice, you triggered this alert message!'</span>, <span class="hljs-string">'success'</span>)
+  })
+}
+</code></pre>
+              <h2 class="s-subtitle" id="link-color">Link color<a class="anchor" href="#link-color" aria-hidden="true">#</a></h2>
+              <p>Use the <code>`.alert-link`</code> utility class to quickly provide matching colored links within any alert.</p><div class='documentation-content '><div class='mojo-docblock'><span class='mojo-doclabel'>EXAMPLE</span><div class="preview-wrapper"><div class="mojo-preview "><div class="alert alert-dark" role="alert">
+  A simple dark alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+</div>
+</div></div><div class='mojo-highlight'><pre class="code" data-lang="html"><code>&lt;<span class="hljs-keyword">div</span> class=<span class="hljs-string">"alert alert-dark"</span> role=<span class="hljs-string">"alert"</span>&gt;
+  A simple dark alert <span class="hljs-keyword">with</span> &lt;<span class="hljs-keyword">a</span> href=<span class="hljs-string">"#"</span> class=<span class="hljs-string">"alert-link"</span>&gt;<span class="hljs-keyword">an</span> example link&lt;/<span class="hljs-keyword">a</span>&gt;. Give <span class="hljs-keyword">it</span> <span class="hljs-keyword">a</span> click <span class="hljs-keyword">if</span> you like.
+&lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre></div></div></div>
+              <h2 class="s-subtitle" id="additional-content">Additional content<a class="anchor" href="#additional-content" aria-hidden="true">#</a></h2>
+              <div class="docs-demo">
+                <p>Alerts can also contain additional HTML elements like headings, paragraphs and dividers.</p>
+              </div><div class='documentation-content '><div class='mojo-docblock'><span class='mojo-doclabel'>EXAMPLE</span><div class="preview-wrapper"><div class="mojo-preview "><div class="alert alert-success" role="alert">
+  <h4 class="alert-heading">Well done!</h4>
+  <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+  <hr>
+  <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+</div>
+</div></div><div class='mojo-highlight'><pre class="code" data-lang="html"><code>&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"alert alert-success"</span> role=<span class="hljs-string">"alert"</span>&gt;
+  &lt;h4 <span class="hljs-built_in">class</span>=<span class="hljs-string">"alert-heading"</span>&gt;Well done!&lt;/h4&gt;
+  &lt;p&gt;Aww yeah, you successfully <span class="hljs-built_in">read</span> this important alert message. This example <span class="hljs-built_in">text</span> <span class="hljs-keyword">is</span> going <span class="hljs-keyword">to</span> <span class="hljs-built_in">run</span> a bit longer so <span class="hljs-keyword">that</span> you can see how spacing within an alert works <span class="hljs-keyword">with</span> this kind <span class="hljs-keyword">of</span> content.&lt;/p&gt;
+  &lt;hr&gt;
+  &lt;p <span class="hljs-built_in">class</span>=<span class="hljs-string">"mb-0"</span>&gt;Whenever you need <span class="hljs-keyword">to</span>, be sure <span class="hljs-keyword">to</span> use margin utilities <span class="hljs-keyword">to</span> keep things nice <span class="hljs-keyword">and</span> tidy.&lt;/p&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre></div></div></div>
+              <h2 class="s-subtitle" id="icons">Icons<a class="anchor" href="#icons" aria-hidden="true">#</a></h2>
+              <div class="docs-demo">
+                <p>Similarly, you can use<a href="/utilities/flex">flexbox utilities</a> and<a href="/modules/icons"> Bootstrap Icons</a> to create alerts with icons. Depending on your icons and content, you may want to add more utilities or custom styles.</p>
+              </div><div class='documentation-content '><div class='mojo-docblock'><span class='mojo-doclabel'>EXAMPLE</span><div class="preview-wrapper"><div class="mojo-preview "><div class="alert alert-primary d-flex align-items-center" role="alert">
+  <svg xmlns="http://www.w3.org/2000/svg" class="rif bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Warning:">
+    <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+  </svg>
+  <div>
+    An example alert with an icon
+  </div>
+</div>
+</div></div><div class='mojo-highlight'><pre class="code" data-lang="html"><code><span class="hljs-string">&lt;div</span> <span class="hljs-string">class="alert</span> <span class="hljs-string">alert-primary</span> <span class="hljs-string">d-flex</span> <span class="hljs-string">align-items-center"</span> <span class="hljs-string">role="alert"&gt;</span>
+  <span class="hljs-string">&lt;svg</span> <span class="hljs-string">xmlns="http://www.w3.org/2000/svg"</span> <span class="hljs-string">class="rif</span> <span class="hljs-string">bi-exclamation-triangle-fill</span> <span class="hljs-string">flex-shrink-0</span> <span class="hljs-string">me-2"</span> <span class="hljs-string">viewBox="0</span> <span class="hljs-number">0</span> <span class="hljs-number">16</span> <span class="hljs-number">16</span><span class="hljs-string">" role="</span><span class="hljs-string">img"</span> <span class="hljs-string">aria-label="Warning:"&gt;</span>
+    <span class="hljs-string">&lt;path</span> <span class="hljs-string">d="M8.982</span> <span class="hljs-number">1.</span><span class="hljs-string">566a1.13</span> <span class="hljs-number">1.13</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span><span class="hljs-number">-1.96</span> <span class="hljs-string">0L.165</span> <span class="hljs-number">13.</span><span class="hljs-string">233c-.457.778.091</span> <span class="hljs-number">1.767</span><span class="hljs-number">.98</span> <span class="hljs-number">1.</span><span class="hljs-string">767h13.713c.889</span> <span class="hljs-number">0</span> <span class="hljs-number">1.438</span><span class="hljs-number">-.99</span><span class="hljs-number">.98</span><span class="hljs-number">-1.</span><span class="hljs-string">767L8.982</span> <span class="hljs-number">1.</span><span class="hljs-string">566zM8</span> <span class="hljs-string">5c.535</span> <span class="hljs-number">0</span> <span class="hljs-number">.954</span><span class="hljs-number">.462</span><span class="hljs-number">.9</span><span class="hljs-string">.995l-.35</span> <span class="hljs-number">3.</span><span class="hljs-string">507a.552.552</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">1</span><span class="hljs-number">-1.1</span> <span class="hljs-string">0L7.1</span> <span class="hljs-number">5.</span><span class="hljs-string">995A.905.905</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">1</span> <span class="hljs-number">8</span> <span class="hljs-string">5zm.002</span> <span class="hljs-string">6a1</span> <span class="hljs-number">1</span> <span class="hljs-number">0</span> <span class="hljs-number">1</span> <span class="hljs-number">1</span> <span class="hljs-number">0</span> <span class="hljs-number">2</span> <span class="hljs-number">1</span> <span class="hljs-number">1</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">1</span> <span class="hljs-number">0</span><span class="hljs-string">-2z"/&gt;</span>
+  <span class="hljs-string">&lt;/svg&gt;</span>
+  <span class="hljs-string">&lt;div&gt;</span>
+    <span class="hljs-string">An</span> <span class="hljs-string">example</span> <span class="hljs-string">alert</span> <span class="hljs-string">with</span> <span class="hljs-string">an</span> <span class="hljs-string">icon</span>
+  <span class="hljs-string">&lt;/div&gt;</span>
+<span class="hljs-string">&lt;/div&gt;</span>
+</code></pre></div></div></div><h3>Dismissing</h3>
+<p>Using the alert JavaScript plugin, it's possible to dismiss any alert inline. Here's how:</p>
+<ul>
+<li>Be sure you've loaded the alert plugin, or the compiled Bootstrap JavaScript.</li>
+<li>Add a [close button]({{&lt; docsref &quot;/components/close-button&quot; &gt;}}) and the <code>.alert-dismissible</code> class, which adds extra padding to the right of the alert and positions the close button.</li>
+<li>On the close button, add the <code>data-bs-dismiss=&quot;alert&quot;</code> attribute, which triggers the JavaScript functionality. Be sure to use the <code>&lt;button&gt;</code> element with it for proper behavior across all devices.</li>
+<li>To animate alerts when dismissing them, be sure to add the <code>.fade</code> and <code>.show</code> classes.</li>
+</ul>
+<p>You can see this in action with a live demo:</p>
+              <div class='documentation-content '><div class='mojo-docblock'><span class='mojo-doclabel'>EXAMPLE</span><div class="preview-wrapper"><div class="mojo-preview "><div class="alert alert-warning alert-dismissible fade show" role="alert">
+  <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+
+</div></div><div class='mojo-highlight'><pre class="code" data-lang="html"><code>&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"alert alert-warning alert-dismissible fade show"</span> role=<span class="hljs-string">"alert"</span>&gt;
+  &lt;strong&gt;Holy guacamole!&lt;/strong&gt; You should check <span class="hljs-keyword">in</span> <span class="hljs-keyword">on</span> <span class="hljs-keyword">some</span> <span class="hljs-keyword">of</span> those fields <span class="hljs-keyword">below</span>.
+  &lt;button type=<span class="hljs-string">"button"</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"btn-close"</span> data-bs-dismiss=<span class="hljs-string">"alert"</span> aria-label=<span class="hljs-string">"Close"</span>&gt;&lt;/button&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;
+
+</code></pre></div></div></div>
+              <div class="docs-demo">
+                <p class="half-lead p-5 bg-info">When an alert is dismissed, the element is completely removed from the page structure. If a keyboard user dismisses the alert using the close button, their focus will suddenly be lost and, depending on the browser, reset to the start of the page/document. For this reason, we recommend including additional JavaScript that listens for the `closed.bs.alert` event and programmatically sets `focus()` to the most appropriate location in the page. If you're planning to move focus to a non-interactive element that normally does not receive focus, make sure to add `tabindex="-1"` to the element.</p>
+              </div>
+            </div>
+          </div>
+          <div class="vr-block vr-block-lg"></div><!-- Mojo Footer -->
+          <footer class="footer make-background-highlight-light" role="contentinfo" style="background-image:url(../imgs/SceneL@2x.png)" alt="GrungeElement">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-4 offset-md-2"><img class="img-fluid" src="../imgs/MadeWithLove.png" alt="HeartLogo"></div>
+                <div class="col-4 offset-md-2">
+                  <div class="social-wrap">
+                    <ul class="social-icons">
+                      <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                      <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                      <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                      <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div><!-- URL  -->
+  </body>
+</html>

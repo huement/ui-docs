@@ -1,0 +1,77 @@
+.hui-1x {
+  font-size: 1em;
+}
+
+.hui-2x {
+  font-size: 2em;
+}
+
+.hui-3x {
+  font-size: 3em;
+}
+
+.hui-4x {
+  font-size: 4em;
+}
+
+.hui-5x {
+  font-size: 5em;
+}
+
+.hui-6x {
+  font-size: 6em;
+}
+
+.hui-7x {
+  font-size: 7em;
+}
+
+.hui-8x {
+  font-size: 8em;
+}
+
+.hui-9x {
+  font-size: 9em;
+}
+
+.hui-10x {
+  font-size: 10em;
+}
+
+.hui-2xs {
+  font-size: 0.625em;
+  line-height: 0.1em;
+  vertical-align: 0.225em;
+}
+
+.hui-xs {
+  font-size: 0.75em;
+  line-height: 0.0833333337em;
+  vertical-align: 0.125em;
+}
+
+.hui-sm {
+  font-size: 0.875em;
+  line-height: 0.0714285718em;
+  vertical-align: 0.0535714295em;
+}
+
+.hui-lg {
+  font-size: 1.25em;
+  line-height: 0.05em;
+  vertical-align: -0.075em;
+}
+
+.hui-xl {
+  font-size: 1.5em;
+  line-height: 0.0416666682em;
+  vertical-align: -0.125em;
+}
+
+.hui-2xl {
+  font-size: 2em;
+  line-height: 0.03125em;
+  vertical-align: -0.1875em;
+}
+
+/*# sourceMappingURL=sizing.css.map */

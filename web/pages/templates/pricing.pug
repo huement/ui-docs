@@ -1,0 +1,239 @@
+extends ../../layout/templates
+
+append ExtraHeader
+  //-  Custom styles for this template\
+  link(href= path + "www/css/pricing.css", rel="stylesheet")
+  style.
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    .b-example-divider {
+      height: 3rem;
+      background-color: rgba(0, 0, 0, .1);
+      border: solid rgba(0, 0, 0, .15);
+      border-width: 1px 0;
+      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
+
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
+
+    .bi {
+      vertical-align: -.125em;
+      fill: currentColor;
+    }
+
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
+
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+
+
+append config
+    - var title = "Blog Template"
+    - var metaDesc = "Grid Based Blog Template. Sticky Cool!"
+    - var parent = 'templates'
+    - var slug = 'blog'
+
+
+block content
+  svg(xmlns="http://www.w3.org/2000/svg", style="display: none;")
+    symbol#check(viewBox="0 0 16 16")
+      title Check
+      path(d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z")
+  .container.py-3
+    header
+      .make-flex.flex-column.flex-md-row.align-items-center.pb-3.mb-4.border-bottom
+        a.make-flex.align-items-center.text-dark.text-decoration-none(href="/")
+          svg.me-2(xmlns="http://www.w3.org/2000/svg", width="40", height="32", viewBox="0 0 118 94", role="img")
+            title Bootstrap
+            path(fill-rule="evenodd", clip-rule="evenodd", d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z", fill="currentColor")
+          span.fs-4 Pricing example
+        nav.make-inline-flex.mt-2.mt-md-0.ms-md-auto
+          a.me-3.py-2.text-dark.text-decoration-none(href="#") Features
+          a.me-3.py-2.text-dark.text-decoration-none(href="#") Enterprise
+          a.me-3.py-2.text-dark.text-decoration-none(href="#") Support
+          a.py-2.text-dark.text-decoration-none(href="#") Pricing
+      .pricing-header.p-3.pb-md-4.mx-auto.text-center
+        h1.display-4.fw-normal Pricing
+        p.fs-5.text-medium Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.
+    main
+      .row.row-cols-1.row-cols-md-3.mb-3.text-center
+        .col
+          .card.mb-4.rounded-3.shadow-sm
+            .card-header.py-3
+              h4.my-0.fw-normal Free
+            .card-body
+              h1.card-title.pricing-card-title
+                | $0
+                small.text-medium.fw-light /mo
+              ul.list-unstyled.mt-3.mb-4
+                li 10 users included
+                li 2 GB of storage
+                li Email support
+                li Help center access
+              button.w-100.btn.btn-lg.btn-outline-primary(type="button") Sign up for free
+        .col
+          .card.mb-4.rounded-3.shadow-sm
+            .card-header.py-3
+              h4.my-0.fw-normal Pro
+            .card-body
+              h1.card-title.pricing-card-title
+                | $15
+                small.text-medium.fw-light /mo
+              ul.list-unstyled.mt-3.mb-4
+                li 20 users included
+                li 10 GB of storage
+                li Priority email support
+                li Help center access
+              button.w-100.btn.btn-lg.btn-primary(type="button") Get started
+        .col
+          .card.mb-4.rounded-3.shadow-sm.border-primary
+            .card-header.py-3.text-bg-primary.border-primary
+              h4.my-0.fw-normal Enterprise
+            .card-body
+              h1.card-title.pricing-card-title
+                | $29
+                small.text-medium.fw-light /mo
+              ul.list-unstyled.mt-3.mb-4
+                li 30 users included
+                li 15 GB of storage
+                li Phone and email support
+                li Help center access
+              button.w-100.btn.btn-lg.btn-primary(type="button") Contact us
+      h2.display-6.text-center.mb-4 Compare plans
+      .table-responsive
+        table.table.text-center
+          thead
+            tr
+              th(style="width: 34%;")
+              th(style="width: 22%;") Free
+              th(style="width: 22%;") Pro
+              th(style="width: 22%;") Enterprise
+          tbody
+            tr
+              th.text-start(scope="row") Public
+              td
+                svg.bi(width="24", height="24")
+                  use(href="#check")
+              td
+                svg.bi(width="24", height="24")
+                  use(href="#check")
+              td
+                svg.bi(width="24", height="24")
+                  use(href="#check")
+            tr
+              th.text-start(scope="row") Private
+              td
+              td
+                svg.bi(width="24", height="24")
+                  use(href="#check")
+              td
+                svg.bi(width="24", height="24")
+                  use(href="#check")
+          tbody
+            tr
+              th.text-start(scope="row") Permissions
+              td
+                svg.bi(width="24", height="24")
+                  use(href="#check")
+              td
+                svg.bi(width="24", height="24")
+                  use(href="#check")
+              td
+                svg.bi(width="24", height="24")
+                  use(href="#check")
+            tr
+              th.text-start(scope="row") Sharing
+              td
+              td
+                svg.bi(width="24", height="24")
+                  use(href="#check")
+              td
+                svg.bi(width="24", height="24")
+                  use(href="#check")
+            tr
+              th.text-start(scope="row") Unlimited members
+              td
+              td
+                svg.bi(width="24", height="24")
+                  use(href="#check")
+              td
+                svg.bi(width="24", height="24")
+                  use(href="#check")
+            tr
+              th.text-start(scope="row") Extra security
+              td
+              td
+              td
+                svg.bi(width="24", height="24")
+                  use(href="#check")
+    footer.pt-4.my-md-5.pt-md-5.border-top
+      .row
+        .col-12.col-md
+          img.mb-2(src="../assets/brand/bootstrap-logo.svg", alt, width="24", height="19")
+          small.make-block.mb-3.text-medium © 2017–2022
+        .col-6.col-md
+          h5 Features
+          ul.list-unstyled.text-small
+            li.mb-1
+              a.link-secondary.text-decoration-none(href="#") Cool stuff
+            li.mb-1
+              a.link-secondary.text-decoration-none(href="#") Random feature
+            li.mb-1
+              a.link-secondary.text-decoration-none(href="#") Team feature
+            li.mb-1
+              a.link-secondary.text-decoration-none(href="#") Stuff for developers
+            li.mb-1
+              a.link-secondary.text-decoration-none(href="#") Another one
+            li.mb-1
+              a.link-secondary.text-decoration-none(href="#") Last time
+        .col-6.col-md
+          h5 Resources
+          ul.list-unstyled.text-small
+            li.mb-1
+              a.link-secondary.text-decoration-none(href="#") Resource
+            li.mb-1
+              a.link-secondary.text-decoration-none(href="#") Resource name
+            li.mb-1
+              a.link-secondary.text-decoration-none(href="#") Another resource
+            li.mb-1
+              a.link-secondary.text-decoration-none(href="#") Final resource
+        .col-6.col-md
+          h5 About
+          ul.list-unstyled.text-small
+            li.mb-1
+              a.link-secondary.text-decoration-none(href="#") Team
+            li.mb-1
+              a.link-secondary.text-decoration-none(href="#") Locations
+            li.mb-1
+              a.link-secondary.text-decoration-none(href="#") Privacy
+            li.mb-1
+              a.link-secondary.text-decoration-none(href="#") Terms

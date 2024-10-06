@@ -1,0 +1,105 @@
+extends ../../layout/doc
+
+append config
+  - var slug = 'dropdown'
+  - var parent = 'components'
+  - var title = 'Dropdown - Components - Mojo Framework'
+  - var icon = "gear"
+  - var metaDesc = 'Toggle contextual overlays for displaying lists of links and more with the dropdown module.'
+
+block content
+  +docs-heading('menu-dropdown', 'Dropdown menu')
+
+  p.doc-intro
+    | Dropdowns are toggleable, contextual overlays for displaying lists of links and more.
+
+  .docs-demo.container
+    .row
+      .col-12.col-md-5
+        .dropdown
+          .btn-group
+            a.btn.btn-primary
+              | dropdown button
+            a.btn.btn-primary.dropdown-toggle(tabindex="0")
+              +iFont(iconPrefix, "ion", "md-arrow-dropdown")
+            ul.menu
+              li.menu-item
+                a(href="#dropdowns")
+                  | Geo Cities
+              li.menu-item
+                a(href="#dropdowns")
+                  | MySpace
+              li.menu-item
+                a(href="#dropdowns")
+                  | AOL Online
+      .col-12.col-md-5.offset-md-2
+        .dropdown
+          a.btn.btn-outline.btn-dark.dropdown-toggle(tabindex="0")
+            | dropdown button
+            +iFont(iconPrefix, "ion", "md-arrow-dropdown")
+          ul.menu
+            li.menu-item
+              a(href="#dropdowns")
+                | Geo Cities
+            li.menu-item
+              a(href="#dropdowns")
+                | MySpace
+            li.menu-item
+              a(href="#dropdowns")
+                | AOL Online
+
+  p
+    | Dropdown menus component is built entirely in CSS. It is triggered by #[code :focus] event.
+  p
+    | Add a container element with the #[code dropdown] class.
+    | And add a focusable element with the #[code dropdown-toggle] class for the button and a #[code menu] component right next to it.
+    | You also need to add #[code tabindex] to make the buttons focusable.
+  p
+    | If the dropdown is close to the right edge of the browser, you can add the #[code dropdown-right] class to the container to prevent it appearing off screen.
+
+  .docs-demo.container
+    .row
+      .col-12.text-right
+        .dropdown.dropdown-right
+          a.btn.btn-primary.dropdown-toggle(tabindex="0")
+            | dropdown button
+            +iFont(iconPrefix, "ion", "md-arrow-dropdown")
+          ul.menu.text-left
+            li.menu-item
+              a(href="#dropdowns") Geo Cities
+            li.menu-item
+              a(href="#dropdowns") MySpace
+            li.menu-item
+              a(href="#dropdowns") AOL Online
+
+  p
+    | Also, you can implement your JS to interact with the dropdown menus by adding the #[code active] class to the #[code dropdown] container.
+
+  :highlightify(lang="html")
+    <!-- basic dropdown button -->
+    <div class="dropdown">
+      <a href="#" class="btn btn-link dropdown-toggle" tabindex="0">
+        dropdown menu <i class="icon icon-caret"></i>
+      </a>
+      <!-- menu component -->
+      <ul class="menu">
+        ...
+      </ul>
+    </div>
+
+    <!-- dropdown button group -->
+    <div class="dropdown">
+      <div class="btn-group">
+        <a href="#" class="btn">
+          dropdown button
+        </a>
+        <a href="#" class="btn dropdown-toggle" tabindex="0">
+          <i class="icon icon-caret"></i>
+        </a>
+
+        <!-- menu component -->
+        <ul class="menu">
+          ...
+        </ul>
+      </div>
+    </div>

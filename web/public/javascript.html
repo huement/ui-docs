@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mojo 'Kitchen Sink' Testbed</title>
+  <link rel="stylesheet" href="mojo.css?ver=#REPLACE#">
+  <!-- <link rel="stylesheet" href="css/mojo.css">
+  <link rel="stylesheet" href="css/icons.css"> -->
+  <style>
+    html,
+    body {
+      overflow-x: hidden;
+      /* Prevent scroll on narrow devices */
+    }
+
+    body {
+      padding-top: 56px;
+    }
+
+    /* navbar hide on scroll down */
+    .nav-up {
+      top: -80px;
+    }
+
+    .navbar {
+      transition: top 0.4s ease-in-out;
+    }
+
+    .sidebar,
+    .overlay {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+    }
+
+    .sidebar {
+      left: -100%;
+      max-width: 300px;
+      transition: all ease 0.25s;
+      overflow-y: auto;
+      z-index: 1032;
+    }
+
+    .overlay {
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.50);
+      visibility: hidden;
+      z-index: 1031;
+    }
+
+    .main-navigation.active .sidebar {
+      left: 0;
+    }
+
+    .main-navigation.active .overlay {
+      visibility: visible;
+    }
+
+    @media (min-width: 992px) {
+      .sidebar {
+        position: relative;
+        top: auto;
+        bottom: auto;
+        left: auto;
+        flex-direction: row;
+        max-width: 100%;
+        transform: none;
+        transition: none;
+        overflow-y: visible;
+        z-index: auto;
+      }
+
+    }
+
+    .main-heading {
+      position: relative;
+      z-index: 100;
+    }
+
+    @media (max-width: 991.98px) {
+      .navbar-nav {
+        padding-top: 5rem;
+        padding-left: 1.5rem;
+      }
+    }
+
+    #list-example {
+      margin: 2rem auto;
+    }
+
+  </style>
+  <link rel="icon" type="image/png" href="./favicon/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="./favicon/favicon-16x16.png" sizes="16x16">
+  <link href="./favicon/favicon.ico" rel="shortcut icon" type="image/x-icon">
+</head>
+
+<body>
+  <nav class="navbar navbar-light navbar-expand-lg bg-primary fixed-top main-navigation" id="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">@huement/ui</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="hui hui-bacon-cheeseburger"></i>
+      </button>
+      <div class="overlay d-flex d-lg-none"></div>
+      <div class="order-lg-2 bg-primary d-lg-flex w-100 sidebar pb-3 pb-lg-0" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-lg-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="hui hui-saturn-orbit"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Another Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <div class="mt-3 pt-3">
+          <div class="card text-white bg-primary mb-3">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+              <h5 class="card-title">Primary card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="my-3">
+          <p class="my-3">Accordion Example</p>
+
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  Accordion Item #1
+                </button>
+              </div>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
+                  plugin adds
+                  the appropriate classes that we use to style each element. These classes control the overall
+                  appearance, as well
+                  as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
+                  overriding our
+                  default variables. It's also worth noting that just about any HTML can go within the
+                  <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false" aria-controls="collapseTwo">
+                  Accordion Item #2
+                </button>
+              </div>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
+                  plugin
+                  adds the appropriate classes that we use to style each element. These classes control the overall
+                  appearance, as
+                  well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
+                  overriding our
+                  default variables. It's also worth noting that just about any HTML can go within the
+                  <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false" aria-controls="collapseThree">
+                  Accordion Item #3
+                </button>
+              </div>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
+                  plugin
+                  adds the appropriate classes that we use to style each element. These classes control the overall
+                  appearance, as
+                  well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
+                  overriding our
+                  default variables. It's also worth noting that just about any HTML can go within the
+                  <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <div class="mt-3 pt-3">
+          <div class="alert alert-primary" role="alert">
+            A simple primary alert—check it out!
+          </div>
+        </div>
+        <div class="mt-3">
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Launch demo modal
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="my-3 py-3">
+          <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+            aria-controls="offcanvasExample">
+            Link with href
+          </a>
+          <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample">
+            Button with data-bs-target
+          </button>
+
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div>
+                Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images,
+                lists, etc.
+              </div>
+              <div class="dropdown mt-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                  Dropdown button
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./js/bundle.js?ver=#REPLACE#"></script>
+  <script>
+    // Hide Navbar on scroll down
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+      var currentScrollPos = window.pageYOffset;
+      if ( prevScrollpos > currentScrollPos ) {
+        document.getElementById( "navbar" ).style.top = "0";
+      } else {
+        document.getElementById( "navbar" ).style.top = "-80px"; /* width horizontal navbar */
+      }
+      prevScrollpos = currentScrollPos;
+
+    }
+
+    function showToastClick() {
+      bs5Utils.Toast.show( {
+        type: 'primary',
+        icon: `<i class="hui hui-skull-and-bones fa-lg me-2"></i>`,
+        title: 'Notification!',
+        subtitle: '23 secs ago',
+        content: 'Hello World!',
+        buttons: [
+          {
+            text: 'Click Me!',
+            class: 'btn btn-sm btn-primary',
+            handler: () => {
+              alert( `Button #1 has been clicked!` );
+            }
+          },
+          {
+            text: 'Click Me Too!',
+            class: 'btn btn-sm btn-warning',
+            handler: () => {
+              alert( `You clicked me too!` );
+            }
+          },
+          {
+            type: 'dismiss',
+            text: 'Hide',
+            class: 'btn btn-sm btn-secondary'
+          }
+        ],
+        delay: 0,
+        dismissible: true
+      } );
+    }
+
+    const mainNavigation = document.querySelector( ".main-navigation" );
+    const overlay = mainNavigation.querySelector( ".overlay" );
+    const toggler = mainNavigation.querySelector( ".navbar-toggler" );
+
+    const openSideNav = () => mainNavigation.classList.add( "active" );
+    const closeSideNav = () => mainNavigation.classList.remove( "active" );
+    toggler.addEventListener( "click", openSideNav );
+    overlay.addEventListener( "click", closeSideNav );
+
+  </script>
+</body>
+
+</html>

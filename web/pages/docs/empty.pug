@@ -1,0 +1,89 @@
+extends ../../layout/doc
+
+append config
+  - var icon = "gear"
+  - var slug = 'empty'
+  - var parent = 'layout'
+  - var title = 'Empty states - Layout - Mojo Framework'
+  - var metaDesc = 'Empty states/blank slates are commonly used as placeholders for first time use, empty data and error screens.'
+
+block content
+  +docs-heading('empty', 'Empty states')
+
+  p.doc-intro
+    | Empty states/blank slates are commonly used as placeholders for first time use, empty data and error screens. Often times when mocking up a page, or when there simply isnt enough content to properly fill up a page enough, where a short page would cause issues with a footer, sidebar or other such isssues, you can quickly add in an #[strong Empty Module] to quickly get back to building your application, without having to huddle up and brainstorm all day to simply fill out an error page or a thank you confirmation element.
+
+
+  +docs-subheading('ex-one', 'Example One')
+  p
+    | #[strong Example One] shows the basic structure of an empty layout placeholder module.
+
+  .docs-demo.container
+    .row
+      .col-12
+        .empty
+          .empty-icon
+            i.icon.icon-3x.icon-mail
+          p.empty-title.h5 You have no new messages
+          p.empty-subtitle Click the button to start a conversation
+          .empty-action
+            button.btn.btn-primary Send a message
+
+
+  +docs-linebreak()
+
+  +docs-subheading('ex-two', 'Example Two')
+
+  p
+    | #[strong Example Two] shows the a slightly more complex structure of an empty layout placeholder module.
+
+  .docs-demo.container
+    .row
+      .col-12
+        .empty
+          .empty-icon
+            i.icon.icon-3x.icon-mail
+          p.empty-title.h5 You've successfully signed up
+          p.empty-subtitle Click the button to invite your friends
+          .empty-action
+            button.btn.btn-primary Invite your friends
+          .empty-action
+            button.btn.btn-link Skip
+
+  +docs-linebreak()
+
+  +docs-subheading('ex-thrice', 'Example Thrice')
+  p
+    | #[strong Example Thrice] is an empty placeholder module with form controls mocked inside it.
+
+  .docs-demo.container
+    .row
+      .col-12
+        .empty
+          .empty-icon
+            i.icon.icon-3x.icon-people
+          p.empty-title.h5 You are not following anyone
+          p.empty-subtitle Start to meet new friends
+          .empty-action.input-group.input-inline
+            input.form-input(type="text" placeholder="")
+            button.btn.btn-primary.input-group-btn Search
+
+
+
+  +docs-alert()
+    | An empty state component can include icons, messages (title and subtitle messages) and action buttons or any combination of those elements.
+    | Add #[code empty-icon], #[code empty-title], #[code empty-subtitle] or #[code empty-action] to the elements.
+    | HTML structure is exampled below.
+
+
+  :highlightify(lang="html")
+    <div class="empty">
+      <div class="empty-icon">
+        <i class="icon icon-people"></i>
+      </div>
+      <p class="empty-title h5">You have no new messages</p>
+      <p class="empty-subtitle">Click the button to start a conversation.</p>
+      <div class="empty-action">
+        <button class="btn btn-primary">Send a message</button>
+      </div>
+    </div>

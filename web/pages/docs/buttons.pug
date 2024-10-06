@@ -1,0 +1,209 @@
+extends ../../layout/doc
+
+append config
+  - var icon = "gear"
+  - var metaDesc = 'Buttons include simple button styles for actions in different types and sizes. Mojo Framework is a lightweight, responsive and modern CSS framework for faster and extensible development.'
+  - var parent = 'components'
+  - var slug = 'buttons'
+  - var title = 'Buttons - Components - Mojo Framework'
+  - var contentClass = "btns-ex"
+
+
+block content
+  +docs-heading('buttons', 'Buttons')
+
+  p.doc-intro Buttons include simple button styles for actions in different types and sizes.
+
+  .docs-demo
+    .row
+      .col
+        button.btn default
+        button.btn.btn-primary primary
+        button.btn.btn-link link
+        button.btn.btn-outline.btn-secondary outline
+
+  p
+    | Add the #[code btn] class to #{'<a>'}, #{'<input>'} or #{'<button>'} elements for a default button.
+    | There are classes #[code btn-primary] and #[code btn-link] for predefined primary and link buttons.
+    | Additionally, #[code btn-outline] is available for border only buttons.
+
+
+  :highlightify(lang="html")
+    <button class="btn"> default </button>
+    <button class="btn btn-primary"> primary </button>
+    <button class="btn btn-link"> link </button>
+
+  +docs-subheading('buttons-colors', 'Button colors')
+
+  .docs-demo
+    .row
+      .col
+        button.btn.btn-success success
+        button.btn.btn-danger failure
+        button.btn.btn-info inform
+        button.btn.btn-warning caution
+
+  .docs-demo.my-2
+    .row
+      .col
+        button.btn.btn-dark dark
+        button.btn.btn-muted muted
+        button.btn.btn-light light
+        button.btn.btn-primary primary
+        button.btn.btn-secondary secondary
+
+  p
+    | Add the #[code btn-success] or #[code btn-danger] class for success (green) or danger (red) button color.
+    | If you need more button colors, please use
+    a(href="../getting-started/custom.html#variables-buttons") button mixins
+    |  to create your own button color variants.
+
+
+  :highlightify(lang="html")
+    <button class="btn btn-success">success button</button>
+    <button class="btn btn-error">error button</button>
+
+  +docs-subheading('buttons-sizes', 'Button sizes')
+
+  .docs-demo
+    .row
+      .col
+        button.btn.btn-primary.btn-lg
+          | large
+          +iFont(iconPrefix, "ion", "md-arrow-dropdown")
+        button.btn.btn-primary.btn-lg large button
+    .row
+      .col
+        button.btn.btn-primary
+          | normal
+          +iFont(iconPrefix, "ion", "md-arrow-dropdown")
+        button.btn.btn-primary normal button
+    .row
+      .col
+        button.btn.btn-primary.btn-sm
+          | small
+          +iFont(iconPrefix, "ion", "md-arrow-dropdown")
+        button.btn.btn-primary.btn-sm small button
+
+
+  p
+    | Add the #[code btn-sm] or #[code btn-lg] class for small or large button size.
+    | Also, you can add the #[code btn-block] class for a full-width button.
+
+
+  :highlightify(lang="html")
+    <button class="btn btn-lg">large button</button>
+    <button class="btn btn-sm">small button</button>
+
+    <button class="btn btn-block">block button</button>
+
+    <button class="btn btn-primary btn-lg"><i class="rif ion-md-arrow-dropleft"></i> large</button>
+    <button class="btn btn-primary"><i class="rif ion-md-arrow-dropleft"></i> normal</button>
+    <button class="btn btn-primary btn-sm"><i class="rif ion-md-arrow-dropleft"></i> small</button>
+
+  p
+    | Please note that you could use the #[code btn-action] class for a square button, or add another #[code rounded-circle] class for a round button, which is often used as a Float Action Button (FAB).
+
+  .docs-demo
+    .row
+      .col.col-sm-6
+        button.btn.btn-action.btn-primary.btn-lg
+          +iFont(iconPrefix, "ion", "md-menu")
+        button.btn.btn-action.btn-primary
+          +iFont(iconPrefix, "ion", "md-menu")
+        button.btn.btn-action.btn-primary.btn-sm
+          +iFont(iconPrefix, "ion", "md-menu")
+      .col.col-sm-6
+        button.btn.btn-action.btn-primary.btn-lg.rounded-circle
+          +iFont(iconPrefix, "ion", "md-arrow-dropup")
+        button.btn.btn-action.btn-primary.rounded-circle
+          +iFont(iconPrefix, "ion", "md-arrow-dropup")
+        button.btn.btn-action.btn-primary.btn-sm.rounded-circle
+          +iFont(iconPrefix, "ion", "md-arrow-dropup")
+
+
+  :highlightify(lang="html")
+    <button class="btn btn-action"><i class="rif ion-md-arrow-dropleft"></i></button>
+    <button class="btn btn-action rounded-circle"><i class="rif ion-md-arrow-dropleft"></i></button>
+
+  +docs-subheading('buttons-states', 'Button states')
+
+  p
+    | Add the #[code active] class for active button state style.
+
+  .docs-demo
+    .row
+      .col
+        button.btn.active default active
+        button.btn.btn-primary.active primary active
+        button.btn.btn-link.active link active
+
+  p
+    | Add the #[code disabled] class or the #[code disabled] attribute for disabled button state style.
+
+  .docs-demo
+    .row
+      .col
+        button.btn.disabled(tabindex="-1") default disabled
+        button.btn.btn-primary(disabled="" tabindex="-1") primary disabled
+        button.btn.btn-link(disabled="" tabindex="-1") link disabled
+
+
+  :highlightify(lang="html")
+    <!-- buttons with disabled state -->
+    <button class="btn disabled" tabindex="-1">disabled button</button>
+    <button class="btn" disabled tabindex="-1">disabled button</button>
+
+  p
+    | A button with the #[code loading] class can show loading indicator.
+
+  .docs-demo
+    .row
+      .col
+        button.btn.loading default button
+        button.btn.btn-primary.loading primary button
+        button.btn.btn-link.loading link button
+
+
+  :highlightify(lang="html")
+    <!-- buttons with loading state -->
+    <button class="btn loading">button</button>
+    <button class="btn btn-primary loading">primary button</button>
+
+  +docs-subheading('buttons-groups', 'Button groups')
+
+  .docs-demo
+    .row
+      .col.col-md-6
+        .btn-group
+          button.btn first button
+          button.btn second button
+          button.btn third button
+      .col.col-md-6
+        .btn-group.btn-group-block
+          button.btn.btn-primary first button
+          button.btn.btn-primary second button
+          button.btn.btn-primary third button
+    .row
+      .col.col-md-6
+        .btn-group
+          button.btn.btn-sm.active first button
+          button.btn.btn-sm second button
+          button.btn.btn-sm third button
+      .col.col-md-6
+        .btn-group.btn-group-block
+          button.btn.btn-primary.btn-sm.active first button
+          button.btn.btn-primary.btn-sm second button
+          button.btn.btn-primary.btn-sm third button
+
+  p
+    | If you want to use buttons as a group, add the #[code btn-group] class to the container.
+    | You can add the #[code btn-group-block] class for a full-width button group.
+
+
+  :highlightify(lang="html")
+    <div class="btn-group btn-group-block">
+      <button class="btn">first button</button>
+      <button class="btn">second button</button>
+      <button class="btn">third button</button>
+    </div>

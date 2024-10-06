@@ -1,0 +1,82 @@
+extends ../../layout/doc
+
+append config
+  - var icon = "gear"
+  - var metaDesc = 'Using typography to have a flowing, scaled, ratio based approach to beautiful typography.'
+  - var parent = 'style-guide'
+  - var slug = 'vert-rhythm'
+  - var title = 'Vertical Rhythm - Style Guide - Mojo Framework'
+
+
+block content
+  +docs-heading('vert-rhythm', 'Vertical Rhythm')
+
+  p.doc-intro
+    | You've likely heard of the #[strong Golden Ratio]. A pleasing relationship applied to design elements, used to achieve a visually harmonious design. Using the typography module within this framework, you can easily apply ratios, scaling, and spacing, allowing your page layouts to have a harmonious, pleasing relationship.
+
+  p
+    | Similar to the way a piece of music uses related chords to carry a tune from start to finish, a vertical rhythmic based typographic layout will give your designs a visually harmony that can't be achieved with regular frameworks.
+
+  p
+    | Using the #[strong `chord ratio`] based typography is very simple. All you have to do is set the values and ratios you wish to use in the theme file, and the framework will automatically scale your typography across tags (#[em H1 - H6]) and across breakpoints. Where one ratio might be pleasing on a very large screen, the same chord might not look as pleasing on a handheld device. Using this framework you can easily account for these differences.
+
+
+  .docs-demo
+    p
+      | Using the included #[strong Mojo CLI Tool], or by manually altering the #[strong Design Token] JSON file, you can easily set your initial chord config settings.
+
+  :highlightify(lang="json")
+    {
+      "base-font-size": "16px",
+      "base-line-height": 1.5,
+      "chords": [
+        {
+          "name": "xsmall",
+          "abr": "xs",
+          "scale": 1.125,
+          "scale_name": "MAJOR_SECOND",
+          "break": 0,
+          "max": 0,
+          "text": 16,
+          "line": 1.25,
+          "vertical": 8
+        },
+        {...}
+    }
+
+  .docs-demo
+    p
+      | Once your JSON tokens have been set, the framework will input them and automatically generate the #[strong SCSS Token File] that is used throughout the framework automatically in all the typography modules, such as the #[strong H1-6 Headings], the #[strong Title + Subtitle] and #[strong Display Text] modules.
+
+  :highlightify(lang="scss")
+    $chords: (
+      xs: (
+        name: xsmall,
+        abrev: xs,
+        width: 0,
+        max: 0,
+        fontSize: 16px,
+        lineHeight: 1.25,
+        vertical: 8,
+        scale: 1.125,
+        scale_name: MAJOR_SECOND,
+        headings: (
+          h1: 1.8rem,
+          h2: 1.6rem,
+          h3: 1.42rem,
+          h4: 1.27rem,
+          h5: 1.13rem,
+          h6: 1rem,
+        ),
+        headingsLine: (
+          h1: 2.25rem,
+          h2: 2rem,
+          h3: 1.78rem,
+          h4: 1.58rem,
+          h5: 1.41rem,
+          h6: 1.25rem,
+        ),
+      )
+    );
+
+  .vr-block.vr-block-two

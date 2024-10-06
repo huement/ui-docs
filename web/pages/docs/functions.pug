@@ -1,0 +1,24 @@
+extends ../../layout/doc
+
+append config
+    - var icon = "gear"
+    - var metaDesc = "Mojo SCSS Toolbox Functions | Library Documentation"
+    - var parent = 'utilities'
+    - var slug = 'functions'
+    - var title = "Toolbox Functions"
+
+
+block content
+  div.documentation-block
+    div.documentation-title
+      h3 Toolbox Functions
+    div.documentation-details
+      p There are a number of functions that are available when you are building your own elements and/or adapting the framework.
+    div.documentation-content
+
+      :highlightify(lang="scss")
+        // Available Functions
+        @import "functions/colors";
+        @import "functions/lists";
+        @import "functions/maps";
+        @import "functions/math";

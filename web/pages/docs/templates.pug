@@ -1,0 +1,39 @@
+extends ../../layout/doc
+
+
+append config
+    - var title = "Mojo Templates"
+    - var metaDesc = "Prebuilt Starting Points - Style Guide - Mojo Framework"
+    - var icon = "text"
+    - var parent = 'style-guide'
+    - var slug = 'templates'
+
+block content
+  .vr-block(style="height:200px")
+
+  .hero.bg-gray-900
+    .hero-body
+      p.title.text-gray-200
+        | Prebuilt Templates
+      p.subtitle.text-gray-400
+        | start falling in love today
+
+  .docs-demo
+    p.half-lead
+      | A number of starting points are available for download. Use this to jumpstart your development!
+    p.half-lead
+      | These are available in #[code .html] format, allowing for you to easily use and visualize a complete setup,  as well as #[code .pug] format for use with use with your favorite build tool.
+
+    .vr-block(style="height:200px")
+
+    h4.mt-3 List of Templates
+    .row.mt-2.g-5
+      each template in templatePages
+        .col-md-3.col-sm-4.col-xs-6
+          .card
+            .card-img-top(style="height:180px")
+              .placeholder-img Your Img Here
+            .card-body
+              h5.card-title #{template.name}
+              p.card-text TODO: grab the template summary and put it in json file so it can be displayed here.
+              a.btn.btn-primary(href="../"+template.url+".html") Open Template

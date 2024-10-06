@@ -1,0 +1,238 @@
+extends ../../layout/doc
+
+append config
+  - var title = 'Mojo Typography Laboratory'
+  - var metaDesc = 'Testing out the SCSS Library with an easy to use testbed'
+  - var slug = 'type'
+  - var icon = 'gear'
+  - var parent = 'style-guide'
+
+append scriptsJS
+  script(src=path+"js/bundle.js" + stamp, type="module")
+
+block content
+  .container.main-content
+    .row
+      .col-12
+        +docs-heading('type', 'Typography')
+
+  section.bg-black.positive-top.headBlock
+    .vr-block.site-spacer
+    .container
+      .row
+        .col-12.my-3.py-3
+          table.table
+            thead.table-dark
+              tr
+                th(style="width:150px") Heading
+                th Example
+            tbody
+              tr
+                td(style="width:150px")
+                  p
+                    code.highlighter-rouge &lt;h1&gt; &lt;/h1&gt;
+                td
+                  span.h1 h1. some cool title
+              tr
+                td
+                  p
+                    code.highlighter-rouge &lt;h2&gt; &lt;/h2&gt;
+                td
+                  span.h2 h2. some cool title
+              tr
+                td
+                  p
+                    code.highlighter-rouge &lt;h3&gt; &lt;/h3&gt;
+                td
+                  span.h3 h3. some cool title
+              tr
+                td
+                  p
+                    code.highlighter-rouge &lt;h4&gt; &lt;/h4&gt;
+                td
+                  span.h4 h4. some cool title
+              tr
+                td
+                  p
+                    code.highlighter-rouge &lt;h5&gt; &lt;/h5&gt;
+                td
+                  span.h5 h5. some cool title
+              tr
+                td
+                  p
+                    code.highlighter-rouge &lt;h6&gt; &lt;/h6&gt;
+                td
+                  span.h6 h6. some cool title
+
+  section
+    .vr-block.site-spacer
+    .container
+      .row
+        .col-12
+          .card
+            .card-body
+              h4.header-title Display headings
+              p.sub-header Using the classes
+                code .display-#
+                | .
+              p.text-muted.
+
+                Traditional heading elements are designed to work best in the meat of your page content. When you need a heading to stand out, consider using a display heading—a larger, slightly more opinionated heading style.
+
+              h1.display-1 Display 1
+              p.text-muted Suspendisse vel quam malesuada, aliquet sem sit amet, fringilla elit. Morbi tempor tincidunt tempor. Etiam id turpis viverra, vulputate sapien nec, varius sem. Curabitur ullamcorper fringilla eleifend. In ut eros hendrerit est consequat posuere et at velit.
+              .clearfix
+              h1.display-2 Display 2
+              p.text-muted In nec rhoncus eros. Vestibulum eu mattis nisl. Quisque viverra viverra magna nec pulvinar. Maecenas pellentesque porta augue, consectetur facilisis diam porttitor sed. Suspendisse tempor est sodales augue rutrum tincidunt. Quisque a malesuada purus.
+              .clearfix
+              h1.display-3 Display 3
+              p.text-muted Vestibulum auctor tincidunt semper. Phasellus ut vulputate lacus. Suspendisse ultricies mi eros, sit amet tempor nulla varius sed. Proin nisl nisi, feugiat quis bibendum vitae, dapibus in tellus.
+              .clearfix
+              h1.display-4 Display 4
+              p.text-muted Nulla et mattis nunc. Curabitur scelerisque commodo condimentum. Mauris blandit, velit a consectetur egestas, diam arcu fermentum justo, eget ultrices arcu eros vel erat.
+              .clearfix
+              h1.display-5 Display 5
+              p.text-muted Vestibulum auctor tincidunt semper. Phasellus ut vulputate lacus. Suspendisse ultricies mi eros, sit amet tempor nulla varius sed. dapibus in tellus.
+              .clearfix
+              h1.display-6 Display 6
+              p.text-muted Nulla et mattis nunc. Curabitur scelerisque commodo condimentum. Mauris blandit, velit a consectetur egestas.
+              .clearfix
+
+  section
+    .vr-block.site-spacer
+    .container
+      .row
+        .col-12.offset-sm-1.col-sm-10
+          p
+            | You can use the mark tag to
+            mark highlight
+            |  text.
+          p
+            del This line of text is meant to be treated as deleted text.
+          p
+            s This line of text is meant to be treated as no longer accurate.
+          p
+            ins This line of text is meant to be treated as an addition to the document.
+          p
+            u This line of text will render as underlined
+          p
+            small This line of text is meant to be treated as fine print.
+          p
+            strong This line rendered as bold text.
+          p
+            em This line rendered as italicized text.
+      .row
+        .col-xl-6.mt-3.mt-xl-0
+          h4.header-title Contextual Text Colors
+          p.sub-header.
+
+            Your awesome text goes here.
+
+          p.text-custom.
+
+            Etiam porta sem malesuada magna mollis euismod.
+
+          p.text-pink.
+
+            Donec ullamcorper nulla non metus auctor fringilla.
+
+          p.text-muted.
+
+            Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.
+
+          p.text-primary.
+
+            Nullam id dolor id nibh ultricies vehicula ut id elit.
+
+          p.text-success.
+
+            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+
+          p.text-info.
+
+            Maecenas sed diam eget risus varius blandit sit amet non magna.
+
+          p.text-warning.
+
+            Etiam porta sem malesuada magna mollis euismod.
+
+          p.text-danger.
+
+            Donec ullamcorper nulla non metus auctor fringilla.
+
+          p.text-dark.
+
+            Nullam id dolor id nibh ultricies vehicula ut id elit.
+
+          p.text-purple.
+
+            Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.
+
+  section.bg-black
+    .vr-block.site-spacer
+    .container
+      .row
+        .col-12.offset-sm-1.col-sm-10
+          blockquote(cite="Tim Berners-Lee") The Semantic Web is not a separate Web but an extension of the current one, in which information is given well-defined meaning, better enabling computers and people to work in cooperation.
+          p
+            em Jelly-o jelly-o jelly
+            |  lollipop croissant. Carrot cake tart danish macaroon dragée gingerbread. Sugar plum cotton candy biscuit
+            strong fruitcake powder liquorice
+            | . Shortbread candy pie tart pudding. Sesame snaps bear claw tart tiramisu donut chocolate cake. Cheesecake tiramisu chocolate cake dessert dessert candy candy canes apple pie marshmallow. Sweet croissant pudding toffee tootsie roll gummies tart pastry pie. Candy apple pie cake wafer tootsie roll tart icing halvah.
+          h3 Gingerbread gummi bears
+          p
+            em Tiramisu sweet pastry
+            |  danish topping ice cream caramels. Tiramisu candy liquorice jelly-o marzipan candy canes cupcake topping. Gummi bears jujubes carrot cake shortbread sesame snaps marshmallow danish pudding cotton candy.
+            strong Cake jujubes biscuit
+            |  topping marzipan sweet roll apple pie bonbon. Bear claw donut bear claw bonbon caramels halvah gummi bears. Gummi bears apple pie jelly-o donut sesame snaps icing marzipan.
+          p
+            strong
+              em Bonbon chupa chups
+            |  donut dessert pudding. Sweet roll caramels dessert muffin croissant. Powder chocolate lollipop ice cream bonbon pie candy muffin cotton candy. Fruitcake topping chupa chups toffee jelly-o halvah. Candy soufflé toffee gummies fruitcake oat cake chocolate cake. Dessert cupcake cheesecake sweet roll bear claw. Marshmallow halvah bear claw biscuit dragée marzipan lemon drops jelly.
+
+  section
+    .vr-block.site-spacer
+    .container
+      .row
+        .col-12
+          h1 Sweet strawberry cheesecake
+            p
+              em Sweet muffin bear claw
+              |  donut chupa chups liquorice tiramisu candy canes sweet
+      .row.mt-3
+        .col-12
+          h1 Testing Heading
+          h2 Testing Heading
+          h3 Testing Heading
+          p
+            | Chocolate shortbread caramels tootsie roll tiramisu sweet dessert apple pie fruitcake.
+            strong Croissant icing chupa chups
+            |  sweet roll cake tart fruitcake soufflé jujubes. Shortbread brownie tootsie roll ice cream pudding dessert marshmallow sesame snaps. Cake pie jujubes lemon drops sesame snaps soufflé cookie jujubes wafer. Caramels ice cream fruitcake pastry cheesecake chocolate tootsie roll cake marshmallow. Pie candy canes cupcake dragée bonbon fruitcake marzipan. Tootsie roll halvah bonbon cake muffin gummies. Bonbon cotton candy marzipan cake sesame snaps chupa chups donut dessert. Macaroon gummies macaroon biscuit chocolate carrot cake gummi bears.
+          h2 Donut candy canes cotton candy
+          p
+            strong
+              em Liquorice gingerbread tiramisu
+            |  pie bonbon soufflé. Jujubes tootsie roll muffin gingerbread powder. Carrot cake halvah chocolate bar tart sugar plum sugar plum pastry. Jelly topping jelly beans candy canes cheesecake gingerbread pie sesame snaps sugar plum. Pie cheesecake pudding jelly brownie jelly beans halvah. Ice cream powder carrot cake bear claw cake cheesecake.
+          p
+            em Jelly-o jelly-o jelly
+            |  lollipop croissant. Carrot cake tart danish macaroon dragée gingerbread. Sugar plum cotton candy biscuit
+            strong fruitcake powder liquorice
+            | . Shortbread candy pie tart pudding. Sesame snaps bear claw tart tiramisu donut chocolate cake. Cheesecake tiramisu chocolate cake dessert dessert candy candy canes apple pie marshmallow. Sweet croissant pudding toffee tootsie roll gummies tart pastry pie. Candy apple pie cake wafer tootsie roll tart icing halvah.
+          h3 Gingerbread gummi bears
+          p
+            em Tiramisu sweet pastry
+            |  danish topping ice cream caramels. Tiramisu candy liquorice jelly-o marzipan candy canes cupcake topping. Gummi bears jujubes carrot cake shortbread sesame snaps marshmallow danish pudding cotton candy.
+            strong Cake jujubes biscuit
+            |  topping marzipan sweet roll apple pie bonbon. Bear claw donut bear claw bonbon caramels halvah gummi bears. Gummi bears apple pie jelly-o donut sesame snaps icing marzipan.
+          p
+            strong
+              em Bonbon chupa chups
+            |  donut dessert pudding. Sweet roll caramels dessert muffin croissant. Powder chocolate lollipop ice cream bonbon pie candy muffin cotton candy. Fruitcake topping chupa chups toffee jelly-o halvah. Candy soufflé toffee gummies fruitcake oat cake chocolate cake. Dessert cupcake cheesecake sweet roll bear claw. Marshmallow halvah bear claw biscuit dragée marzipan lemon drops jelly.
+
+
+  section
+    .vr-block.site-spacer
+    .container
+      .row
+        .col-12
+          p.text-emphasis-body Nulla et mattis nunc. Curabitur scelerisque

@@ -1,0 +1,249 @@
+///
+/// DOCS PAGE STYLINGS
+/// Used to style the docs + styleguide areas
+///
+
+// Sass Modules
+@use 'sass:map';
+@use 'sass:list';
+@use 'sass:math';
+@use 'sass:color';
+@use 'sass:meta';
+
+// Global Constants
+@import '@huement/ui/scss/framework';
+
+@include mojoBanner('DOCUMENTATION', $version);
+
+// @import "@huement/ui/jollybar/jolly";
+
+// Docs Specific Stylings
+@import 'doc-vars';
+@import 'base';
+@import 'doc-nav';
+@import 'footer';
+
+// OLD PLUME STYLINGS
+@import 'styleguide';
+
+@include superclass() {
+  //background-color: $body;
+  // .headingDebug {
+  //   @include Harmonic_Headings_Breakpoints(true);
+  // }
+
+  .testDebug {
+    background: #00ddff !important;
+    border: 1px solid #ff6699 !important;
+    font-weight: bold !important;
+  }
+
+  .btns-ex {
+    .row {
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  .placeholder-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    background-color: rgb(162, 162, 162);
+    color: rgb(33, 33, 33);
+    font-weight: bold;
+    font-size: 1.25rem;
+    height: 100%;
+  }
+
+  .docs-demo {
+    .navbar {
+      position: relative !important;
+      left: 0 !important;
+      right: 0 !important;
+      top: 0 !important;
+    }
+
+    &.container {
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  .text-small {
+    font-size: 0.75rem;
+  }
+
+  .social-wrap {
+    margin-top: 3.5rem;
+
+    .social-icons {
+    }
+  }
+
+  .test_block {
+    margin: 0;
+    padding: 10px 50px;
+    color: $dark;
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: block;
+    position: relative;
+
+    &:after {
+      content: 'test';
+      display: block;
+      position: relative;
+    }
+  }
+
+  .vr-block.bg-light {
+    background-color: $gray-300;
+  }
+
+  .robot-wrapper {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    min-height: 250px;
+
+    .vr-block {
+      height: 250px !important;
+    }
+
+    .robot-logo {
+      position: absolute;
+      bottom: -20px;
+      right: 0;
+      height: 250px;
+    }
+  }
+
+  // Main Content Area Wrapper
+  .docs-content {
+    flex: 1 1 auto;
+    //padding: 1rem 1rem 3rem 1rem;
+    width: calc(100vw - #{$SideBarWidth + 1rem});
+    min-height: 1000px;
+
+    .s-title {
+      margin-bottom: 0px;
+    }
+
+    & > .main-area {
+      padding: 3rem 0 1.5rem 0;
+      position: relative;
+
+      .doc-intro {
+        margin-top: 0;
+        font-size: calc(1.5rem * var(--active-ratio));
+        line-height: vr-block(3);
+        margin-bottom: $sz_9;
+      }
+
+      .half-lead {
+        margin-top: 3rem;
+        font-size: calc(1.2rem * var(--active-ratio));
+        line-height: vr-block(2);
+        margin-bottom: $sz_6;
+      }
+    }
+
+    // Page Sections
+    .docs-demo {
+      padding-bottom: 1rem;
+      padding-top: 1rem;
+
+      &.row {
+        margin-bottom: $sz_3;
+
+        .input-group {
+          margin-bottom: $sz_4;
+        }
+      }
+
+      .card {
+        box-shadow: 0 0.25rem 1rem rgba($dark, 0.15);
+        border: 0;
+        height: 100%;
+      }
+    }
+
+    // Token Pages
+    #code-widget {
+      #code-printout {
+        .token-title {
+          font-size: 2rem;
+          font-weight: normal;
+          line-height: 1;
+          padding: 0;
+          margin: 0;
+        }
+        .token-form {
+          margin-top: 1rem;
+        }
+      }
+
+      #code-form {
+        .tab-content {
+          margin-top: 1rem;
+          padding: 0 1.25rem 0.5rem 1.25rem;
+        }
+      }
+    }
+
+    .colorMain {
+      .colorTitle {
+      }
+
+      .colorBlock {
+        .colorLabel {
+          margin: 0;
+          padding: 1.25rem 0.5rem;
+          line-height: 1.1;
+          font-size: 1.25rem;
+        }
+      }
+    }
+  }
+
+  // IMPORTS
+  @import 'code-preview';
+  @import 'ex-grid';
+}
+
+.bg-cyan-light {
+  background: map.get($mojo-cyan, light) !important;
+}
+
+.make-background-highlight-light.footer {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0.5rem 0 0.5rem;
+}
+
+.footer-logo {
+  width: 210px;
+  height: auto;
+  @include img-center;
+  z-index: 2;
+  margin-top: -10.5rem;
+  margin-left: 10.5rem;
+}
+
+.footer-circle {
+  margin-left: auto;
+  margin-right: auto;
+  right: 0;
+  z-index: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100px;
+  width: 200px;
+  border-radius: 150px 150px 0 0;
+}

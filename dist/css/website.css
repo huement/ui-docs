@@ -1,0 +1,469 @@
+body {
+  background-color: #1f1f1f !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.demo .row {
+  margin-bottom: 15px;
+}
+.demo [class^=col-] {
+  background-color: #e3f2f7;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.main-content {
+  padding-top: 100px;
+}
+
+.navbar.z-max {
+  z-index: 10;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+.navbar.z-max .navbar-nav {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+}
+
+.oversized-logo {
+  height: 70px;
+  width: auto;
+}
+
+.circle-block {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.promo-block .img-center {
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+  display: block;
+}
+
+.social-wrap .social-icons {
+  width: 216px;
+  position: relative;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+.social-wrap .social-icons li a {
+  position: relative;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #1f1f1f;
+  border-color: #1f1f1f;
+}
+
+.bg-cyan-light {
+  background: #2ef9de !important;
+}
+
+.footer {
+  margin-top: 200px;
+}
+
+.footer-logo {
+  width: 210px;
+  height: auto;
+  position: relative;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  z-index: 2;
+  margin-top: -10.5rem;
+  margin-left: 10.5rem;
+}
+
+.footer-circle {
+  margin-left: auto;
+  margin-right: auto;
+  right: 0;
+  z-index: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100px;
+  width: 200px;
+  border-radius: 150px 150px 0 0;
+}
+
+.z-max {
+  z-index: 9999 !important;
+}
+
+.page-header {
+  margin-top: 50px;
+}
+
+.negative-top {
+  margin-top: -13rem;
+}
+
+.positive-top {
+  padding-bottom: 10rem;
+}
+
+.subtitle {
+  font-family: "Jost";
+  font-weight: 400;
+}
+
+.mojoWebsite .headBlock .hero .hero-body {
+  z-index: 1;
+}
+.mojoWebsite .headBlock .hero .hero-body .title {
+  z-index: 1;
+}
+.mojoWebsite .headBlock .hero .hero-body .subtitle {
+  z-index: 1;
+}
+.mojoWebsite .headBlock .triangleMojo,
+.mojoWebsite .headBlock .triangleTop {
+  position: absolute;
+  top: 15rem;
+  z-index: 0;
+  width: 6em;
+  height: auto;
+  left: 35%;
+}
+.mojoWebsite .headBlock .triangleTop {
+  width: 0;
+  height: 0;
+  border-top: 12rem solid #ff0054;
+  border-right: 6rem solid transparent;
+  border-left: 6rem solid transparent;
+}
+.mojoWebsite .circle-block {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.mojoWebsite .promo-block .img-center {
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+  display: block;
+}
+
+@media (min-width: 992px) {
+  .vr-block.site-spacer {
+    height: 150px !important;
+  }
+}
+.code {
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+.code .hljs-tag {
+  color: #f0f0f0;
+}
+.code .hljs-comment {
+  color: #757575;
+}
+.code .hljs-title,
+.code .hljs-class,
+.code .hljs-string,
+.code .hljs-number {
+  color: #2ef9de;
+}
+.code .hljs-name,
+.code .hljs-attribute,
+.code .hljs-variable,
+.code .hljs-keyword,
+.code .hljs-built_in {
+  color: #3bfc43;
+}
+.code .hljs-value,
+.code .hljs-hexcolor {
+  color: #fbff12;
+}
+
+.documentation-content {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 2rem auto 5rem auto;
+  background: #171717;
+}
+.documentation-content .mojo-docblock {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: 2.5rem auto;
+  padding: 0;
+  border: 0.0625rem solid #3d3d3d;
+  border-radius: 0.35rem;
+}
+.documentation-content .mojo-docblock .mojo-doclabel {
+  font-size: 0.75rem;
+  position: absolute;
+  top: -1.25rem;
+  left: 2rem;
+  clear: none;
+  height: 30px;
+  padding: 0.5rem;
+  color: #8a8a8a;
+  border-radius: 0.5rem;
+  background: #171717;
+}
+.documentation-content .mojo-docblock .preview-wrapper {
+  padding: 1rem;
+}
+.documentation-content .mojo-docblock .preview-wrapper .mojo-preview {
+  margin: 0 auto;
+  padding: 0;
+}
+.documentation-content .mojo-docblock .preview-wrapper .mojo-preview.row-previews .row > .col,
+.documentation-content .mojo-docblock .preview-wrapper .mojo-preview.row-previews .row > [class^=col-] {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  border: 1px solid rgba(86, 61, 124, 0.2);
+  background-color: rgba(86, 61, 124, 0.15);
+}
+.documentation-content .mojo-docblock .preview-wrapper .mojo-preview.row-previews .row + .row {
+  margin-top: 1rem;
+}
+.documentation-content .mojo-docblock .preview-wrapper .mojo-preview .flex-items-top,
+.documentation-content .mojo-docblock .preview-wrapper .mojo-preview .flex-items-middle,
+.documentation-content .mojo-docblock .preview-wrapper .mojo-preview .flex-items-bottom {
+  min-height: 6rem;
+  background-color: rgba(255, 0, 0, 0.1);
+}
+.documentation-content .mojo-docblock .mojo-highlight {
+  margin: 0 auto;
+  padding: 1rem;
+  border-top: 0.0625rem solid #3d3d3d;
+}
+.documentation-content .mojo-docblock .mojo-highlight pre.code {
+  border-radius: 0.35rem;
+  margin-bottom: 0;
+  margin-top: 0;
+  background: #242424;
+}
+.documentation-content .docs-content pre.code {
+  background: #242424;
+}
+.documentation-content.padded .preview-wrapper {
+  padding: 2rem 2.5rem;
+}
+@media (min-width: 992px) {
+  .documentation-content.padded .mojo-preview {
+    padding: 1.5rem 2rem;
+  }
+}
+
+.example {
+  padding: 0 3.2rem;
+}
+@media (min-width: 576px) {
+  .example {
+    padding: 0 3.6rem;
+  }
+  .example.row {
+    padding: 0 !important;
+  }
+}
+@media (min-width: 768px) {
+  .example {
+    padding: 0 4rem;
+  }
+  .example.row {
+    padding: 0 !important;
+  }
+}
+@media (min-width: 992px) {
+  .example {
+    padding: 0 4.4rem;
+  }
+  .example.row {
+    padding: 0 !important;
+  }
+}
+.example p {
+  padding-top: 1em;
+  color: #f0f0f0;
+}
+@media (min-width: 768px) {
+  .example h4,
+  .example p {
+    line-height: 1.25;
+  }
+}
+@media (min-width: 992px) {
+  .example h4,
+  .example p {
+    line-height: 1.5;
+  }
+}
+.example.row {
+  padding: 0 !important;
+}
+
+.example > div {
+  min-height: 40px;
+  margin-bottom: 1.8rem;
+}
+.example > div h4,
+.example > div p {
+  padding: 0;
+  margin: 0;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+@media (min-width: 768px) {
+  .example > div h4,
+  .example > div p {
+    font-size: 1.7rem;
+  }
+}
+@media (min-width: 992px) {
+  .example > div h4,
+  .example > div p {
+    font-size: 1.9rem;
+  }
+}
+.example > div .row {
+  padding: 0;
+}
+
+.example > div > div {
+  height: 100%;
+}
+.example > div > div > div {
+  padding-left: 1rem;
+}
+.example > div > div > div h4,
+.example > div > div > div p {
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+@media (min-width: 768px) {
+  .example > div > div > div h4,
+  .example > div > div > div p {
+    font-size: 1.7rem;
+  }
+}
+@media (min-width: 992px) {
+  .example > div > div > div h4,
+  .example > div > div > div p {
+    font-size: 1.9rem;
+  }
+}
+
+.example > div:nth-of-type(5n + 1) {
+  background-color: #520099;
+}
+.example > div:nth-of-type(5n + 1) h4 {
+  color: #242424;
+}
+
+.example > div:nth-of-type(5n + 2) {
+  background-color: #0fb2aa;
+}
+.example > div:nth-of-type(5n + 2) h4 {
+  color: #242424;
+}
+
+.example > div:nth-of-type(5n + 3) {
+  background-color: #00f5d4;
+}
+.example > div:nth-of-type(5n + 3) h4 {
+  color: #242424;
+}
+
+.example > div:nth-of-type(5n + 4) {
+  background-color: #fbff12;
+}
+.example > div:nth-of-type(5n + 4) h4 {
+  color: #242424;
+}
+
+.example > div:nth-of-type(5n + 5) {
+  background-color: #520099;
+}
+.example > div:nth-of-type(5n + 5) h4 {
+  color: #242424;
+}
+
+.example > div > div > div:nth-of-type(5n + 1) {
+  background-color: #b3b3b3;
+}
+.example > div > div > div:nth-of-type(5n + 1) h4 {
+  color: #dbdbdb;
+}
+
+.example > div > div > div:nth-of-type(5n + 2) {
+  background-color: #8a8a8a;
+}
+.example > div > div > div:nth-of-type(5n + 2) h4 {
+  color: #dbdbdb;
+}
+
+.example > div > div > div:nth-of-type(5n + 3) {
+  background-color: #3d3d3d;
+}
+.example > div > div > div:nth-of-type(5n + 3) h4 {
+  color: #dbdbdb;
+}
+
+.example > div > div > div:nth-of-type(5n + 4) {
+  background-color: #4c4c4c;
+}
+.example > div > div > div:nth-of-type(5n + 4) h4 {
+  color: #dbdbdb;
+}
+
+.example > div > div > div:nth-of-type(5n + 5) {
+  background-color: #757575;
+}
+.example > div > div > div:nth-of-type(5n + 5) h4 {
+  color: #dbdbdb;
+}
+
+.grid_test {
+  background-color: #f0f0f0;
+}
+.grid_test .row {
+  margin-bottom: 2rem;
+}
+
+.grid_test > [class^=col]:nth-of-type(5n + 1) {
+  background-color: #520099;
+}
+
+.grid_test > [class^=col]:nth-of-type(5n + 2) {
+  background-color: #0fb2aa;
+}
+
+.grid_test > [class^=col]:nth-of-type(5n + 3) {
+  background-color: #00f5d4;
+}
+
+.grid_test > [class^=col]:nth-of-type(5n + 4) {
+  background-color: #fbff12;
+}
+
+.grid_test > [class^=col]:nth-of-type(5n + 5) {
+  background-color: #520099;
+}
+
+/*# sourceMappingURL=website.css.map */

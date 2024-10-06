@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en.US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta property="og:url" content="https://huement.github.io/ui/">
+    <meta property="og:type" content="website">
+    <meta property="description" content="Grid &amp; Layout Testbed">
+    <meta property="og:title" content="Mojo Layout Laboratory">
+    <meta property="og:image" content="https://huement.github.io/ui/imgs/Logo.png">
+    <meta property="og:description" content="Grid &amp; Layout Testbed">
+    <meta property="og:site_name" content="Mojo Layout Laboratory - v0.5.0">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@huement/ui">
+    <meta name="twitter:creator" content="@huement/ui">
+    <meta name="twitter:title" content="Mojo Layout Laboratory">
+    <meta name="twitter:description" content="Grid &amp; Layout Testbed">
+    <meta name="twitter:image" content="https://huement.github.io/ui/imgs/Logo.png">
+    <meta charset="UTF-8">
+    <title>Mojo Layout Laboratory</title>
+    <meta name="description" content="Grid &amp; Layout Testbed">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="../favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../favicon/favicon-16x16.png" sizes="16x16">
+    <link href="../favicon/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <!-- [if lt IE 9]><script language="javascript" type="text/javascript" src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <link rel="stylesheet" href="../layout.css?token=0.5.0" type="text/css" id="hui_css">
+    <link rel="stylesheet" href="../hi/icons.css?token=0.5.0" type="text/css" id="hui_icons">
+    <link rel="stylesheet" href="../css/website.css?stamp=0.5.0" type="text/css" id="page_css">
+    <link rel="stylesheet" href="../css/docs.css" type="text/css" id="docs_css">
+  </head>
+  <body class="no-javascript">
+    <script>document.body.classList.remove('no-javascript');</script>
+    <div class="mojo docs-container container-fluid docPage">
+      <div class="row">
+        <div class="col-sm-4 col-md-3 sidebar">
+          <div class="side-container">
+            <div class="logo-container"><img class="logo img-fluid" src="../imgs/Logo.png"/></div>
+            <div class="build-container">
+              <div class="row g-0 mx-0 text-center">
+                <div class="col">
+                  <p class="build-label">Latest Build</p>
+                  <p class="build-version">0.5.0 Mon Sep 23 2024</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="docs-nav">
+            <div class="accordion-container">
+              <div class="accordion">
+                <input id="accordion-getting-started" type="checkbox" name="docs-accordion-checkbox" hidden=""/>
+                <label class="accordion-header c-hand" for="accordion-getting-started"><i class="hui hui-document-down mr-1"></i>getting-started</label>
+                <div class="accordion-body">
+                  <ul class="menu menu-nav">
+                    <li class="menu-item"><a href="../docs/installation.html">Installation</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/tokens.html">Tokens</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion">
+                <input id="accordion-style-guide" type="checkbox" name="docs-accordion-checkbox" hidden="" checked="checked"/>
+                <label class="accordion-header c-hand" for="accordion-style-guide"><i class="hui hui-document-down mr-1"></i>style-guide</label>
+                <div class="accordion-body">
+                  <ul class="menu menu-nav">
+                    <li class="menu-item"><a href="../docs/colors.html">Colors</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/templates.html">Templates</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/type-heading.html">Type-heading</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/typography.html">Typography</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/vert-rhythm.html">Vert-rhythm</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion">
+                <input id="accordion-layout" type="checkbox" name="docs-accordion-checkbox" hidden=""/>
+                <label class="accordion-header c-hand" for="accordion-layout"><i class="hui hui-document-down mr-1"></i>layout</label>
+                <div class="accordion-body">
+                  <ul class="menu menu-nav">
+                    <li class="menu-item"><a href="../docs/bs5-grid.html">Bs5-grid</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/containers.html">Containers</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/empty.html">Empty</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/gutters.html">Gutters</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/navbar.html">Navbar</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/off-canvas.html">Off-canvas</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/responsive.html">Responsive</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/tables.html">Tables</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion">
+                <input id="accordion-components" type="checkbox" name="docs-accordion-checkbox" hidden=""/>
+                <label class="accordion-header c-hand" for="accordion-components"><i class="hui hui-document-down mr-1"></i>components</label>
+                <div class="accordion-body">
+                  <ul class="menu menu-nav">
+                    <li class="menu-item"><a href="../docs/accordions.html">Accordions</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/alerts.html">Alerts</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/badges.html">Badges</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/buttons.html">Buttons</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/cards.html">Cards</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/dropdown.html">Dropdown</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/forms.html">Forms</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/hero.html">Hero</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/icons.html">Icons</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/images.html">Images</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/labels.html">Labels</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/lists.html">Lists</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/menu.html">Menu</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/modal.html">Modal</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/panels.html">Panels</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/snaps.html">Snaps</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/tabs.html">Tabs</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/tags.html">Tags</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/tiles.html">Tiles</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion">
+                <input id="accordion-utilities" type="checkbox" name="docs-accordion-checkbox" hidden=""/>
+                <label class="accordion-header c-hand" for="accordion-utilities"><i class="hui hui-document-down mr-1"></i>utilities</label>
+                <div class="accordion-body">
+                  <ul class="menu menu-nav">
+                    <li class="menu-item"><a href="../docs/_blank.html">_blank</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/cursors.html">Cursors</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/display.html">Display</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/divider.html">Divider</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/functions.html">Functions</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/loading.html">Loading</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/position.html">Position</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/shapes.html">Shapes</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/text.html">Text</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-8 col-md-9 main-content">
+          <div class="container  docs-content" id="content">
+            <div class="main-area px-xs-0 px-sm-0 px-md-2 px-lg-3 px-xl-3 px-xx-4">
+              <div class="docbar docbar-dark">
+                <div class="docbar-section">
+                  <button class="btn btn-dark m-1 btn-sm"><i class="hui hui-bacon-cheeseburger"></i></button>
+                </div>
+                <div class="docbar-section" style="flex: 2 0 0">
+                  <input class="form-input input-sm mr-2" type="text" placeholder="search"/>
+                  <div class="btns d-flex"><a class="text-white btn btn-sm mr-2 ml-1 btn-dark" href="https://github.com/huement/ui">Github</a><a class="text-white btn btn-sm mr-2 ml-1 btn-secondary" href="/index.html">@hui</a><a class="text-white btn btn-sm mr-2 ml-1 btn-primary" href="http://localhost">Huement</a>
+                  </div>
+                </div>
+              </div>
+              <div class="vr-block">&nbsp;</div>
+              <div class="container main-content">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="head-block" id="grid">
+                      <h1 class="s-title">theGRID<a class="anchor" href="#grid" aria-hidden="true">#</a></h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container main-content">
+                <div class="row">
+                  <div class="col-12">
+                    <p class="doc-intro">Grid layout modules are more flexible than a hot yoga instructor. Like a Tai Chi master flowing energy, Huement UI guides and shapes the page's content effortlessly. Automatically dance like a prima ballerina across breakpoints and screen orientations.</p>
+                    <p class="intro">A responsive grid system based on&nbsp;<a href="http://flexboxgrid.com/"> Flexbox Grid</a>and the <code>flex property</code>. This flexbox grid component allows for a responsive, fluid, mobile first layout! All of this is easily achieved with a minimal amount of markup.</p>
+                    <p class="intro">This grid is heavily adapted from <code>Bootstrap v5.2.X's Grid</code> codebase. It has been modified to support being scoped to a parent class, with some other minor tweaks and additions that are documented below. When you are starting a project, a strong foundation is everything.</p>
+                    <p style="font-style:italic">This grid is going to put your content where you want it, on any screen size, and then get out of your way.</p>
+                    <ul class="features-list my-3">
+                      <li>Battle Tested, Mother Approved</li>
+                      <li>Customize any part thanks to Sass! Columns, Gaps, etc.</li>
+                      <li>From 'XS' extra small to 'XX' double extra large breakpoints</li>
+                      <li>Every feature has responsive classes. Pixel perfect controls.</li>
+                    </ul><h2>How it works</h2>
+<p>Bootstrap's grid system uses a series of containers, rows, and columns to layout and align content. It's built with <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox">flexbox</a> and is fully responsive. Below is an example and an in-depth look at how the grid comes together.</p>
+<p><strong>New to or unfamiliar with flexbox?</strong> <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background">Read this CSS Tricks flexbox guide</a> for background, terminology, guidelines, and code snippets.</p>
+                    <div class='documentation-content '><div class='mojo-docblock'><span class='mojo-doclabel'>EXAMPLE</span><div class="preview-wrapper"><div class="mojo-preview row-previews"><div class="container">
+  <div class="row">
+    <div class="col-sm">
+      One of three columns
+    </div>
+    <div class="col-sm">
+      One of three columns
+    </div>
+    <div class="col-sm">
+      One of three columns
+    </div>
+  </div>
+</div>
+
+</div></div><div class='mojo-highlight'><pre class="code" data-lang="html"><code>&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"container"</span>&gt;
+  &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"row"</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"col-sm"</span>&gt;
+      One <span class="hljs-keyword">of</span> three columns
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"col-sm"</span>&gt;
+      One <span class="hljs-keyword">of</span> three columns
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"col-sm"</span>&gt;
+      One <span class="hljs-keyword">of</span> three columns
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+  &lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;
+
+</code></pre></div></div></div>
+                    <div class="row center-xs content-block">
+                      <div class="col-xs-12 col-md-8">
+                        <h2><span class="h2-accent-mark">⁋</span>Responsive and Fluid</h2>
+                        <p>Responsive modifiers let you define column sizes, offsets, alignment and distribution at xs, sm, md &amp; lg viewport widths. Use the row class to define an outer row of columns and then place columns inside of rows.<a href="/views/classes.html">See all classes</a></p>
+                      </div>
+                    </div><pre class='code ' data-lang='html'><code>&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"row"</span>&gt;
+  &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"col-xs-12 col-sm-8 col-md-6 col-lg-4"</span>&gt;&lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre>
+                    <div class="container-fluid">
+                      <div class="row example">
+                        <div class="col-xs-12 col-sm-3 col-md-2 col-lg-1"></div>
+                        <div class="col-xs-6 col-sm-6 col-md-8 col-lg-10"></div>
+                        <div class="col-xs-6 col-sm-3 col-md-2 col-lg-1"></div>
+                        <div class="col-xs-12 col-sm-3 col-md-2 col-lg-1"></div>
+                        <div class="col-xs-12 col-sm-9 col-md-10 col-lg-11"></div>
+                        <div class="col-xs-10 col-sm-6 col-md-8 col-lg-10"></div>
+                        <div class="col-xs-2 col-sm-6 col-md-4 col-lg-2"></div>
+                      </div>
+                    </div>
+                    <div class="styled-box"><p>The above example creates three equal-width columns on small, medium, large, and extra large devices using our predefined grid classes. Those columns are centered in the page with the parent <code>.container</code>.</p>
+<p>Breaking it down, here's how it works:</p>
+<ul>
+<li>Containers provide a means to center and horizontally pad your site's contents. Use <code>.container</code> for a responsive pixel width or <code>.container-fluid</code> for <code>width: 100%</code> across all viewport and device sizes.</li>
+<li>Rows are wrappers for columns. Each column has horizontal <code>padding</code> (called a gutter) for controlling the space between them. This <code>padding</code> is then counteracted on the rows with negative margins. This way, all the content in your columns is visually aligned down the left side.</li>
+<li>In a grid layout, content must be placed within columns and only columns may be immediate children of rows.</li>
+<li>Thanks to flexbox, grid columns without a specified <code>width</code> will automatically layout as equal width columns. For example, four instances of <code>.col-sm</code> will each automatically be 25% wide from the small breakpoint and up. See the <a href="#auto-layout-columns">auto-layout columns</a> section for more examples.</li>
+<li>Column classes indicate the number of columns you'd like to use out of the possible 12 per row. So, if you want three equal-width columns across, you can use <code>.col-4</code>.</li>
+<li>Column <code>width</code>s are set in percentages, so they're always fluid and sized relative to their parent element.</li>
+<li>Columns have horizontal <code>padding</code> to create the gutters between individual columns, however, you can remove the <code>margin</code> from rows and <code>padding</code> from columns with <code>.no-gutters</code> on the <code>.row</code>.</li>
+<li>To make the grid responsive, there are five grid breakpoints, one for each [responsive breakpoint]({{&lt; docsref &quot;/layout/overview#responsive-breakpoints&quot; &gt;}}): all breakpoints (extra small), small, medium, large, and extra large.</li>
+<li>Grid breakpoints are based on minimum width media queries, meaning <strong>they apply to that one breakpoint and all those above it</strong> (e.g., <code>.col-sm-4</code> applies to small, medium, large, and extra large devices, but not the first <code>xs</code> breakpoint).</li>
+<li>You can use predefined grid classes (like <code>.col-4</code>) or <a href="#sass-mixins">Sass mixins</a> for more semantic markup.</li>
+</ul>
+<p>Be aware of the limitations and <a href="https://github.com/philipwalton/flexbugs">bugs around flexbox</a>, like the <a href="https://github.com/philipwalton/flexbugs#flexbug-9">inability to use some HTML elements as flex containers</a>.</p>
+<h2>Grid options</h2>
+<p>While Bootstrap uses <code>em</code>s or <code>rem</code>s for defining most sizes, <code>px</code>s are used for grid breakpoints and container widths. This is because the viewport width is in pixels and does not change with the <a href="https://drafts.csswg.org/mediaqueries-3/#units">font size</a>.</p>
+<p>See how aspects of the Bootstrap grid system work across multiple devices with a handy table.</p>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container main-content">
+                <div class="row">
+                  <div class="col-12">
+                    <table class="table table-bordered table-striped">
+                      <thead>
+                        <tr>
+                          <th></th>
+                          <th class="text-center">Extra small<br><small><576px</small></th>
+                          <th class="text-center">Small<br><small>≥576px</small></th>
+                          <th class="text-center">Medium<br><small>≥768px</small></th>
+                          <th class="text-center">Large<br><small>≥992px</small></th>
+                          <th class="text-center">Extra large<br><small>≥1200px</small></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th class="text-nowrap" scope="row">Max container width</th>
+                          <td>None (auto)</td>
+                          <td>540px</td>
+                          <td>720px</td>
+                          <td>960px</td>
+                          <td>1140px</td>
+                        </tr>
+                        <tr>
+                          <th class="text-nowrap" scope="row">Class prefix</th>
+                          <td><code>.col-</code></td>
+                          <td><code>.col-sm-</code></td>
+                          <td><code>.col-md-</code></td>
+                          <td><code>.col-lg-</code></td>
+                          <td><code>.col-xl-</code></td>
+                        </tr>
+                        <tr>
+                          <th class="text-nowrap" scope="row"># of columns</th>
+                          <td colspan="5">12</td>
+                        </tr>
+                        <tr>
+                          <th class="text-nowrap" scope="row">Gutter width</th>
+                          <td colspan="5">30px (15px on each side of a column)</td>
+                        </tr>
+                        <tr>
+                          <th class="text-nowrap" scope="row">Nestable</th>
+                          <td colspan="5">Yes</td>
+                        </tr>
+                        <tr>
+                          <th class="text-nowrap" scope="row">Column ordering</th>
+                          <td colspan="5">Yes</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="vr-block vr-block-lg"></div>
+              <div class="container main-content">
+                <div class="row">
+                  <div class="col-12">
+                    <h2 class="mt-5">Five grid tiers</h2>
+                    <p>There are five tiers to the Bootstrap grid system, one for each range of devices we support. Each tier starts at a minimum viewport size and automatically applies to the larger devices unless overridden.</p>
+                    <div class="container-fluid">
+                      <div class="row mb-3 text-center">
+                        <div class="col-4 themed-grid-col">.col-4</div>
+                        <div class="col-4 themed-grid-col">.col-4</div>
+                        <div class="col-4 themed-grid-col">.col-4</div>
+                      </div>
+                      <div class="row mb-3 text-center">
+                        <div class="col-sm-4 themed-grid-col">.col-sm-4</div>
+                        <div class="col-sm-4 themed-grid-col">.col-sm-4</div>
+                        <div class="col-sm-4 themed-grid-col">.col-sm-4</div>
+                      </div>
+                      <div class="row mb-3 text-center">
+                        <div class="col-md-4 themed-grid-col">.col-md-4</div>
+                        <div class="col-md-4 themed-grid-col">.col-md-4</div>
+                        <div class="col-md-4 themed-grid-col">.col-md-4</div>
+                      </div>
+                      <div class="row mb-3 text-center">
+                        <div class="col-lg-4 themed-grid-col">.col-lg-4</div>
+                        <div class="col-lg-4 themed-grid-col">.col-lg-4</div>
+                        <div class="col-lg-4 themed-grid-col">.col-lg-4</div>
+                      </div>
+                      <div class="row mb-3 text-center">
+                        <div class="col-xl-4 themed-grid-col">.col-xl-4</div>
+                        <div class="col-xl-4 themed-grid-col">.col-xl-4</div>
+                        <div class="col-xl-4 themed-grid-col">.col-xl-4</div>
+                      </div>
+                      <div class="row mb-3 text-center">
+                        <div class="col-xxl-4 themed-grid-col">.col-xxl-4</div>
+                        <div class="col-xxl-4 themed-grid-col">.col-xxl-4</div>
+                        <div class="col-xxl-4 themed-grid-col">.col-xxl-4</div>
+                      </div>
+                    </div>
+                    <h2 class="mt-5">Three equal columns</h2>
+                    <p>Get three equal-width columns<strong> starting at desktops and scaling to large desktops</strong>. On mobile devices, tablets and below, the columns will automatically stack.</p>
+                    <div class="container-fluid">
+                      <div class="row mb-3 text-center">
+                        <div class="col-md-4 themed-grid-col">.col-md-4</div>
+                        <div class="col-md-4 themed-grid-col">.col-md-4</div>
+                        <div class="col-md-4 themed-grid-col">.col-md-4</div>
+                      </div>
+                    </div>
+                    <h2 class="mt-5">Three equal columns alternative</h2>
+                    <p>By using the<code>.row-cols-*</code> classes, you can easily create a grid with equal columns.</p>
+                    <div class="container-fluid">
+                      <div class="row row-cols-md-3 mb-3 text-center">
+                        <div class="col themed-grid-col"><code>.col</code> child of<code>.row-cols-md-3</code></div>
+                        <div class="col themed-grid-col"><code>.col</code> child of<code>.row-cols-md-3</code></div>
+                        <div class="col themed-grid-col"><code>.col</code> child of<code>.row-cols-md-3</code></div>
+                      </div>
+                    </div>
+                    <h2 class="mt-5">Three unequal columns</h2>
+                    <p>Get three columns<strong> starting at desktops and scaling to large desktops</strong> of various widths. Remember, grid columns should add up to twelve for a single horizontal block. More than that, and columns start stacking no matter the viewport.</p>
+                    <div class="container-fluid">
+                      <div class="row mb-3 text-center">
+                        <div class="col-md-3 themed-grid-col">.col-md-3</div>
+                        <div class="col-md-6 themed-grid-col">.col-md-6</div>
+                        <div class="col-md-3 themed-grid-col">.col-md-3</div>
+                      </div>
+                    </div>
+                    <h2 class="mt-5">Two columns</h2>
+                    <p>Get two columns<strong> starting at desktops and scaling to large desktops</strong>.</p>
+                    <div class="container-fluid">
+                      <div class="row mb-3 text-center">
+                        <div class="col-md-8 themed-grid-col">.col-md-8</div>
+                        <div class="col-md-4 themed-grid-col">.col-md-4</div>
+                      </div>
+                    </div>
+                    <h2 class="mt-5">Full width, single column</h2>
+                    <p class="text-warning bg-dark p-3 rounded-1 mx-3">No grid classes are necessary for full-width elements.</p>
+                    <hr class="my-3">
+                    <h2 class="mt-5">Two columns with two nested columns</h2>
+                    <p>Per the documentation, nesting is easy—just put a row of columns within an existing column. This gives you two columns<strong> starting at desktops and scaling to large desktops</strong>, with another two (equal widths) within the larger column.</p>
+                    <p>At mobile device sizes, tablets and down, these columns and their nested columns will stack.</p>
+                    <div class="container-fluid">
+                      <div class="row mb-3 text-center">
+                        <div class="col-md-8 themed-grid-col">
+                          <div class="pb-3">
+                            <div class="col-md-8"></div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-6 themed-grid-col">.col-md-6</div>
+                            <div class="col-md-6 themed-grid-col">.col-md-6</div>
+                          </div>
+                        </div>
+                        <div class="col-md-4 themed-grid-col">.col-md-4</div>
+                      </div>
+                    </div>
+                    <hr class="my-3">
+                    <h2 class="mt-5">Mixed: mobile and desktop</h2>
+                    <p>The Bootstrap v5 grid system has six tiers of classes: xs (extra small, this class infix is not used), sm (small), md (medium), lg (large), xl (x-large), and xxl (xx-large). You can use nearly any combination of these classes to create more dynamic and flexible layouts.</p>
+                    <p>Each tier of classes scales up, meaning if you plan on setting the same widths for md, lg, xl and xxl, you only need to specify md.</p>
+                    <div class="container-fluid">
+                      <div class="row mb-3 text-center">
+                        <div class="col-md-8 themed-grid-col">.col-md-8</div>
+                        <div class="col-6 col-md-4 themed-grid-col">.col-6 .col-md-4</div>
+                      </div>
+                      <div class="row mb-3 text-center">
+                        <div class="col-6 col-md-4 themed-grid-col">.col-6 .col-md-4</div>
+                        <div class="col-6 col-md-4 themed-grid-col">.col-6 .col-md-4</div>
+                        <div class="col-6 col-md-4 themed-grid-col">.col-6 .col-md-4</div>
+                      </div>
+                      <div class="row mb-3 text-center">
+                        <div class="col-6 themed-grid-col">.col-6</div>
+                        <div class="col-6 themed-grid-col">.col-6</div>
+                      </div>
+                    </div>
+                    <hr class="my-3">
+                    <h2 class="mt-5">Mixed: mobile, tablet, and desktop</h2>
+                    <div class="container-fluid">
+                      <div class="row mb-3 text-center">
+                        <div class="col-sm-6 col-lg-8 themed-grid-col">.col-sm-6 .col-lg-8</div>
+                        <div class="col-6 col-lg-4 themed-grid-col">.col-6 .col-lg-4</div>
+                      </div>
+                      <div class="row mb-3 text-center">
+                        <div class="col-6 col-sm-4 themed-grid-col">.col-6 .col-sm-4</div>
+                        <div class="col-6 col-sm-4 themed-grid-col">.col-6 .col-sm-4</div>
+                        <div class="col-6 col-sm-4 themed-grid-col">.col-6 .col-sm-4</div>
+                      </div>
+                    </div>
+                    <hr class="my-3">
+                    <h2 class="mt-5">Gutters</h2>
+                    <p>With<code>.gx-*</code> classes, the horizontal gutters can be adjusted.</p>
+                    <div class="container-fluid">
+                      <div class="row row-cols-1 row-cols-md-3 gx-4 text-center">
+                        <div class="col themed-grid-col"><code>.col</code> with<code>.gx-4</code> gutters</div>
+                        <div class="col themed-grid-col"><code>.col</code> with<code>.gx-4</code> gutters</div>
+                        <div class="col themed-grid-col"><code>.col</code> with<code>.gx-4</code> gutters</div>
+                        <div class="col themed-grid-col"><code>.col</code> with<code>.gx-4</code> gutters</div>
+                        <div class="col themed-grid-col"><code>.col</code> with<code>.gx-4</code> gutters</div>
+                        <div class="col themed-grid-col"><code>.col</code> with<code>.gx-4</code> gutters</div>
+                      </div>
+                    </div>
+                    <p class="mt-4">Use the<code>.gy-*</code> classes to control the vertical gutters.</p>
+                    <div class="container-fluid">
+                      <div class="row row-cols-1 row-cols-md-3 gy-4 text-center">
+                        <div class="col themed-grid-col"><code>.col</code> with<code>.gy-4</code> gutters</div>
+                        <div class="col themed-grid-col"><code>.col</code> with<code>.gy-4</code> gutters</div>
+                        <div class="col themed-grid-col"><code>.col</code> with<code>.gy-4</code> gutters</div>
+                        <div class="col themed-grid-col"><code>.col</code> with<code>.gy-4</code> gutters</div>
+                        <div class="col themed-grid-col"><code>.col</code> with<code>.gy-4</code> gutters</div>
+                        <div class="col themed-grid-col"><code>.col</code> with<code>.gy-4</code> gutters</div>
+                      </div>
+                    </div>
+                    <p class="mt-4">With<code>.g-*</code> classes, the gutters in both directions can be adjusted.</p>
+                    <div class="container-fluid">
+                      <div class="row row-cols-1 row-cols-md-3 g-3 text-center">
+                        <div class="col themed-grid-col"><code>.col</code> with<code>.g-3</code> gutters</div>
+                        <div class="col themed-grid-col"><code>.col</code> with<code>.g-3</code> gutters</div>
+                        <div class="col themed-grid-col"><code>.col</code> with<code>.g-3</code> gutters</div>
+                        <div class="col themed-grid-col"><code>.col</code> with<code>.g-3</code> gutters</div>
+                        <div class="col themed-grid-col"><code>.col</code> with<code>.g-3</code> gutters</div>
+                        <div class="col themed-grid-col"><code>.col</code> with<code>.g-3</code> gutters</div>
+                      </div>
+                    </div>
+                    <div class="section_intro">
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col-xs-12 col-md-8 offset-md-2 text-center">
+                            <h2>Column Height Equalizer</h2>
+                            <p>By default, flexbox stretches each flex item to match the height of it&apos;s sibling. The .natural-height row utility class will make each column&apos;s height match it&apos;s content, giving the developer control of the behavior.</p>
+                          </div>
+                        </div><pre class='code ' data-lang='html'><code>&lt;div <span class="hljs-keyword">class</span>="<span class="hljs-symbol">container</span>"&gt;
+  &lt;<span class="hljs-symbol">div</span> <span class="hljs-symbol">class</span>="<span class="hljs-symbol">row</span>"&gt;
+    &lt;<span class="hljs-symbol">div</span> <span class="hljs-symbol">class</span>="<span class="hljs-symbol">col</span>"&gt;<span class="hljs-symbol">Content</span> <span class="hljs-symbol">of</span> <span class="hljs-symbol">varying</span> <span class="hljs-symbol">height</span>&lt;/<span class="hljs-symbol">div</span>&gt;
+    &lt;<span class="hljs-symbol">div</span> <span class="hljs-symbol">class</span>="<span class="hljs-symbol">col</span>"&gt;<span class="hljs-symbol">Content</span> <span class="hljs-symbol">of</span> <span class="hljs-symbol">varying</span> <span class="hljs-symbol">height</span>&lt;/<span class="hljs-symbol">div</span>&gt;
+    &lt;<span class="hljs-symbol">div</span> <span class="hljs-symbol">class</span>="<span class="hljs-symbol">col</span>"&gt;<span class="hljs-symbol">Content</span> <span class="hljs-symbol">of</span> <span class="hljs-symbol">varying</span> <span class="hljs-symbol">height</span>&lt;/<span class="hljs-symbol">div</span>&gt;
+  &lt;/<span class="hljs-symbol">div</span>&gt;
+&lt;/<span class="hljs-symbol">div</span>&gt;
+</code></pre>
+                        <div class="row example hide-xs-only">
+                          <div class="col">
+                            <p class="p-3">They never said winning was easy.</p>
+                          </div>
+                          <div class="col">
+                            <p class="p-3">Another one. It’s on you how you want to live your life. Everyone has a choice. I pick my choice, squeaky clean. They don’t want us to eat. The first of the month is coming, we have to get money, we have no choice. Some people can’t handle success, I can.</p>
+                          </div>
+                          <div class="col">
+                            <p class="p-3">The key to more success is to get a massage once a week, very important, major key, cloth talk.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="container">
+                      <h2>Mobile and desktop</h2>
+                      <!--  Stack the columns on mobile by making one full-width and the other half-width-->
+                      <div class="row">
+                        <div class="col-xs-12 col-md-8">.col-xs-12 .col-md-8</div>
+                        <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+                      </div>
+                      <!--  Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop-->
+                      <div class="row">
+                        <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+                        <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+                        <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+                      </div>
+                      <!--  Columns are always 50% wide, on mobile and desktop-->
+                      <div class="row">
+                        <div class="col-xs-6">.col-xs-6</div>
+                        <div class="col-xs-6">.col-xs-6</div>
+                      </div>
+                      <h2>Mobile, tablet, desktop</h2>
+                      <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-8">.col-xs-12 .col-sm-6 .col-md-8</div>
+                        <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+                      </div>
+                      <div class="row">
+                        <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+                        <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+                        <!--  Optional: clear the XS cols if their content doesn't match in height-->
+                        <div class="clearfix visible-xs-block"></div>
+                        <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="vr-block vr-block-lg" style="height:200px;"></div>
+            </div>
+          </div>
+          <div class="vr-block vr-block-lg"></div><!-- Mojo Footer -->
+          <footer class="footer make-background-highlight-light" role="contentinfo" style="background-image:url(../imgs/SceneL@2x.png)" alt="GrungeElement">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-4 offset-md-2"><img class="img-fluid" src="../imgs/MadeWithLove.png" alt="HeartLogo"></div>
+                <div class="col-4 offset-md-2">
+                  <div class="social-wrap">
+                    <ul class="social-icons">
+                      <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                      <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                      <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                      <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div><!-- URL  -->
+  </body>
+</html>

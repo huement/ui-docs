@@ -1,0 +1,157 @@
+extends ../../layout/doc
+
+append config
+  - var icon = "gear"
+  - var metaDesc = 'The Hero container shows key featured content or information. Mojo Framework is a lightweight, responsive and modern CSS framework for faster and extensible development.'
+  - var parent = 'components'
+  - var slug = 'modals'
+  - var title = 'Modals - Components - Mojo Framework'
+
+block content
+  +docs-heading('modal', 'Modals')
+
+  p.doc-intro
+    | Using the #[strong Modal Module] enables Mojo Framework to add elevated dialogs windows for lightboxes, user notifications, or completely custom content.
+
+  :codeblock(lang="html")
+    <div class="bd-example bg-light">
+      <div class="modal position-static d-block" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Modal body text goes here.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  p.half-lead
+    | In the above static example, we use #[code h5], to avoid issues with the heading hierarchy in the documentation page. Structurally, however, a modal dialog represents its own separate document/context, so the #[code .modal-title] should ideally be an #[code h1]. If necessary, you can use the&nbsp;
+    a(href="#test")  font size utilities
+    |  to control the headings appearance. All the following live examples use this approach.
+
+  .vr-block.vr-block-two
+
+  +docs-subheading('example','Overlay Example')
+
+  p.half-lead
+    | Toggle a working modal demo by clicking the button below. It will slide down and fade in from the top of the page. It also includes an #[strong OVERLAY] element that will dim all the content behind it.
+    | The overlay is optional, and to include it, simply add in one additional HTML element when creating the modal. #[code .modal-backdrop] class is added immediately after the main #[code .modal] element, before any of the actual modal markup.
+
+  :highlightify(lang="html")
+    <div class="modal fade" id="...">
+      <div class="modal-backdrop" data-dismiss="modal"></div>
+      <div class="modal-dialog">
+        ...
+      </div>
+    </div>
+
+  :codeblock(lang="html")
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLiveLabel" aria-hidden="true">
+      <div class="modal-backdrop" data-dismiss="modal"></div>
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-md" id="exampleModalLiveLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Woo-hoo, you're reading this text in a modal!</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bd-example">
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Launch demo modal
+      </button>
+    </div>
+
+  +docs-subheading("javascript","Javascript")
+
+  p.half-lead
+    | There are a million and one ways to activate and deactivate the modal window. You can do it with or without javascript, depending on your usecase and accessability requirements etc.
+    | In the above example, we are using javascript to toggle a single #[code .show] class on the modal element, as well as setting its #[code display:"block"] on show and #[code display:"none"] on hide.
+
+  p.half-lead
+    | This is a simple example showcasing how you can use #[code NPM] to quickly and easily get your show on the road. #[code cash-dom] is less than #[strong 8KB] minified! More info can be obtained about it here:
+    a(href="https://www.npmjs.com/package/cash-dom") https://www.npmjs.com/package/cash-dom
+
+  :highlightify(lang="javascript",class="fullheight")
+    import $ from "cash-dom";
+
+    $(function () {
+      MojoDataToggles();
+    });
+
+    function toggleElement(iden, showHide) {
+      let display = showHide;
+      if (!showHide) display = $(iden).hasClass("show") ? "block" : "none";
+      $(iden).css({ display: display });
+      $(iden).toggleClass("show");
+    }
+
+    function MojoDataToggles() {
+      $("[data-toggle]").on("click", function (e) {
+        e.preventDefault();
+        toggleElement($(this).data("target"), "block");
+      });
+
+      $("[data-dismiss]").on("click", function (e) {
+        e.preventDefault();
+        let target = $(this).data("dismiss");
+        toggleElement($(this).closest("." + target)[0], "none");
+      });
+    }
+
+  .vr-block.vr-block-two
+
+  +docs-subheading("sidebar","Sidebar Modal")
+
+  p.half-lead
+    | If you add a #[code left] or #[code right] class to a #[code modal] element it will automatically transform into a sidebar element. Allowing for an easy #[em "offcanvas-light"] setup.
+
+  :highlightify(lang="html")
+    <div class="modal fade left" id="...">
+        ...
+    </div>
+
+  :codeblock(lang="html")
+    <div class="modal fade left" id="sideModal" tabindex="-1" aria-labelledby="sideModalLabel" aria-hidden="true">
+      <div class="modal-backdrop" data-dismiss="modal"></div>
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-md" id="sideModalLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Woo-hoo, you're reading this text in a modal!</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bd-example">
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sideModal">
+        Left-side modal
+      </button>
+    </div>

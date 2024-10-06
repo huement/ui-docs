@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Nav Menu Example</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="@huement/ui navigation 'navbar' menu example">
+  <meta name="keywords" content="navmenu, demo, @huement/ui">
+
+  <link rel="icon" type="image/png" href="/favicon/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicon/favicon-16x16.png" sizes="16x16">
+  <link href="/favicon/favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+  <link href="/mojo.css?ver=#REPLACE#" rel="stylesheet">
+  <link href="/hi/icons.css?ver=#REPLACE#" rel="stylesheet">
+  <style>
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    html,
+    body {
+      overflow-x: hidden;
+      /* Prevent scroll on narrow devices */
+    }
+
+    body {
+      padding-top: 56px;
+    }
+
+    .icons {
+      font-size: 24px;
+      margin: 15px auto;
+
+      a {
+        margin: 0px 3px;
+      }
+    }
+
+    #list-example {
+      margin: 2rem auto;
+    }
+  </style>
+</head>
+
+<body class="d-flex flex-column h-100">
+  <header>
+    <nav class="navbar navbar-light navbar-expand-lg bg-primary fixed-top main-navigation" id="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand d-none d-lg-block" href="#">HUEMENT</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand d-md-block d-sm-block d-lg-none mx-md-auto mx-sm-auto mx-auto" href="#">HUEMENT</a>
+        <a class="d-md-inline d-sm-inline d-inline d-lg-none" href="#"><i class="hui hui-search"></i></a>
+        <div class="overlay d-flex d-lg-none"></div>
+        <div class="order-lg-2 bg-primary d-lg-flex w-100 sidebar pb-3 pb-lg-0" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-lg-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="hui hui-bacon-cheeseburger"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another Action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex nav-form">
+            <input class="form-control form-control-sm ml-1" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Search Modal -->
+    <div class="modal fade" id="mobileSearchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="mobileSearchModalLabel">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><i
+                class="hui hui-bacon-cheeseburger"></i></button>
+            <button type="button" class="btn btn-primary">SEARCH</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="flex-shrink-0">
+    <section class="my-5">
+      <div class="container">
+        <div class="p-4 border">
+          <h1>@huement/ui <span class="badge bg-primary">0.0.1</span> Navbar Menu</h1>
+          <p class="lead">Fully responsive navigation menu with plenty of features</p>
+          <p>This example shows a Navbar component of the <code>@huement/ui</code> framework. It will beb instantly
+            familiar
+            with anyone that has used the Bootstrap Framework v5.3+. Some of its best qualities are as followes:</p>
+          <ul>
+            <li>No extra JavaSript required</li>
+            <li>Multi Level Menu</li>
+            <li>Responsive Mega Menu</li>
+            <li>Unlimited Levels possible!</li>
+            <li>Animated Hamburger Menu for Mobile Devices (with JavaScript)</li>
+          </ul>
+          <div class="alert alert-info text-dark"><strong>Updated August 13 2023:</strong> Now compatible with Bootstrap
+            5.3.0 and support for <strong>Dark / Light Theme added. See Navbar!</strong></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer mt-auto py-3 bg-light">
+    <div class="container"><span class="text-muted">&copy;&nbsp;<a href="#">Author</a> 2023</span></div>
+  </footer>
+  <!-- Bootstrap 5 + Popper Bundled -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script>
+
+    // Wait for the DOM (Document Object Model) to be fully loaded
+    document.addEventListener( 'DOMContentLoaded', function ( event ) {
+
+      // Hamburger menu
+      var navbarToggler = document.querySelectorAll( '.navbar-toggler' )[ 0 ];
+      navbarToggler.addEventListener( 'click', function ( e ) {
+        console.log( e.target );
+        e.target.classList.toggle( 'active' );
+        //e.target.children[0].classList.toggle('active');
+      } );
+
+      // Select the <html> element
+      var html = document.querySelectorAll( 'html' )[ 0 ];
+
+      // Select the first element with the attribute 'data-bs-toggle-theme'
+      var themeToggle = document.querySelectorAll( '*[data-bs-toggle-theme]' )[ 0 ];
+
+      // Set the default theme to 'dark' for the <html> element
+      html.setAttribute( 'data-bs-theme', 'dark' );
+
+      // Check if a themeToggle element is found
+      if ( themeToggle ) {
+        // Add a click event listener to the themeToggle element
+        themeToggle.addEventListener( 'click', function ( event ) {
+          // Prevent the default behavior of the click event
+          event.preventDefault();
+
+          // Check the current theme attribute value of the <html> element
+          if ( html.getAttribute( 'data-bs-theme' ) === 'dark' ) {
+            // If the current theme is 'dark', change it to 'light'
+            html.setAttribute( 'data-bs-theme', 'light' );
+          } else {
+            // If the current theme is not 'dark', change it back to 'dark'
+            html.setAttribute( 'data-bs-theme', 'dark' );
+          }
+        } );
+      }
+    } );
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+- const stamp = Math.round(new Date().getTime() / 1000)
+
+//Mobile Console
+//- script(src="//cdn.jsdelivr.net/npm/eruda" type="text/javascript")
+//- script(type="text/javascript").
+//-     const el = document.getElementById("btn1");
+
+//-     eruda.init({
+//-         container: el,
+//-         tool: ['console', 'elements', 'resources'],
+//-         useShadowDom: true,
+//-         autoScale: true,
+//-         defaults: {
+//-             displaySize: 80,
+//-             transparency: 0.3,
+//-             theme: 'Material Palenight'
+//-         }
+//-     });
+
+<!-- Debugger Toolbar -->
+div(id="jollybar")
+    nav(class="av")
+        div(class="nlogo")
+            img(src="./imgs/jolly.png" alt="JollyRobot")
+        div(class="toggle-bars")
+            div(class="bar")
+            div(class="bar")
+            div(class="bar")
+        div(class="nnav")
+            ul
+                li(class="button btn console-btn")
+                    #btn1
+                        a.btn(href="#open-modal") 🤖
+                li#debugBtn(class="text-btn-link")
+                    #btn2(onclick="toggle_visibility('testing')")
+                        span(class="data-label", data-mq)
+                    #testing(class="debug_size_viewer")
+                        p
+                            b Viewport
+                            span(data-viewport)
+                        p
+                            b Screen
+                            span(data-screen)
+                        p
+                            b Breakpoint
+                            span(data-mq2)
+                        p
+                            b Modular-Scale
+                            span(data-scale)
+                        p
+                            b Font-Size
+                            span#data-fontsize(data-fontsize)
+                        p
+                            b Line-Height
+                            span#data-lineheight(data-lineheight)
+
+                li
+                    div(id="switcher")
+                        div(id="switcher_wrapper" class="select")
+                            select(onchange="switch_css(this.value)" name="switcher_dropdown" id="switcher_dropdown" accesskey="s")
+
+#open-modal.modal-window
+    div
+        a.modal-close(href="#" title="Close") Close
+        h1 Voilà!
+        div A CSS-only modal based on the :target pseudo-class. Hope you find it helpful.
+        div
+            small Check out
+        a(href="https://aminoeditor.com" target="_blank") 👉 Amino: Live CSS Editor for Chrome
+
+<!-- Debugger Javascript -->
+script(type="text/javascript" src= path + "jollybar/jollybar.js?stamp=" + stamp)

@@ -1,0 +1,217 @@
+extends ../../layout/doc
+
+append config
+  - var icon = "gear"
+  - var slug = 'tabs'
+  - var parent = 'components'
+  - var title = 'Tabs - Components - Mojo Framework'
+  - var metaDesc = 'Tabs enable quick switch between different views.'
+
+block content
+  +docs-heading('tabs', 'Tabs')
+
+  .docs-demo
+    p.doc-intro
+      | Tabs enable quick switch between different views.
+
+  .docs-demo.container
+    .row
+      .col-md-6.col-sm-12
+        ul.nav.nav-tabs
+          li.nav-item
+            a.nav-link.active(href="#tabs")
+              | Music
+          li.nav-item
+            a.nav-link(href="#tabs")
+              | Playlists
+          li.nav-item
+            a.nav-link(href="#tabs")
+              | Radio
+          li.nav-item
+            a.nav-link(href="#tabs")
+              | Store
+      .col-md-6.col-sm-12
+        ul.nav.nav-tabs.nav-fill
+          li.nav-item
+            a.nav-link.active(href="#tabs")
+              | Music
+          li.nav-item
+            a.nav-link(href="#tabs")
+              | Playlists
+          li.nav-item
+            a.nav-link(href="#tabs")
+              | Radio
+
+  p
+    | Takes the basic nav element, combined with a #[code nav-tabs] class.
+    | And add child elements with the #[code nav-item] class.
+    | Finally for the clickable content, add #[code nav-link] items.
+    | The #[code nav-item] or its child #{'<a>'} with the #[code active] class will be highlighted.
+
+  :highlightify(lang="html")
+    <ul class="nav nav-tabs nav-fill">
+      <li class="nav-item">
+        <a href="#" class="nav-link">Music</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link active">Playlists</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Radio</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Connect</a>
+      </li>
+    </ul>
+
+  .docs-demo.container
+    .row
+      .col-md-6.col-sm-12
+        ul.nav.nav-tabs
+          li.nav-item
+            a.nav-link.badge.active(href="#tabs" data-badge="999")
+              | Music
+          li.nav-item
+            a.nav-link(href="#tabs")
+              | Playlists
+          li.nav-item
+            a.nav-link(href="#tabs")
+              | Radio
+      .col-md-6.col-sm-12
+        ul.nav.nav-tabs.nav-fill
+          li.nav-item
+            a.nav-link.active.badge(href="#tabs" data-badge="9")
+              | Music
+          li.nav-item
+            a.nav-link.badge(href="#tabs" data-badge="99")
+              | Playlists
+          li.nav-item
+            a.nav-link(href="#tabs")
+              | Radio
+
+  p
+    | If you need #[code badges] on tabs, you can add badge class to the element within #[code nav-item].
+
+  :highlightify(lang="html")
+    <ul class="nav nav-fill">
+      <li class="nav-item active">
+        <a href="#" class="badge" data-badge="9">
+          Music
+        </a>
+      </li>
+    </ul>
+
+  .docs-demo.container
+    .row
+      .col
+        ul.nav.nav-tabs
+          li.nav-item
+            a.nav-link.active(href="#tabs")
+              | Music
+              span.btn.btn-clear
+          li.nav-item
+            a.nav-link(href="#tabs")
+              | Playlists
+          li.nav-item
+            a.nav-link(href="#tabs")
+              | Radio
+          li.nav-item
+            a.nav-link(href="#tabs")
+              | Store
+          li.nav-item.tab-action
+            .input-group.input-inline
+              input.form-input.input-sm(type="text")
+              button.btn.btn-primary.btn-sm.input-group-btn Search
+
+  p
+    | You could add a search box or buttons inside a tab.
+    | Add the #[code tab-action] class to the #[code nav-item].
+
+  :highlightify(lang="html")
+    <ul class="tab">
+      <li class="nav-item active">
+        <a href="#">
+          Music
+        </a>
+      </li>
+      <li class="nav-item tab-action">
+        <div class="input-group input-inline">
+          <input class="form-input input-sm" type="text">
+          <button class="btn btn-primary btn-sm input-group-btn">Search</button>
+        </div>
+      </li>
+    </ul>
+
+  +docs-subheading('tabs-options', 'Tab Options')
+
+  .docs-demo
+    p.docs-intro
+      | There are a number of other classes that can be used to modify the look and functionality of the tabs module. Here are some examples showcasing those features.
+      | Pay special attention to the shorthand version, if you use #[code nav] element with single child #[code a] tag version you can omit the #[code nav-item] class required when using the #[code ul -> li -> a] version.
+
+  :codeblock(lang="html")
+    <nav class="nav nav-tabs tab-centered">
+      <a class="nav-link active">Pictures</a>
+      <a class="nav-link">Music</a>
+      <a class="nav-link">Videos</a>
+      <a class="nav-link">Documents</a>
+    </nav>
+
+  .vr-block.vr-block-two
+
+  :codeblock(lang="html")
+    <ul class="nav nav-tabs tab-right">
+      <li class="nav-item"><a class="nav-link">Pictures</a></li>
+      <li class="nav-item"><a class="nav-link active">Music</a></li>
+      <li class="nav-item"><a class="nav-link">Videos</a></li>
+      <li class="nav-item"><a class="nav-link">Documents</a></li>
+    </ul>
+
+  +docs-subheading('tabs-pills', 'Tab Pills')
+
+  .docs-demo
+    p.docs-intro
+      | The tabs have an alternate visual style, instead of the boxed in line version, they also have a #[strong pill theme].
+      | To activate this theme, simple add on the class #[code nav-pills]. All other positioning and badges etc are supported with the pill version.
+
+  :codeblock(lang="html")
+    <ul class="nav nav-pills nav-fill">
+      <li class="nav-item"><a class="nav-link active">Pictures</a></li>
+      <li class="nav-item"><a class="nav-link">Music</a></li>
+      <li class="nav-item"><a class="nav-link">Videos</a></li>
+      <li class="nav-item"><a class="nav-link">Documents</a></li>
+    </ul>
+
+  .docs-demo
+    p.half-lead
+      | For equal-width elements, use #[code nav-justified]. All horizontal space will be occupied by nav links, but unlike the .#[code nav-fill] above, every nav item will be the same width.
+
+  :codeblock(lang="html")
+    <nav class="nav nav-pills nav-justified">
+      <a class="nav-link">Pictures</a>
+      <a class="nav-link">Music</a>
+      <a class="nav-link active">Videos</a>
+      <a class="nav-link">Documents</a>
+    </nav>
+
+  +docs-subheading('tabs-flex', 'Tab Flexbox')
+
+  .docs-demo
+    p.docs-intro
+      | Tabs can be problematic on smaller screens, however, with just a couple classes, using them has never been easier. In the example below, the nav will be stacked on the lowest breakpoint, then adapt to a horizontal layout that fills the available width starting from the small breakpoint.
+
+  :codeblock(lang="html")
+    <ul class="nav nav-pills flex-column flex-sm-row">
+      <li class="nav-item"><a class="nav-link active">Pictures</a></li>
+      <li class="nav-item"><a class="nav-link">Music</a></li>
+      <li class="nav-item"><a class="nav-link">Videos</a></li>
+      <li class="nav-item"><a class="nav-link">Documents</a></li>
+    </ul>
+
+  .vr-block.vr-block-two
+
+  +docs-subheading('tab-panels', 'Tab Panels')
+
+  .docs-demo
+    p.docs-intro
+      | #[strong TODO]: add in example showing the tab panels showing & hiding content.

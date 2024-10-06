@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Home",
+    "icon": "html5",
+    "url": "/index.html",
+    "file": "index.pug"
+  },
+  {
+    "name": "Documentation",
+    "icon": "table",
+    "url": "/docs/installation.html"
+  },
+  {
+    "name": "Icons",
+    "icon": "zippo-lighter",
+    "url": "hi/icons.html"
+  },
+  {
+    "name": "Preview",
+    "icon": "icecream",
+    "url": "/preview.html",
+    "file": "preview.pug"
+  },
+  {
+    "name": "Dashboard",
+    "icon": "microsoft",
+    "url": "/dashboard.html",
+    "file": "dashboard.pug"
+  }
+]

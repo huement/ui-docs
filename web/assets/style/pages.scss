@@ -1,0 +1,18 @@
+///
+/// DOCS PAGE STYLINGS
+/// Used to style the docs + styleguide areas
+///
+
+// Sass Modules
+@use 'sass:map';
+@use 'sass:list';
+@use 'sass:math';
+@use 'sass:color';
+@use 'sass:meta';
+
+// Global Constants
+@import '@huement/ui/scss/framework';
+
+@include mojoBanner('', $version);
+
+@import './shared';

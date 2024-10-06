@@ -1,0 +1,34 @@
+include ../config
+include ../docsConfig
+block config
+
+append config
+  - var prismjs = prismjs || false
+  - var highlightjs = highlightjs || false
+  - var bsbjs = bsbjs || false
+  - var bodyClass = bodyClass || ''
+  - var cssFile = package.codeName
+
+doctype html
+html(lang= lang)
+  head
+    meta(charset="UTF-8")
+    title= title
+    include ../partials/meta
+
+    link(rel="canonical" href="/templates/"+slug+"/")
+    link(href= path + "css/" + cssFile + ".css?token=" + stamp, rel="stylesheet")
+
+    if prismjs
+      link(rel="stylesheet", href=path+"css/prism.css" type="text/css" id="prism_css")
+    if highlight
+      link(rel="stylesheet", href=path+"css/highlight.css" type="text/css" id="highlight_css")
+
+    block ExtraHeader
+
+body(class=bodyClass)
+  div(class= superClass + " templatePage")
+    block content
+
+  if bsbjs
+    script(src=path+"js/bundle.js" type="module")

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en.US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta property="og:url" content="https://huement.github.io/ui/">
+    <meta property="og:type" content="website">
+    <meta property="description" content="Design Tokens are used to create a style dictionary which themes Mojo before any code changed are needed.">
+    <meta property="og:title" content="Design Tokens - Getting Started - Mojo Framework">
+    <meta property="og:image" content="https://huement.github.io/ui/imgs/Logo.png">
+    <meta property="og:description" content="Design Tokens are used to create a style dictionary which themes Mojo before any code changed are needed.">
+    <meta property="og:site_name" content="Design Tokens - Getting Started - Mojo Framework - v0.5.0">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@huement/ui">
+    <meta name="twitter:creator" content="@huement/ui">
+    <meta name="twitter:title" content="Design Tokens - Getting Started - Mojo Framework">
+    <meta name="twitter:description" content="Design Tokens are used to create a style dictionary which themes Mojo before any code changed are needed.">
+    <meta name="twitter:image" content="https://huement.github.io/ui/imgs/Logo.png">
+    <meta charset="UTF-8">
+    <title>Design Tokens - Getting Started - Mojo Framework</title>
+    <meta name="description" content="Design Tokens are used to create a style dictionary which themes Mojo before any code changed are needed.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="../favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../favicon/favicon-16x16.png" sizes="16x16">
+    <link href="../favicon/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <!-- [if lt IE 9]><script language="javascript" type="text/javascript" src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <link rel="stylesheet" href="../mojo.css?token=0.5.0" type="text/css" id="hui_css">
+    <link rel="stylesheet" href="../hi/icons.css?token=0.5.0" type="text/css" id="hui_icons">
+    <link rel="stylesheet" href="../css/docs.css" type="text/css" id="docs_css">
+  </head>
+  <body class="no-javascript">
+    <script>document.body.classList.remove('no-javascript');</script>
+    <div class="mojo docs-container container-fluid docPage">
+      <div class="row">
+        <div class="col-sm-4 col-md-3 sidebar">
+          <div class="side-container">
+            <div class="logo-container"><img class="logo img-fluid" src="../imgs/Logo.png"/></div>
+            <div class="build-container">
+              <div class="row g-0 mx-0 text-center">
+                <div class="col">
+                  <p class="build-label">Latest Build</p>
+                  <p class="build-version">0.5.0 Mon Sep 23 2024</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="docs-nav">
+            <div class="accordion-container">
+              <div class="accordion">
+                <input id="accordion-getting-started" type="checkbox" name="docs-accordion-checkbox" hidden="" checked="checked"/>
+                <label class="accordion-header c-hand" for="accordion-getting-started"><i class="hui hui-document-down mr-1"></i>getting-started</label>
+                <div class="accordion-body">
+                  <ul class="menu menu-nav">
+                    <li class="menu-item"><a href="../docs/installation.html">Installation</a>
+                    </li>
+                    <li class="menu-item"><a class="active" href="../docs/tokens.html">Tokens</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion">
+                <input id="accordion-style-guide" type="checkbox" name="docs-accordion-checkbox" hidden=""/>
+                <label class="accordion-header c-hand" for="accordion-style-guide"><i class="hui hui-document-down mr-1"></i>style-guide</label>
+                <div class="accordion-body">
+                  <ul class="menu menu-nav">
+                    <li class="menu-item"><a href="../docs/colors.html">Colors</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/templates.html">Templates</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/type-heading.html">Type-heading</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/typography.html">Typography</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/vert-rhythm.html">Vert-rhythm</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion">
+                <input id="accordion-layout" type="checkbox" name="docs-accordion-checkbox" hidden=""/>
+                <label class="accordion-header c-hand" for="accordion-layout"><i class="hui hui-document-down mr-1"></i>layout</label>
+                <div class="accordion-body">
+                  <ul class="menu menu-nav">
+                    <li class="menu-item"><a href="../docs/bs5-grid.html">Bs5-grid</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/containers.html">Containers</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/empty.html">Empty</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/gutters.html">Gutters</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/navbar.html">Navbar</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/off-canvas.html">Off-canvas</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/responsive.html">Responsive</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/tables.html">Tables</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion">
+                <input id="accordion-components" type="checkbox" name="docs-accordion-checkbox" hidden=""/>
+                <label class="accordion-header c-hand" for="accordion-components"><i class="hui hui-document-down mr-1"></i>components</label>
+                <div class="accordion-body">
+                  <ul class="menu menu-nav">
+                    <li class="menu-item"><a href="../docs/accordions.html">Accordions</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/alerts.html">Alerts</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/badges.html">Badges</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/buttons.html">Buttons</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/cards.html">Cards</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/dropdown.html">Dropdown</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/forms.html">Forms</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/hero.html">Hero</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/icons.html">Icons</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/images.html">Images</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/labels.html">Labels</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/lists.html">Lists</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/menu.html">Menu</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/modal.html">Modal</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/panels.html">Panels</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/snaps.html">Snaps</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/tabs.html">Tabs</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/tags.html">Tags</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/tiles.html">Tiles</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion">
+                <input id="accordion-utilities" type="checkbox" name="docs-accordion-checkbox" hidden=""/>
+                <label class="accordion-header c-hand" for="accordion-utilities"><i class="hui hui-document-down mr-1"></i>utilities</label>
+                <div class="accordion-body">
+                  <ul class="menu menu-nav">
+                    <li class="menu-item"><a href="../docs/_blank.html">_blank</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/cursors.html">Cursors</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/display.html">Display</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/divider.html">Divider</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/functions.html">Functions</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/loading.html">Loading</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/position.html">Position</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/shapes.html">Shapes</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/text.html">Text</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-8 col-md-9 main-content">
+          <div class="container  docs-content" id="content">
+            <div class="main-area px-xs-0 px-sm-0 px-md-2 px-lg-3 px-xl-3 px-xx-4">
+              <div class="docbar docbar-dark">
+                <div class="docbar-section">
+                  <button class="btn btn-dark m-1 btn-sm"><i class="hui hui-bacon-cheeseburger"></i></button>
+                </div>
+                <div class="docbar-section" style="flex: 2 0 0">
+                  <input class="form-input input-sm mr-2" type="text" placeholder="search"/>
+                  <div class="btns d-flex"><a class="text-white btn btn-sm mr-2 ml-1 btn-dark" href="https://github.com/huement/ui">Github</a><a class="text-white btn btn-sm mr-2 ml-1 btn-secondary" href="/index.html">@hui</a><a class="text-white btn btn-sm mr-2 ml-1 btn-primary" href="http://localhost">Huement</a>
+                  </div>
+                </div>
+              </div>
+              <div class="vr-block">&nbsp;</div>
+              <div class="head-block" id="design-tokens">
+                <h1 class="s-title">Design Tokens<a class="anchor" href="#design-tokens" aria-hidden="true">#</a></h1>
+              </div>
+              <p class="doc-intro">
+                Design Tokens play an important role in Mojo. Tweaking them allows for that perfect look and harmony.
+                One major way Design Tokens are used, is to create a style dictionary which themes Mojo before any code changed are needed.
+              </p>
+              <p>Using the included CLI Tools, you  can easily generate and apply the changed <strong>Design Tokens</strong> to the Mojo framework. At the core, the tools help you create and/or update a simple JSON file that holds the initial values, which are then used to compute a theme the framework.</p>
+              <p>Below is a preview of the default tokens file. If you want to customize Mojo, simple make changes to this file, and then run the CLI tool, <code>cli/bin/mojo.js</code> and you will have fresh SCSS files with which to rebuild the framework to your new specifications.</p>
+              <div class="vr-block vr-block-two"></div>
+              <div class="row gx-5">
+                <div class="col-xs-12 col-sm-6">
+                  <div class="token-form-wrapper p-3" id="code-printout">
+                    <h4 class="token-title">Custom Chords</h4>
+                    <div class="token-form bg-dark">
+                      <pre><code class="downloadJSON"></code></pre>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <div class="token-form-wrapper p-3" id="code-explained">
+                    <table class="table">
+                      <thead class="thead-dark">
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">First</th>
+                          <th scope="col">Last</th>
+                          <th scope="col">Handle</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>@fat</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td>Larry</td>
+                          <td>the Bird</td>
+                          <td>@twitter</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="robot-wrapper">
+            <div class="vr-block"></div><img class="robot-logo" src="../imgs/RocketRobot.png" alt="RobotImg">
+          </div><!-- Mojo Footer -->
+          <footer class="footer make-background-highlight-light" role="contentinfo" style="background-image:url(../imgs/SceneL@2x.png)" alt="GrungeElement">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-4 offset-md-2"><img class="img-fluid" src="../imgs/MadeWithLove.png" alt="HeartLogo"></div>
+                <div class="col-4 offset-md-2">
+                  <div class="social-wrap">
+                    <ul class="social-icons">
+                      <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                      <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                      <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                      <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div><!-- URL  -->
+    <script src="../js/prism.js"></script>
+    <script src="../www/js/docs-tokens-es6-compiled.js?stamp=0.5.0" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en.US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta property="og:url" content="https://huement.github.io/ui/">
+    <meta property="og:type" content="website">
+    <meta property="description" content="Using typography to have a flowing, scaled, ratio based approach to beautiful typography.">
+    <meta property="og:title" content="Vertical Rhythm - Style Guide - Mojo Framework">
+    <meta property="og:image" content="https://huement.github.io/ui/imgs/Logo.png">
+    <meta property="og:description" content="Using typography to have a flowing, scaled, ratio based approach to beautiful typography.">
+    <meta property="og:site_name" content="Vertical Rhythm - Style Guide - Mojo Framework - v0.5.0">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@huement/ui">
+    <meta name="twitter:creator" content="@huement/ui">
+    <meta name="twitter:title" content="Vertical Rhythm - Style Guide - Mojo Framework">
+    <meta name="twitter:description" content="Using typography to have a flowing, scaled, ratio based approach to beautiful typography.">
+    <meta name="twitter:image" content="https://huement.github.io/ui/imgs/Logo.png">
+    <meta charset="UTF-8">
+    <title>Vertical Rhythm - Style Guide - Mojo Framework</title>
+    <meta name="description" content="Using typography to have a flowing, scaled, ratio based approach to beautiful typography.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="../favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../favicon/favicon-16x16.png" sizes="16x16">
+    <link href="../favicon/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <!-- [if lt IE 9]><script language="javascript" type="text/javascript" src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <link rel="stylesheet" href="../mojo.css?token=0.5.0" type="text/css" id="hui_css">
+    <link rel="stylesheet" href="../hi/icons.css?token=0.5.0" type="text/css" id="hui_icons">
+    <link rel="stylesheet" href="../css/docs.css" type="text/css" id="docs_css">
+  </head>
+  <body class="no-javascript">
+    <script>document.body.classList.remove('no-javascript');</script>
+    <div class="mojo docs-container container-fluid docPage">
+      <div class="row">
+        <div class="col-sm-4 col-md-3 sidebar">
+          <div class="side-container">
+            <div class="logo-container"><img class="logo img-fluid" src="../imgs/Logo.png"/></div>
+            <div class="build-container">
+              <div class="row g-0 mx-0 text-center">
+                <div class="col">
+                  <p class="build-label">Latest Build</p>
+                  <p class="build-version">0.5.0 Mon Sep 23 2024</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="docs-nav">
+            <div class="accordion-container">
+              <div class="accordion">
+                <input id="accordion-getting-started" type="checkbox" name="docs-accordion-checkbox" hidden=""/>
+                <label class="accordion-header c-hand" for="accordion-getting-started"><i class="hui hui-document-down mr-1"></i>getting-started</label>
+                <div class="accordion-body">
+                  <ul class="menu menu-nav">
+                    <li class="menu-item"><a href="../docs/installation.html">Installation</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/tokens.html">Tokens</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion">
+                <input id="accordion-style-guide" type="checkbox" name="docs-accordion-checkbox" hidden="" checked="checked"/>
+                <label class="accordion-header c-hand" for="accordion-style-guide"><i class="hui hui-document-down mr-1"></i>style-guide</label>
+                <div class="accordion-body">
+                  <ul class="menu menu-nav">
+                    <li class="menu-item"><a href="../docs/colors.html">Colors</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/templates.html">Templates</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/type-heading.html">Type-heading</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/typography.html">Typography</a>
+                    </li>
+                    <li class="menu-item"><a class="active" href="../docs/vert-rhythm.html">Vert-rhythm</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion">
+                <input id="accordion-layout" type="checkbox" name="docs-accordion-checkbox" hidden=""/>
+                <label class="accordion-header c-hand" for="accordion-layout"><i class="hui hui-document-down mr-1"></i>layout</label>
+                <div class="accordion-body">
+                  <ul class="menu menu-nav">
+                    <li class="menu-item"><a href="../docs/bs5-grid.html">Bs5-grid</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/containers.html">Containers</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/empty.html">Empty</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/gutters.html">Gutters</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/navbar.html">Navbar</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/off-canvas.html">Off-canvas</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/responsive.html">Responsive</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/tables.html">Tables</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion">
+                <input id="accordion-components" type="checkbox" name="docs-accordion-checkbox" hidden=""/>
+                <label class="accordion-header c-hand" for="accordion-components"><i class="hui hui-document-down mr-1"></i>components</label>
+                <div class="accordion-body">
+                  <ul class="menu menu-nav">
+                    <li class="menu-item"><a href="../docs/accordions.html">Accordions</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/alerts.html">Alerts</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/badges.html">Badges</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/buttons.html">Buttons</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/cards.html">Cards</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/dropdown.html">Dropdown</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/forms.html">Forms</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/hero.html">Hero</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/icons.html">Icons</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/images.html">Images</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/labels.html">Labels</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/lists.html">Lists</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/menu.html">Menu</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/modal.html">Modal</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/panels.html">Panels</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/snaps.html">Snaps</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/tabs.html">Tabs</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/tags.html">Tags</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/tiles.html">Tiles</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion">
+                <input id="accordion-utilities" type="checkbox" name="docs-accordion-checkbox" hidden=""/>
+                <label class="accordion-header c-hand" for="accordion-utilities"><i class="hui hui-document-down mr-1"></i>utilities</label>
+                <div class="accordion-body">
+                  <ul class="menu menu-nav">
+                    <li class="menu-item"><a href="../docs/_blank.html">_blank</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/cursors.html">Cursors</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/display.html">Display</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/divider.html">Divider</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/functions.html">Functions</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/loading.html">Loading</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/position.html">Position</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/shapes.html">Shapes</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/text.html">Text</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-8 col-md-9 main-content">
+          <div class="container  docs-content" id="content">
+            <div class="main-area px-xs-0 px-sm-0 px-md-2 px-lg-3 px-xl-3 px-xx-4">
+              <div class="docbar docbar-dark">
+                <div class="docbar-section">
+                  <button class="btn btn-dark m-1 btn-sm"><i class="hui hui-bacon-cheeseburger"></i></button>
+                </div>
+                <div class="docbar-section" style="flex: 2 0 0">
+                  <input class="form-input input-sm mr-2" type="text" placeholder="search"/>
+                  <div class="btns d-flex"><a class="text-white btn btn-sm mr-2 ml-1 btn-dark" href="https://github.com/huement/ui">Github</a><a class="text-white btn btn-sm mr-2 ml-1 btn-secondary" href="/index.html">@hui</a><a class="text-white btn btn-sm mr-2 ml-1 btn-primary" href="http://localhost">Huement</a>
+                  </div>
+                </div>
+              </div>
+              <div class="vr-block">&nbsp;</div>
+              <div class="head-block" id="vert-rhythm">
+                <h1 class="s-title">Vertical Rhythm<a class="anchor" href="#vert-rhythm" aria-hidden="true">#</a></h1>
+              </div>
+              <p class="doc-intro">You've likely heard of the <strong>Golden Ratio</strong>. A pleasing relationship applied to design elements, used to achieve a visually harmonious design. Using the typography module within this framework, you can easily apply ratios, scaling, and spacing, allowing your page layouts to have a harmonious, pleasing relationship.</p>
+              <p>Similar to the way a piece of music uses related chords to carry a tune from start to finish, a vertical rhythmic based typographic layout will give your designs a visually harmony that can't be achieved with regular frameworks.</p>
+              <p>Using the <strong>`chord ratio`</strong> based typography is very simple. All you have to do is set the values and ratios you wish to use in the theme file, and the framework will automatically scale your typography across tags (<em>H1 - H6</em>) and across breakpoints. Where one ratio might be pleasing on a very large screen, the same chord might not look as pleasing on a handheld device. Using this framework you can easily account for these differences.</p>
+              <div class="docs-demo">
+                <p>Using the included <strong>Mojo CLI Tool</strong>, or by manually altering the <strong>Design Token</strong> JSON file, you can easily set your initial chord config settings.</p>
+              </div><pre class='code ' data-lang='json'><code>{
+  <span class="hljs-string">"base-font-size"</span>: <span class="hljs-string">"16px"</span>,
+  <span class="hljs-string">"base-line-height"</span>: <span class="hljs-number">1</span>.<span class="hljs-number">5</span>,
+  <span class="hljs-string">"chords"</span>: [
+    {
+      <span class="hljs-string">"name"</span>: <span class="hljs-string">"xsmall"</span>,
+      <span class="hljs-string">"abr"</span>: <span class="hljs-string">"xs"</span>,
+      <span class="hljs-string">"scale"</span>: <span class="hljs-number">1</span>.<span class="hljs-number">125</span>,
+      <span class="hljs-string">"scale_name"</span>: <span class="hljs-string">"MAJOR_SECOND"</span>,
+      <span class="hljs-string">"break"</span>: <span class="hljs-number">0</span>,
+      <span class="hljs-string">"max"</span>: <span class="hljs-number">0</span>,
+      <span class="hljs-string">"text"</span>: <span class="hljs-number">16</span>,
+      <span class="hljs-string">"line"</span>: <span class="hljs-number">1</span>.<span class="hljs-number">25</span>,
+      <span class="hljs-string">"vertical"</span>: <span class="hljs-number">8</span>
+    },
+    <span class="hljs-meta">{...}</span>
+}
+</code></pre>
+              <div class="docs-demo">
+                <p>Once your JSON tokens have been set, the framework will input them and automatically generate the <strong>SCSS Token File</strong> that is used throughout the framework automatically in all the typography modules, such as the <strong>H1-6 Headings</strong>, the <strong>Title + Subtitle</strong> and <strong>Display Text</strong> modules.</p>
+              </div><pre class='code ' data-lang='scss'><code><span class="hljs-string">$chords:</span> <span class="hljs-string">(</span>
+  <span class="hljs-attr">xs:</span> <span class="hljs-string">(</span>
+    <span class="hljs-attr">name:</span> <span class="hljs-string">xsmall,</span>
+    <span class="hljs-attr">abrev:</span> <span class="hljs-string">xs,</span>
+    <span class="hljs-attr">width:</span> <span class="hljs-number">0</span><span class="hljs-string">,</span>
+    <span class="hljs-attr">max:</span> <span class="hljs-number">0</span><span class="hljs-string">,</span>
+    <span class="hljs-attr">fontSize:</span> <span class="hljs-string">16px,</span>
+    <span class="hljs-attr">lineHeight:</span> <span class="hljs-number">1.25</span><span class="hljs-string">,</span>
+    <span class="hljs-attr">vertical:</span> <span class="hljs-number">8</span><span class="hljs-string">,</span>
+    <span class="hljs-attr">scale:</span> <span class="hljs-number">1.125</span><span class="hljs-string">,</span>
+    <span class="hljs-attr">scale_name:</span> <span class="hljs-string">MAJOR_SECOND,</span>
+    <span class="hljs-attr">headings:</span> <span class="hljs-string">(</span>
+      <span class="hljs-attr">h1:</span> <span class="hljs-number">1.</span><span class="hljs-string">8rem,</span>
+      <span class="hljs-attr">h2:</span> <span class="hljs-number">1.</span><span class="hljs-string">6rem,</span>
+      <span class="hljs-attr">h3:</span> <span class="hljs-number">1.</span><span class="hljs-string">42rem,</span>
+      <span class="hljs-attr">h4:</span> <span class="hljs-number">1.</span><span class="hljs-string">27rem,</span>
+      <span class="hljs-attr">h5:</span> <span class="hljs-number">1.</span><span class="hljs-string">13rem,</span>
+      <span class="hljs-attr">h6:</span> <span class="hljs-string">1rem,</span>
+    <span class="hljs-string">),</span>
+    <span class="hljs-attr">headingsLine:</span> <span class="hljs-string">(</span>
+      <span class="hljs-attr">h1:</span> <span class="hljs-number">2.</span><span class="hljs-string">25rem,</span>
+      <span class="hljs-attr">h2:</span> <span class="hljs-string">2rem,</span>
+      <span class="hljs-attr">h3:</span> <span class="hljs-number">1.</span><span class="hljs-string">78rem,</span>
+      <span class="hljs-attr">h4:</span> <span class="hljs-number">1.</span><span class="hljs-string">58rem,</span>
+      <span class="hljs-attr">h5:</span> <span class="hljs-number">1.</span><span class="hljs-string">41rem,</span>
+      <span class="hljs-attr">h6:</span> <span class="hljs-number">1.</span><span class="hljs-string">25rem,</span>
+    <span class="hljs-string">),</span>
+  <span class="hljs-string">)</span>
+<span class="hljs-string">);</span>
+</code></pre>
+              <div class="vr-block vr-block-two"></div>
+            </div>
+          </div>
+          <div class="vr-block vr-block-lg"></div><!-- Mojo Footer -->
+          <footer class="footer make-background-highlight-light" role="contentinfo" style="background-image:url(../imgs/SceneL@2x.png)" alt="GrungeElement">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-4 offset-md-2"><img class="img-fluid" src="../imgs/MadeWithLove.png" alt="HeartLogo"></div>
+                <div class="col-4 offset-md-2">
+                  <div class="social-wrap">
+                    <ul class="social-icons">
+                      <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                      <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                      <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                      <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div><!-- URL  -->
+  </body>
+</html>

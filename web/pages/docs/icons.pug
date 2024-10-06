@@ -1,0 +1,63 @@
+extends ../../layout/doc
+
+append config
+  - var icon = "gear"
+  - var metaDesc = 'High quality, open source icon library. Support for multiple themes and custom icons.'
+  - var parent = 'components'
+  - var slug = 'icons'
+  - var title = 'Icons - Components - Mojo Framework'
+
+
+block content
+  +docs-heading('icons', 'Icons')
+
+  p.doc-intro
+    | Getting the right look and feel via Icons is very tricky. There is no 'one-size fits all' approach. It's for this reason that Mojo does not even waste your time by trying to shove our specific icon font onto you. Instead, Mojo is setup to easily icorperate any icon font you want, easily and quickly into the building, and 1 - 2 - 3, Bingo Bango, you're SVGs are GTG.
+
+  p.half-lead
+    | In between now and loading your perfect font, we do have a seperate, CSS only, (yes you read that right, no SVGs, no PNGs) icon font that will quickly and easily allow for mockups and placeholding to take place without requiring anything until need be.
+
+  p.half-lead
+    | Below is a list of all the available CSS class based icons that are included by default (albeit in a sepearte CSS file from the main framework).
+
+  +docs-subheading("icon-list", "Icon List")
+
+  +docs-icons(iconList)
+
+  +docs-linebreak("light")
+
+  +docs-subheading("font-examples", "Example Icon Fonts")
+
+  p.half-lead
+    | Loading in an icon font, as said, is quite easy, and an example of how one would go about doing so is shown below.
+    | Once you've creeated your own #[code 'myicons.scss'] file, it should look something like the example below. Then you simply run the build command, and you'll have a #[strong scoped] #[code '.css'] file that can be included in your pug/html.
+
+  :highlightify(lang="scss")
+    @import "_frmwrk-config/index";
+    @import "_frmwrk/index";
+
+    @include printBanner(Icons);
+
+    @include superclass() {
+      @import "myicons/list";
+    }
+
+  +docs-subheading("social-icons", "Social Icons")
+
+  p.doc-intro
+    | A number of brand colors are already built in, simply add their color class to an item, or use the #[code social-icons] class to build out an inline list of social media links quickly and easily.
+
+  div.social-wrap
+    ul.social-icons
+      li
+        a.facebook(href="#")
+          i.rif.fa-facebook
+      li
+        a.twitter(href="#")
+          i.rif.fa-twitter
+      li
+        a.dribbble(href="#")
+          i.rif.fa-dribbble
+      li
+        a.linkedin(href="#")
+          i.rif.fa-linkedin

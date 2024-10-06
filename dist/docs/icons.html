@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en.US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta property="og:url" content="https://huement.github.io/ui/">
+    <meta property="og:type" content="website">
+    <meta property="description" content="High quality, open source icon library. Support for multiple themes and custom icons.">
+    <meta property="og:title" content="Icons - Components - Mojo Framework">
+    <meta property="og:image" content="https://huement.github.io/ui/imgs/Logo.png">
+    <meta property="og:description" content="High quality, open source icon library. Support for multiple themes and custom icons.">
+    <meta property="og:site_name" content="Icons - Components - Mojo Framework - v0.5.0">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@huement/ui">
+    <meta name="twitter:creator" content="@huement/ui">
+    <meta name="twitter:title" content="Icons - Components - Mojo Framework">
+    <meta name="twitter:description" content="High quality, open source icon library. Support for multiple themes and custom icons.">
+    <meta name="twitter:image" content="https://huement.github.io/ui/imgs/Logo.png">
+    <meta charset="UTF-8">
+    <title>Icons - Components - Mojo Framework</title>
+    <meta name="description" content="High quality, open source icon library. Support for multiple themes and custom icons.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="../favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../favicon/favicon-16x16.png" sizes="16x16">
+    <link href="../favicon/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <!-- [if lt IE 9]><script language="javascript" type="text/javascript" src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <link rel="stylesheet" href="../mojo.css?token=0.5.0" type="text/css" id="hui_css">
+    <link rel="stylesheet" href="../hi/icons.css?token=0.5.0" type="text/css" id="hui_icons">
+    <link rel="stylesheet" href="../css/docs.css" type="text/css" id="docs_css">
+  </head>
+  <body class="no-javascript">
+    <script>document.body.classList.remove('no-javascript');</script>
+    <div class="mojo docs-container container-fluid docPage">
+      <div class="row">
+        <div class="col-sm-4 col-md-3 sidebar">
+          <div class="side-container">
+            <div class="logo-container"><img class="logo img-fluid" src="../imgs/Logo.png"/></div>
+            <div class="build-container">
+              <div class="row g-0 mx-0 text-center">
+                <div class="col">
+                  <p class="build-label">Latest Build</p>
+                  <p class="build-version">0.5.0 Mon Sep 23 2024</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="docs-nav">
+            <div class="accordion-container">
+              <div class="accordion">
+                <input id="accordion-getting-started" type="checkbox" name="docs-accordion-checkbox" hidden=""/>
+                <label class="accordion-header c-hand" for="accordion-getting-started"><i class="hui hui-document-down mr-1"></i>getting-started</label>
+                <div class="accordion-body">
+                  <ul class="menu menu-nav">
+                    <li class="menu-item"><a href="../docs/installation.html">Installation</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/tokens.html">Tokens</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion">
+                <input id="accordion-style-guide" type="checkbox" name="docs-accordion-checkbox" hidden=""/>
+                <label class="accordion-header c-hand" for="accordion-style-guide"><i class="hui hui-document-down mr-1"></i>style-guide</label>
+                <div class="accordion-body">
+                  <ul class="menu menu-nav">
+                    <li class="menu-item"><a href="../docs/colors.html">Colors</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/templates.html">Templates</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/type-heading.html">Type-heading</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/typography.html">Typography</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/vert-rhythm.html">Vert-rhythm</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion">
+                <input id="accordion-layout" type="checkbox" name="docs-accordion-checkbox" hidden=""/>
+                <label class="accordion-header c-hand" for="accordion-layout"><i class="hui hui-document-down mr-1"></i>layout</label>
+                <div class="accordion-body">
+                  <ul class="menu menu-nav">
+                    <li class="menu-item"><a href="../docs/bs5-grid.html">Bs5-grid</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/containers.html">Containers</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/empty.html">Empty</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/gutters.html">Gutters</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/navbar.html">Navbar</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/off-canvas.html">Off-canvas</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/responsive.html">Responsive</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/tables.html">Tables</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion">
+                <input id="accordion-components" type="checkbox" name="docs-accordion-checkbox" hidden="" checked="checked"/>
+                <label class="accordion-header c-hand" for="accordion-components"><i class="hui hui-document-down mr-1"></i>components</label>
+                <div class="accordion-body">
+                  <ul class="menu menu-nav">
+                    <li class="menu-item"><a href="../docs/accordions.html">Accordions</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/alerts.html">Alerts</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/badges.html">Badges</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/buttons.html">Buttons</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/cards.html">Cards</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/dropdown.html">Dropdown</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/forms.html">Forms</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/hero.html">Hero</a>
+                    </li>
+                    <li class="menu-item"><a class="active" href="../docs/icons.html">Icons</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/images.html">Images</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/labels.html">Labels</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/lists.html">Lists</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/menu.html">Menu</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/modal.html">Modal</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/panels.html">Panels</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/snaps.html">Snaps</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/tabs.html">Tabs</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/tags.html">Tags</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/tiles.html">Tiles</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion">
+                <input id="accordion-utilities" type="checkbox" name="docs-accordion-checkbox" hidden=""/>
+                <label class="accordion-header c-hand" for="accordion-utilities"><i class="hui hui-document-down mr-1"></i>utilities</label>
+                <div class="accordion-body">
+                  <ul class="menu menu-nav">
+                    <li class="menu-item"><a href="../docs/_blank.html">_blank</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/cursors.html">Cursors</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/display.html">Display</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/divider.html">Divider</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/functions.html">Functions</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/loading.html">Loading</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/position.html">Position</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/shapes.html">Shapes</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/text.html">Text</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-8 col-md-9 main-content">
+          <div class="container  docs-content" id="content">
+            <div class="main-area px-xs-0 px-sm-0 px-md-2 px-lg-3 px-xl-3 px-xx-4">
+              <div class="docbar docbar-dark">
+                <div class="docbar-section">
+                  <button class="btn btn-dark m-1 btn-sm"><i class="hui hui-bacon-cheeseburger"></i></button>
+                </div>
+                <div class="docbar-section" style="flex: 2 0 0">
+                  <input class="form-input input-sm mr-2" type="text" placeholder="search"/>
+                  <div class="btns d-flex"><a class="text-white btn btn-sm mr-2 ml-1 btn-dark" href="https://github.com/huement/ui">Github</a><a class="text-white btn btn-sm mr-2 ml-1 btn-secondary" href="/index.html">@hui</a><a class="text-white btn btn-sm mr-2 ml-1 btn-primary" href="http://localhost">Huement</a>
+                  </div>
+                </div>
+              </div>
+              <div class="vr-block">&nbsp;</div>
+              <div class="head-block" id="icons">
+                <h1 class="s-title">Icons<a class="anchor" href="#icons" aria-hidden="true">#</a></h1>
+              </div>
+              <p class="doc-intro">Getting the right look and feel via Icons is very tricky. There is no 'one-size fits all' approach. It's for this reason that Mojo does not even waste your time by trying to shove our specific icon font onto you. Instead, Mojo is setup to easily icorperate any icon font you want, easily and quickly into the building, and 1 - 2 - 3, Bingo Bango, you're SVGs are GTG.</p>
+              <p class="half-lead">In between now and loading your perfect font, we do have a seperate, CSS only, (yes you read that right, no SVGs, no PNGs) icon font that will quickly and easily allow for mockups and placeholding to take place without requiring anything until need be.</p>
+              <p class="half-lead">Below is a list of all the available CSS class based icons that are included by default (albeit in a sepearte CSS file from the main framework).</p>
+              <h2 class="s-subtitle" id="icon-list">Icon List<a class="anchor" href="#icon-list" aria-hidden="true">#</a></h2>
+              <div class="row">
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-arrow"></i></span>
+                    <p class="text-center text-small text-muted mt-2">arrow</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-asterisk"></i></span>
+                    <p class="text-center text-small text-muted mt-2">asterisk</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-bars"></i></span>
+                    <p class="text-center text-small text-muted mt-2">bars</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-bluetooth"></i></span>
+                    <p class="text-center text-small text-muted mt-2">bluetooth</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-book"></i></span>
+                    <p class="text-center text-small text-muted mt-2">book</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-bookmark"></i></span>
+                    <p class="text-center text-small text-muted mt-2">bookmark</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-calendar"></i></span>
+                    <p class="text-center text-small text-muted mt-2">calendar</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-camera"></i></span>
+                    <p class="text-center text-small text-muted mt-2">camera</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-caret"></i></span>
+                    <p class="text-center text-small text-muted mt-2">caret</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-cart"></i></span>
+                    <p class="text-center text-small text-muted mt-2">cart</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-chain"></i></span>
+                    <p class="text-center text-small text-muted mt-2">chain</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-chart"></i></span>
+                    <p class="text-center text-small text-muted mt-2">chart</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-check"></i></span>
+                    <p class="text-center text-small text-muted mt-2">check</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-circle"></i></span>
+                    <p class="text-center text-small text-muted mt-2">circle</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-clock"></i></span>
+                    <p class="text-center text-small text-muted mt-2">clock</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-comment"></i></span>
+                    <p class="text-center text-small text-muted mt-2">comment</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-creditCard"></i></span>
+                    <p class="text-center text-small text-muted mt-2">creditCard</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-crop"></i></span>
+                    <p class="text-center text-small text-muted mt-2">crop</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-cross"></i></span>
+                    <p class="text-center text-small text-muted mt-2">cross</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-cup"></i></span>
+                    <p class="text-center text-small text-muted mt-2">cup</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-display"></i></span>
+                    <p class="text-center text-small text-muted mt-2">display</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-document"></i></span>
+                    <p class="text-center text-small text-muted mt-2">document</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-dropper"></i></span>
+                    <p class="text-center text-small text-muted mt-2">dropper</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-ellipsis"></i></span>
+                    <p class="text-center text-small text-muted mt-2">ellipsis</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-exclamation"></i></span>
+                    <p class="text-center text-small text-muted mt-2">exclamation</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-eye"></i></span>
+                    <p class="text-center text-small text-muted mt-2">eye</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-eyeClose"></i></span>
+                    <p class="text-center text-small text-muted mt-2">eyeClose</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-file"></i></span>
+                    <p class="text-center text-small text-muted mt-2">file</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-filter"></i></span>
+                    <p class="text-center text-small text-muted mt-2">filter</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-flag"></i></span>
+                    <p class="text-center text-small text-muted mt-2">flag</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-folder"></i></span>
+                    <p class="text-center text-small text-muted mt-2">folder</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-forbidden"></i></span>
+                    <p class="text-center text-small text-muted mt-2">forbidden</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-forward"></i></span>
+                    <p class="text-center text-small text-muted mt-2">forward</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-frown"></i></span>
+                    <p class="text-center text-small text-muted mt-2">frown</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-gear"></i></span>
+                    <p class="text-center text-small text-muted mt-2">gear</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-headphone"></i></span>
+                    <p class="text-center text-small text-muted mt-2">headphone</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-heart"></i></span>
+                    <p class="text-center text-small text-muted mt-2">heart</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-home"></i></span>
+                    <p class="text-center text-small text-muted mt-2">home</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-icono"></i></span>
+                    <p class="text-center text-small text-muted mt-2">icono</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-imac"></i></span>
+                    <p class="text-center text-small text-muted mt-2">imac</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-image"></i></span>
+                    <p class="text-center text-small text-muted mt-2">image</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-indent"></i></span>
+                    <p class="text-center text-small text-muted mt-2">indent</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-infinity"></i></span>
+                    <p class="text-center text-small text-muted mt-2">infinity</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-iphone"></i></span>
+                    <p class="text-center text-small text-muted mt-2">iphone</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-keyboard"></i></span>
+                    <p class="text-center text-small text-muted mt-2">keyboard</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-list"></i></span>
+                    <p class="text-center text-small text-muted mt-2">list</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-locationarrow"></i></span>
+                    <p class="text-center text-small text-muted mt-2">locationarrow</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-macbook"></i></span>
+                    <p class="text-center text-small text-muted mt-2">macbook</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-mail"></i></span>
+                    <p class="text-center text-small text-muted mt-2">mail</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-market"></i></span>
+                    <p class="text-center text-small text-muted mt-2">market</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-meh"></i></span>
+                    <p class="text-center text-small text-muted mt-2">meh</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-microphone"></i></span>
+                    <p class="text-center text-small text-muted mt-2">microphone</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-moon"></i></span>
+                    <p class="text-center text-small text-muted mt-2">moon</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-mouse"></i></span>
+                    <p class="text-center text-small text-muted mt-2">mouse</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-music"></i></span>
+                    <p class="text-center text-small text-muted mt-2">music</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-next"></i></span>
+                    <p class="text-center text-small text-muted mt-2">next</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-nexus"></i></span>
+                    <p class="text-center text-small text-muted mt-2">nexus</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-outdent"></i></span>
+                    <p class="text-center text-small text-muted mt-2">outdent</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-paperclip"></i></span>
+                    <p class="text-center text-small text-muted mt-2">paperclip</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-pause"></i></span>
+                    <p class="text-center text-small text-muted mt-2">pause</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-piano"></i></span>
+                    <p class="text-center text-small text-muted mt-2">piano</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-pin"></i></span>
+                    <p class="text-center text-small text-muted mt-2">pin</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-play"></i></span>
+                    <p class="text-center text-small text-muted mt-2">play</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-plus"></i></span>
+                    <p class="text-center text-small text-muted mt-2">plus</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-power"></i></span>
+                    <p class="text-center text-small text-muted mt-2">power</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-previous"></i></span>
+                    <p class="text-center text-small text-muted mt-2">previous</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-rename"></i></span>
+                    <p class="text-center text-small text-muted mt-2">rename</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-reset"></i></span>
+                    <p class="text-center text-small text-muted mt-2">reset</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-rewind"></i></span>
+                    <p class="text-center text-small text-muted mt-2">rewind</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-rss"></i></span>
+                    <p class="text-center text-small text-muted mt-2">rss</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-ruler"></i></span>
+                    <p class="text-center text-small text-muted mt-2">ruler</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-search"></i></span>
+                    <p class="text-center text-small text-muted mt-2">search</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-share"></i></span>
+                    <p class="text-center text-small text-muted mt-2">share</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-signin"></i></span>
+                    <p class="text-center text-small text-muted mt-2">signin</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-signout"></i></span>
+                    <p class="text-center text-small text-muted mt-2">signout</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-sitemap"></i></span>
+                    <p class="text-center text-small text-muted mt-2">sitemap</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-sliders"></i></span>
+                    <p class="text-center text-small text-muted mt-2">sliders</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-smile"></i></span>
+                    <p class="text-center text-small text-muted mt-2">smile</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-socials"></i></span>
+                    <p class="text-center text-small text-muted mt-2">socials</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-spinner"></i></span>
+                    <p class="text-center text-small text-muted mt-2">spinner</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-stop"></i></span>
+                    <p class="text-center text-small text-muted mt-2">stop</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-sun"></i></span>
+                    <p class="text-center text-small text-muted mt-2">sun</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-support"></i></span>
+                    <p class="text-center text-small text-muted mt-2">support</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-sync"></i></span>
+                    <p class="text-center text-small text-muted mt-2">sync</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-tag"></i></span>
+                    <p class="text-center text-small text-muted mt-2">tag</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-terminal"></i></span>
+                    <p class="text-center text-small text-muted mt-2">terminal</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-textalign"></i></span>
+                    <p class="text-center text-small text-muted mt-2">textalign</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-tiles"></i></span>
+                    <p class="text-center text-small text-muted mt-2">tiles</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-trash"></i></span>
+                    <p class="text-center text-small text-muted mt-2">trash</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-user"></i></span>
+                    <p class="text-center text-small text-muted mt-2">user</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-video"></i></span>
+                    <p class="text-center text-small text-muted mt-2">video</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-volume"></i></span>
+                    <p class="text-center text-small text-muted mt-2">volume</p>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="iprev p-4"><span><i class="hui hui-youtube"></i></span>
+                    <p class="text-center text-small text-muted mt-2">youtube</p>
+                  </div>
+                </div>
+              </div>
+              <div class="vr-block vr-block-two"></div>
+              <div class="px-5">
+                <div class="vr-block rounded-2 bg-light"></div>
+              </div>
+              <div class="vr-block vr-block-four"></div>
+              <h2 class="s-subtitle" id="font-examples">Example Icon Fonts<a class="anchor" href="#font-examples" aria-hidden="true">#</a></h2>
+              <p class="half-lead">
+                Loading in an icon font, as said, is quite easy, and an example of how one would go about doing so is shown below.
+                Once you've creeated your own <code>'myicons.scss'</code> file, it should look something like the example below. Then you simply run the build command, and you'll have a <strong>scoped</strong> <code>'.css'</code> file that can be included in your pug/html.
+              </p><pre class='code ' data-lang='scss'><code><span class="hljs-keyword">@import</span> <span class="hljs-string">"_frmwrk-config/index"</span>;
+<span class="hljs-keyword">@import</span> <span class="hljs-string">"_frmwrk/index"</span>;
+
+<span class="hljs-keyword">@include</span> printBanner(Icons);
+
+<span class="hljs-keyword">@include</span> superclass() {
+  <span class="hljs-keyword">@import</span> <span class="hljs-string">"myicons/list"</span>;
+}
+</code></pre>
+              <h2 class="s-subtitle" id="social-icons">Social Icons<a class="anchor" href="#social-icons" aria-hidden="true">#</a></h2>
+              <p class="doc-intro">A number of brand colors are already built in, simply add their color class to an item, or use the <code>social-icons</code> class to build out an inline list of social media links quickly and easily.</p>
+              <div class="social-wrap">
+                <ul class="social-icons">
+                  <li><a class="facebook" href="#"><i class="rif fa-facebook"></i></a></li>
+                  <li><a class="twitter" href="#"><i class="rif fa-twitter"></i></a></li>
+                  <li><a class="dribbble" href="#"><i class="rif fa-dribbble"></i></a></li>
+                  <li><a class="linkedin" href="#"><i class="rif fa-linkedin"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="vr-block vr-block-lg"></div><!-- Mojo Footer -->
+          <footer class="footer make-background-highlight-light" role="contentinfo" style="background-image:url(../imgs/SceneL@2x.png)" alt="GrungeElement">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-4 offset-md-2"><img class="img-fluid" src="../imgs/MadeWithLove.png" alt="HeartLogo"></div>
+                <div class="col-4 offset-md-2">
+                  <div class="social-wrap">
+                    <ul class="social-icons">
+                      <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                      <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                      <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                      <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div><!-- URL  -->
+  </body>
+</html>

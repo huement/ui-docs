@@ -1,0 +1,112 @@
+//- Main Area Topnav bar
+mixin topNavBar(search,links)
+    .docbar.docbar-dark
+        .docbar-section
+            button.btn.btn-dark.m-1.btn-sm
+                i.hui.hui-bacon-cheeseburger
+        .docbar-section(style="flex: 2 0 0")
+            if search
+                input.form-input.input-sm.mr-2(type="text" placeholder="search")
+            .btns.d-flex
+                each link in links
+                    a(href=link.url, class="text-white btn btn-sm mr-2 ml-1 btn-"+link.color)
+                        | #{link.text}
+                    if link.icon
+                        i(class= link.icon + ' hui')
+    div.vr-block &nbsp;
+
+//- Side Nav Logo + Build Data
+mixin sideNavLogo(data)
+    div.side-container
+        div.logo-container
+            img(src=imgPath+"Logo.png" class="logo img-fluid")
+
+        div.build-container
+            .row.g-0.mx-0.text-center
+                .col
+                    p.build-label Latest Build
+                    p.build-version #{package.version} #{package.buildDate}
+
+
+//- Side Nav Accordions
+mixin sideNavMenu(groups)
+    each pages, key in groups
+        .accordion
+            input(id='accordion-' + key type='checkbox' name='docs-accordion-checkbox' hidden='' checked=(parent === key ? true : false))
+            label.accordion-header.c-hand(for='accordion-' + key)
+                i.hui.hui-document-down.mr-1
+                | #{key}
+            .accordion-body
+                ul.menu.menu-nav
+                    each page,i in pages
+                        li.menu-item
+                            if slug.toLowerCase() != page.name.toLowerCase()
+                                a(href='../' + page.url + '.html')= page.name
+                            else
+                                a.active(href= '../' + page.url + '.html')= page.name
+
+
+mixin docs-heading(id, name)
+    .head-block(id=id)
+        h1.s-title
+            | #{name}
+            a.anchor(href='#'+id aria-hidden='true') #
+        //- if block
+        //-     block
+
+
+mixin docs-subheading(id, name)
+    h2.s-subtitle(id=id)
+        | #{name}
+        a.anchor(href='#'+id aria-hidden='true') #
+
+mixin docs-linebreak(color="dark")
+    .vr-block.vr-block-two
+    div.px-5
+        div(class="vr-block rounded-2 bg-"+color)
+    .vr-block.vr-block-four
+
+mixin docs-alert(color="info")
+    .vr-block.vr-block-two
+    p(class="half-lead rounded-2 p-5 bg-"+color)
+        if block
+            block
+    .vr-block.vr-block-two
+
+mixin docs-icons(data)
+    .row
+        each icon, key in data
+            .col-1
+                .iprev.p-4
+                    span
+                        i(class="hui hui-"+icon.name)
+                    p.text-center.text-small.text-muted.mt-2
+                        | #{icon.name}
+
+
+mixin printTokens(json)
+    p #{json.base-font-size}
+    p #{json.base-line-height}
+    each obj, key in json.chords
+        p #{obj.name}
+        p #{obj.scale}
+        p #{obj.break}
+        p #{obj.text}
+        p #{obj.line}
+        p #{obj.vertical}
+
+
+mixin printStacks(json)
+    .container.colorMain
+        .row.gy-4
+            each colorObj, colorKey in json
+                - var counter = 0;
+                .col-6.col-sm-4
+                    h3.colorTitle #{colorKey}
+                    each sVal, sKey in colorObj
+                        .colorBlock(style="background-color:"+sVal)
+                            if counter <= 4
+                                p.colorLabel.text-white #{sKey}
+                            else
+                                p.colorLabel #{sKey}
+                        - counter++

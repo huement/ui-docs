@@ -1,0 +1,47 @@
+include ../config
+include ../docsConfig
+block config
+include ../mixins/docsUI
+include ../mixins/global
+include ../mixins/form
+
+append config
+    - var prismjs = prismjs || false
+    - var showDebug = showDebug || false
+    - var themeBuilder = themeBuilder || false
+    - var vendorJS = vendorJS || false
+    - var contentClass = contentClass || ''
+
+doctype html
+html(lang= lang)
+    head
+        include ./top
+        link(rel="stylesheet", href=path+"css/docs.css" type="text/css" id="docs_css")
+
+    body(class='no-javascript')
+        script document.body.classList.remove('no-javascript');
+
+        div(class= superClass + " " +"docs-container container-fluid docPage")
+            .row
+                .col-sm-4.col-md-3.sidebar
+                    +sideNavLogo(tokens)
+                    .docs-nav
+                        .accordion-container
+                            +sideNavMenu(pages)
+                .col-sm-8.col-md-9.main-content
+                    #content(class="container " + contentClass + " docs-content")
+                        .main-area.px-xs-0.px-sm-0.px-md-2.px-lg-3.px-xl-3.px-xx-4
+                            +topNavBar(topSearch,topLinks)
+                            block content
+                    include ../partials/footer-docs
+
+        <!-- URL #{envData.url} -->
+
+        block scriptsJS
+            if highlight
+                script(src=path+"js/highlight.js")
+            if prismjs
+                script(src=path+"js/prism.js")
+
+        if showDebug
+            include ../partials/debugger

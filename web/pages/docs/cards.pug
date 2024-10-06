@@ -1,0 +1,136 @@
+extends ../../layout/doc
+
+append config
+  - var icon = "gear"
+  - var metaDesc = 'Flexible and extensible content container with multiple variants and options.'
+  - var parent = 'components'
+  - var slug = 'cards'
+  - var title = 'Cards - Component - Mojo Framework'
+
+
+block content
+  +docs-heading('cards', 'Cards')
+
+  p.doc-intro
+    | A flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options.
+
+  p
+    | Cards are built with as little markup and styles as possible, but still manage to deliver a ton of control and customization. Built with flexbox, they offer easy alignment and mix well with other Bootstrap components. They have no `margin` by default, so use #[a(href="/utilities/spacing") spacing utility classes] as needed.
+
+  p
+    | Below is an example of a basic card with mixed content and a fixed width. Cards have no fixed width to start, so they'll naturally fill the full width of its parent element. This is easily customized with our various  #[a(href="#sizing") sizing options].
+
+
+  :codeblock(lang="html")
+    <div class="card" style="width: 18rem;">
+      <div class="card-img-top" style="height:180px"><div class="placeholder-img">Your Img Here</div></div>
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+
+  +docs-subheading('more-details', 'More Details')
+
+  p
+    | Cards support a wide variety of content, including images, text, list groups, links, and more. The general composition of a card is #[strong One Required] section, the #[code card-body] class, and #[strong Two Optional] sections, the #[code card-header] and the #[code card-footer].
+
+  p
+    | There are so many ways cards can be configured and customized, that there is a lot to cover, so jumping into the deepend, here is a maxed out card component with numerous options set.
+
+  :codeblock(lang="html")
+    <div class="card" style="width: 18rem;">
+      <div class="card-header">
+        Featured
+      </div>
+      <div class="card-img-top" style="height:180px"><div class="placeholder-img">Kitchen Sink</div></div>
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">An item</li>
+        <li class="list-group-item">A second item</li>
+        <li class="list-group-item">A third item</li>
+      </ul>
+      <div class="card-body">
+        <a href="#" class="card-link">Card link</a>
+        <a href="#" class="card-link">Another link</a>
+      </div>
+      <div class="card-footer text-muted">
+        2 days ago
+      </div>
+    </div>
+
+  +docs-subheading('card-even-more','Even More Info')
+
+  p
+    | Cards assume no specific `width` to start, so they'll be 100% wide unless otherwise stated. You can change this as needed with custom CSS, grid classes, grid Sass mixins, or utilities.
+  p
+    | You can quickly change the text alignment of any card—in its entirety or specific parts—with our #[a(href="/utilities/text#text-alignment") text align classes].
+
+
+
+  +docs-subheading('card-nav','Card Navigation')
+
+  p
+    | Add some navigation to a card's header (or block) with the #[a(href="/components/tabs") tabs components].
+
+  :codeblock(lang="html")
+    <div class="card text-center">
+      <div class="card-header">
+        <ul class="nav nav-tabs card-header-tabs">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+
+
+  +docs-subheading('card-images','Card Images')
+
+  p
+    | Cards include a few options for working with images. Choose from appending "image caps" at either end of a card, overlaying images with card content, or simply embedding the image in a card.
+
+
+  :highlightify(lang="html")
+    <div class="card mb-3">
+      <img src="..." class="card-img-top" width="100%" height="180" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+      <img src="..." class="card-img-bottom" width="100%" height="180" alt="...">
+    </div>
+
+  p
+    | Its not recommended to use an image as a background with text overtop of it for legibility and accessability reasons. However, you're the boss of you're own life so do what you want.
+
+
+  +docs-subheading('card-colors', 'Card Colors')
+
+  p.half-lead TODO: Add in Lit.js Card color picker example
+
+  :highlightify(lang="html")
+    <div class="card text-white bg-primary mb-3">
+      <div class="card-header">Header</div>
+      <div class="card-body">
+        <h5 class="card-title">Colored Card Title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>

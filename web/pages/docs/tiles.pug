@@ -1,0 +1,44 @@
+extends ../../layout/doc
+
+append config
+  - var icon = "gear"
+  - var slug = 'tiles'
+  - var parent = 'components'
+  - var title = 'Tiles - Components - Mojo Framework'
+  - var metaDesc = 'Simple module to build 2-dimensional Metro-like, Pinterest-like, or whatever-you-like grids.'
+
+block content
+  +docs-heading('tiles', 'Tiles')
+
+  p.doc-intro
+    | Simple module to build 2-dimensional Metro-like, Pinterest-like, Masonry-like, or whatever-you-like grids.
+
+  .tile.tile-ancestor
+    .tile.tile-vertical.tile-8
+      .tile
+        .tile.tile-parent.tile-vertical
+          article.tile.tile-child.notification.bg-primary
+            p.title Vertical...
+            p.subtitle Top tile
+          article.tile.tile-child.notification.bg-warning
+            p.title ...tiles
+            p.subtitle Bottom tile
+        .tile.tile-parent
+          article.tile.tile-child.notification.bg-info
+            p.title Middle tile
+            p.subtitle With an image
+            figure.image.is-4by3
+              img(src="../imgs/street5.png")
+      .tile.tile-parent
+        article.tile.tile-child.notification.bg-danger
+          p.title Wide tile
+          p.subtitle Aligned with the right tile
+          .content
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    .tile.tile-parent
+      article.tile.tile-child.notification.bg-success
+        .content
+          p.title Tall tile
+          p.subtitle With even more content
+          .content
+            p Led do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum dolor sit amet, consectetur!

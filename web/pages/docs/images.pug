@@ -1,0 +1,46 @@
+extends ../../layout/doc
+
+append config
+  - var icon = "gear"
+  - var metaDesc = 'High quality, open source icon library. Support for multiple themes and custom icons.'
+  - var parent = 'components'
+  - var slug = 'images'
+  - var title = 'Images - Components - Mojo Framework'
+
+
+block content
+  +docs-heading('images', 'Images')
+
+  p.doc-intro
+    | Images play an important role in every website. With Mojo's help, images can easily be moved around, ratio-ed, place-holden, rounded, and maybe a few more things.
+
+  .container
+    .row
+      .col-3
+        .thumbnail
+          .caption
+            | Regular
+
+            br
+          img(src="http://via.placeholder.com/70x70", alt="Element1")
+      .col-3
+        .thumbnail
+          .caption
+            | Rounded
+
+            br
+          img(src="http://via.placeholder.com/70x70", alt="Element1").img-rounded
+      .col-3
+        .thumbnail
+          .caption
+            | Thumbnail
+
+            br
+          img(src="http://via.placeholder.com/70x70", alt="Element1").img-thumbnail
+      .col-3
+        .thumbnail
+          .caption
+            | Circle
+
+            br
+          img(src="http://via.placeholder.com/70x70", alt="Element1").img-circle

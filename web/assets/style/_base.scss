@@ -1,0 +1,393 @@
+// Sass Modules
+@use 'sass:map';
+@use 'sass:list';
+@use 'sass:math';
+@use 'sass:color';
+@use 'sass:meta';
+
+/** DOCS CSS */
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  overflow: auto !important;
+  overflow-x: hidden;
+  background: $body;
+  &.sidebar-visible > .#{$superclass}.docs-container {
+    transform: translateX(200px);
+  }
+}
+
+@each $mapKey, $mMap in $chords {
+  $i: 1;
+  $ht: 5;
+  $scale: map-get($mMap, 'scale');
+  $lH: map-get($mMap, 'lineHeight');
+  $lHpx: map-get($mMap, 'lineHeight_px');
+  $fS: map-get($mMap, 'fontSize');
+
+  /**
+  * @debug HTML BACKGROUND LINES #{$lH}
+  */
+
+  @include respond-below(#{$mapKey}) {
+    $debugLH_rem: $lH * 1rem;
+    $debugLH_px: _px($debugLH_rem);
+    $DLH: round((strip_units($lH) * strip_units($fS)) * 1px);
+    $DSize: round($fS * $lH);
+
+    html {
+      background-image: linear-gradient(hsla(200, 100%, 50%, 0.3) 1px, transparent 1px);
+      background-position: left top;
+      background-size: $DSize $DSize;
+
+      body {
+        box-shadow: 1px 0px 0px hsla(200, 100%, 50%, 0.3), -1px 0px 0px hsla(200, 100%, 50%, 0.3);
+      }
+    }
+  }
+
+  $i: $i + 1;
+  $ht: $ht - 1;
+}
+
+@include cssvars(
+  (
+    active-ratio: $modular-ratio,
+  )
+);
+
+@media screen and (max-width: 1500px) {
+  body.sidebar-visible > .#{$superclass}.docs-container {
+    transform: none;
+  }
+}
+
+//
+// Documentation Main Content
+// -----------------------------------------------------------------------------
+//
+body > .#{$superclass}.docs-container {
+  a {
+    font-weight: 400;
+    color: map.get($mojo-blue, dark);
+    transition: $transition-color;
+
+    &:hover {
+      color: map.get($mojo-blue, light);
+    }
+  }
+
+  //GRID
+  .themed-grid-col {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    background-color: rgba(86, 61, 124, 0.15);
+    border: 1px solid rgba(86, 61, 124, 0.2);
+  }
+
+  .themed-container {
+    padding: 0.75rem;
+    margin-bottom: 1.5rem;
+    background-color: rgba(0, 123, 255, 0.15);
+    border: 1px solid rgba(0, 123, 255, 0.2);
+  }
+
+  pre.code.fullheight {
+    max-height: 100% !important;
+  }
+}
+
+body > .#{$superclass}.docs-container {
+  overflow-x: hidden;
+
+  // WRAP
+  &.off-canvas {
+    min-height: 100vh;
+    position: relative;
+
+    // CONTENT
+    .off-canvas-content {
+      padding: 0;
+
+      .docs-content {
+        .anchor {
+          color: $cyan;
+          display: none;
+          margin-left: 0.2rem;
+          padding: 0 0.2rem;
+          &:focus,
+          &:hover {
+            display: inline;
+            text-decoration: none;
+          }
+        }
+
+        .column {
+          padding: $sz_2;
+        }
+
+        .docs-block {
+          border-radius: $border-radius;
+          padding: $sz_2;
+
+          &.make-bg-medium {
+            background: $gray-500;
+          }
+        }
+
+        .docs-shape {
+          height: 4.8rem;
+          line-height: 1.2rem;
+          padding: 1.8rem 0;
+          width: 4.8rem;
+        }
+
+        .docs-dot {
+          border-radius: 50%;
+          display: inline-block;
+          height: 0.5rem;
+          padding: 0;
+          width: 0.5rem;
+        }
+
+        .docs-table {
+          th,
+          td {
+            padding: 0.75rem 0.25rem;
+          }
+        }
+
+        .docs-color {
+          border-radius: $border-radius;
+          margin: 0.25rem 0;
+          padding: 5rem 0.5rem 0.5rem;
+
+          .color-subtitle {
+            font-size: $sz_4;
+            opacity: 0.75;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  :root {
+    --active-ratio: 1.5;
+  }
+
+  body > .#{$superclass}.docs-container {
+    &.off-canvas {
+      .off-canvas-content {
+        padding: 0;
+
+        .docs-content {
+          padding: 0.5rem 0.5rem 1.5rem 0.5rem;
+          width: 100%;
+          min-height: 1000px;
+
+          & > .main-area {
+            padding: 0;
+            width: 100%;
+          }
+
+          .doc-intro {
+            margin-bottom: $sz_11;
+          }
+        }
+      }
+
+      #sidebar.off-canvas-sidebar {
+        background: $cyan;
+        width: 19rem;
+        min-width: 19rem;
+
+        .side-container {
+          height: 180px;
+          top: 0.5rem;
+
+          .logo-container {
+            .logo {
+              width: 100%;
+              max-width: 18rem;
+              min-height: _rem(100px);
+              min-width: _rem(160px);
+            }
+          }
+
+          .build-container {
+            .build-label {
+              margin: #{$sz_1} 0 0 0;
+              padding: 0;
+              font-size: $sz_3;
+            }
+
+            .build-version {
+              letter-spacing: -0.5px;
+              margin: #{$sz_1} 0 $sz_4 0;
+              padding: 0;
+              font-size: $sz_4;
+            }
+          }
+        }
+
+        .docs-nav {
+          width: 19rem;
+          padding: 0.5rem;
+          top: 16rem;
+
+          .accordion {
+            margin-bottom: 0.25rem;
+
+            input {
+              & ~ .accordion-header {
+                font-size: $sz_5;
+                font-weight: 450;
+              }
+            }
+
+            .menu {
+              //margin: vr-block(1) 0 vr-block(1) $sz_3;
+              .menu-item {
+                font-size: $sz_4;
+                padding-left: $sz_2;
+                margin-bottom: vr-block(0.5);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  body > .#{$superclass}.docs-container {
+    &.off-canvas {
+      .off-canvas-toggle {
+        left: 0.5rem;
+      }
+
+      .grid-hero {
+        h2 {
+          font-size: 0.9rem;
+        }
+        .card {
+          padding: 0;
+        }
+      }
+
+      .docs-navbar {
+        .btns {
+          right: 0.9rem;
+        }
+      }
+
+      .grid-hero {
+        .docs-brand {
+          left: 0.9rem;
+        }
+      }
+
+      .docs-sidebar {
+        .docs-brand {
+          margin: 0.85rem 1rem;
+        }
+
+        .docs-nav {
+          padding: 0.5rem 1rem;
+        }
+      }
+
+      .docs-content {
+        padding: 0 0.5rem;
+
+        .docs-block {
+          padding: $vertical-unit $sz_2;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  body > .#{$superclass}.docs-container {
+    &.off-canvas {
+      .off-canvas-toggle {
+        z-index: $zindex-3;
+      }
+
+      .off-canvas-content {
+        width: 100%;
+      }
+
+      .docs-sidebar {
+        .docs-brand {
+          margin: 0.85rem 1.5rem;
+          padding: 0;
+          position: static;
+        }
+
+        .docs-nav {
+          margin-top: 1rem;
+          position: static;
+        }
+
+        .menu .menu-item > a {
+          padding: 0.3rem 0.4rem;
+        }
+      }
+
+      .docs-navbar {
+        backdrop-filter: blur(5px);
+        background: $primary;
+        left: 0;
+      }
+
+      .docs-content {
+        min-width: auto;
+        padding: 0 1.5rem;
+        width: 100%;
+
+        // .s-title,
+        // .s-subtitle {
+        //   padding-top: 5rem;
+        //   position: static;
+
+        //   &::before {
+        //     content: none;
+        //   }
+        // }
+      }
+
+      .section-hero {
+        .s-brand {
+          height: 5rem;
+          padding: 1.5rem 0.5rem;
+          text-align: center;
+          width: 100%;
+
+          .s-logo {
+            height: auto;
+          }
+
+          img {
+            height: 3.2rem;
+            width: 3.2rem;
+          }
+
+          h2 {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

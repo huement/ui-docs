@@ -1,0 +1,374 @@
+[
+  {
+    "name": "arrow",
+    "url": "build/scss/icono/icons/arrow"
+  },
+  {
+    "name": "asterisk",
+    "url": "build/scss/icono/icons/asterisk"
+  },
+  {
+    "name": "bars",
+    "url": "build/scss/icono/icons/bars"
+  },
+  {
+    "name": "bluetooth",
+    "url": "build/scss/icono/icons/bluetooth"
+  },
+  {
+    "name": "book",
+    "url": "build/scss/icono/icons/book"
+  },
+  {
+    "name": "bookmark",
+    "url": "build/scss/icono/icons/bookmark"
+  },
+  {
+    "name": "calendar",
+    "url": "build/scss/icono/icons/calendar"
+  },
+  {
+    "name": "camera",
+    "url": "build/scss/icono/icons/camera"
+  },
+  {
+    "name": "caret",
+    "url": "build/scss/icono/icons/caret"
+  },
+  {
+    "name": "cart",
+    "url": "build/scss/icono/icons/cart"
+  },
+  {
+    "name": "chain",
+    "url": "build/scss/icono/icons/chain"
+  },
+  {
+    "name": "chart",
+    "url": "build/scss/icono/icons/chart"
+  },
+  {
+    "name": "check",
+    "url": "build/scss/icono/icons/check"
+  },
+  {
+    "name": "circle",
+    "url": "build/scss/icono/icons/circle"
+  },
+  {
+    "name": "clock",
+    "url": "build/scss/icono/icons/clock"
+  },
+  {
+    "name": "comment",
+    "url": "build/scss/icono/icons/comment"
+  },
+  {
+    "name": "creditCard",
+    "url": "build/scss/icono/icons/creditcard"
+  },
+  {
+    "name": "crop",
+    "url": "build/scss/icono/icons/crop"
+  },
+  {
+    "name": "cross",
+    "url": "build/scss/icono/icons/cross"
+  },
+  {
+    "name": "cup",
+    "url": "build/scss/icono/icons/cup"
+  },
+  {
+    "name": "display",
+    "url": "build/scss/icono/icons/display"
+  },
+  {
+    "name": "document",
+    "url": "build/scss/icono/icons/document"
+  },
+  {
+    "name": "dropper",
+    "url": "build/scss/icono/icons/dropper"
+  },
+  {
+    "name": "ellipsis",
+    "url": "build/scss/icono/icons/ellipsis"
+  },
+  {
+    "name": "exclamation",
+    "url": "build/scss/icono/icons/exclamation"
+  },
+  {
+    "name": "eye",
+    "url": "build/scss/icono/icons/eye"
+  },
+  {
+    "name": "eyeClose",
+    "url": "build/scss/icono/icons/eyeclose"
+  },
+  {
+    "name": "file",
+    "url": "build/scss/icono/icons/file"
+  },
+  {
+    "name": "filter",
+    "url": "build/scss/icono/icons/filter"
+  },
+  {
+    "name": "flag",
+    "url": "build/scss/icono/icons/flag"
+  },
+  {
+    "name": "folder",
+    "url": "build/scss/icono/icons/folder"
+  },
+  {
+    "name": "forbidden",
+    "url": "build/scss/icono/icons/forbidden"
+  },
+  {
+    "name": "forward",
+    "url": "build/scss/icono/icons/forward"
+  },
+  {
+    "name": "frown",
+    "url": "build/scss/icono/icons/frown"
+  },
+  {
+    "name": "gear",
+    "url": "build/scss/icono/icons/gear"
+  },
+  {
+    "name": "headphone",
+    "url": "build/scss/icono/icons/headphone"
+  },
+  {
+    "name": "heart",
+    "url": "build/scss/icono/icons/heart"
+  },
+  {
+    "name": "home",
+    "url": "build/scss/icono/icons/home"
+  },
+  {
+    "name": "icono",
+    "url": "build/scss/icono/icons/icono"
+  },
+  {
+    "name": "imac",
+    "url": "build/scss/icono/icons/imac"
+  },
+  {
+    "name": "image",
+    "url": "build/scss/icono/icons/image"
+  },
+  {
+    "name": "indent",
+    "url": "build/scss/icono/icons/indent"
+  },
+  {
+    "name": "infinity",
+    "url": "build/scss/icono/icons/infinity"
+  },
+  {
+    "name": "iphone",
+    "url": "build/scss/icono/icons/iphone"
+  },
+  {
+    "name": "keyboard",
+    "url": "build/scss/icono/icons/keyboard"
+  },
+  {
+    "name": "list",
+    "url": "build/scss/icono/icons/list"
+  },
+  {
+    "name": "locationarrow",
+    "url": "build/scss/icono/icons/locationarrow"
+  },
+  {
+    "name": "macbook",
+    "url": "build/scss/icono/icons/macbook"
+  },
+  {
+    "name": "mail",
+    "url": "build/scss/icono/icons/mail"
+  },
+  {
+    "name": "market",
+    "url": "build/scss/icono/icons/market"
+  },
+  {
+    "name": "meh",
+    "url": "build/scss/icono/icons/meh"
+  },
+  {
+    "name": "microphone",
+    "url": "build/scss/icono/icons/microphone"
+  },
+  {
+    "name": "moon",
+    "url": "build/scss/icono/icons/moon"
+  },
+  {
+    "name": "mouse",
+    "url": "build/scss/icono/icons/mouse"
+  },
+  {
+    "name": "music",
+    "url": "build/scss/icono/icons/music"
+  },
+  {
+    "name": "next",
+    "url": "build/scss/icono/icons/next"
+  },
+  {
+    "name": "nexus",
+    "url": "build/scss/icono/icons/nexus"
+  },
+  {
+    "name": "outdent",
+    "url": "build/scss/icono/icons/outdent"
+  },
+  {
+    "name": "paperclip",
+    "url": "build/scss/icono/icons/paperclip"
+  },
+  {
+    "name": "pause",
+    "url": "build/scss/icono/icons/pause"
+  },
+  {
+    "name": "piano",
+    "url": "build/scss/icono/icons/piano"
+  },
+  {
+    "name": "pin",
+    "url": "build/scss/icono/icons/pin"
+  },
+  {
+    "name": "play",
+    "url": "build/scss/icono/icons/play"
+  },
+  {
+    "name": "plus",
+    "url": "build/scss/icono/icons/plus"
+  },
+  {
+    "name": "power",
+    "url": "build/scss/icono/icons/power"
+  },
+  {
+    "name": "previous",
+    "url": "build/scss/icono/icons/previous"
+  },
+  {
+    "name": "rename",
+    "url": "build/scss/icono/icons/rename"
+  },
+  {
+    "name": "reset",
+    "url": "build/scss/icono/icons/reset"
+  },
+  {
+    "name": "rewind",
+    "url": "build/scss/icono/icons/rewind"
+  },
+  {
+    "name": "rss",
+    "url": "build/scss/icono/icons/rss"
+  },
+  {
+    "name": "ruler",
+    "url": "build/scss/icono/icons/ruler"
+  },
+  {
+    "name": "search",
+    "url": "build/scss/icono/icons/search"
+  },
+  {
+    "name": "share",
+    "url": "build/scss/icono/icons/share"
+  },
+  {
+    "name": "signin",
+    "url": "build/scss/icono/icons/signin"
+  },
+  {
+    "name": "signout",
+    "url": "build/scss/icono/icons/signout"
+  },
+  {
+    "name": "sitemap",
+    "url": "build/scss/icono/icons/sitemap"
+  },
+  {
+    "name": "sliders",
+    "url": "build/scss/icono/icons/sliders"
+  },
+  {
+    "name": "smile",
+    "url": "build/scss/icono/icons/smile"
+  },
+  {
+    "name": "socials",
+    "url": "build/scss/icono/icons/socials"
+  },
+  {
+    "name": "spinner",
+    "url": "build/scss/icono/icons/spinner"
+  },
+  {
+    "name": "stop",
+    "url": "build/scss/icono/icons/stop"
+  },
+  {
+    "name": "sun",
+    "url": "build/scss/icono/icons/sun"
+  },
+  {
+    "name": "support",
+    "url": "build/scss/icono/icons/support"
+  },
+  {
+    "name": "sync",
+    "url": "build/scss/icono/icons/sync"
+  },
+  {
+    "name": "tag",
+    "url": "build/scss/icono/icons/tag"
+  },
+  {
+    "name": "terminal",
+    "url": "build/scss/icono/icons/terminal"
+  },
+  {
+    "name": "textalign",
+    "url": "build/scss/icono/icons/textalign"
+  },
+  {
+    "name": "tiles",
+    "url": "build/scss/icono/icons/tiles"
+  },
+  {
+    "name": "trash",
+    "url": "build/scss/icono/icons/trash"
+  },
+  {
+    "name": "user",
+    "url": "build/scss/icono/icons/user"
+  },
+  {
+    "name": "video",
+    "url": "build/scss/icono/icons/video"
+  },
+  {
+    "name": "volume",
+    "url": "build/scss/icono/icons/volume"
+  },
+  {
+    "name": "youtube",
+    "url": "build/scss/icono/icons/youtube"
+  }
+]

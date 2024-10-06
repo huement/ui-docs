@@ -1,0 +1,127 @@
+extends ../../layout/doc
+
+append config
+  - var icon = "gear"
+  - var metaDesc = 'Accordions are used to toggle sections of content. Mojo Framework is a lightweight, responsive and modern CSS framework for faster and extensible development.'
+  - var parent = 'components'
+  - var slug = 'accordions'
+  - var title = 'Accordions - Components - Mojo Framework'
+
+block content
+  +docs-heading('accordions', 'Accordions')
+
+  p.doc-intro Accordions are used to toggle sections of content.
+
+  div.p-10
+    .docs-demo.row
+      .col-lg-6.col-md-12
+        .accordion
+          input#accordion-1(type="radio" name="accordion-radio" hidden="" checked="")
+          label.accordion-header.c-hand(for="accordion-1")
+            +iFont(iconPrefix, "ion", "md-arrow-dropright")
+            | Elements
+          .accordion-body
+            ul.menu.menu-nav
+              li.menu-item
+                a(href="#accordions") Element 1
+              li.menu-item
+                a(href="#accordions") Element 2
+        .accordion
+          input#accordion-2(type="radio" name="accordion-radio" hidden="")
+          label.accordion-header.c-hand(for="accordion-2")
+            +iFont(iconPrefix, "ion", "md-arrow-dropright")
+            | Layout
+          .accordion-body
+            ul.menu.menu-nav
+              li.menu-item
+                a(href="#accordions") Layout 1
+              li.menu-item
+                a(href="#accordions") Layout 2
+        .accordion
+          input#accordion-3(type="radio" name="accordion-radio" hidden="")
+          label.accordion-header.c-hand(for="accordion-3")
+            +iFont(iconPrefix, "ion", "md-arrow-dropright")
+            | Components
+          .accordion-body
+            ul.menu.menu-nav
+              li.menu-item
+                a(href="#accordions") Component 1
+              li.menu-item
+                a(href="#accordions") Component 2
+      .col-lg-6.col-md-12
+        .accordion
+          input#accordion-4(type="checkbox" name="accordion-checkbox" hidden="" checked="")
+          label.accordion-header.c-hand(for="accordion-4")
+            | Elements
+          .accordion-body
+            ul.menu.menu-nav
+              li.menu-item
+                a(href="#accordions") Element 1
+              li.menu-item
+                a(href="#accordions") Element 2
+        .accordion
+          input#accordion-5(type="checkbox" name="accordion-checkbox" hidden="")
+          label.accordion-header.c-hand(for="accordion-5")
+            | Layout
+          .accordion-body
+            ul.menu.menu-nav
+              li.menu-item
+                a(href="#accordions") Layout 1
+              li.menu-item
+                a(href="#accordions") Layout 2
+        .accordion
+          input#accordion-6(type="checkbox" name="accordion-checkbox" hidden="")
+          label.accordion-header.c-hand(for="accordion-6")
+            | Components
+          .accordion-body
+            ul.menu.menu-nav
+              li.menu-item
+                a(href="#accordions") Component 1
+              li.menu-item
+                a(href="#accordions") Component 2
+
+
+  :highlightify(lang="html")
+    <!-- standard Accordions example -->
+    <div class="accordion">
+      <input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
+      <label class="accordion-header" for="accordion-1">
+        <i class="icon icon-arrow-right mr-1"></i>
+        Title
+      </label>
+      <div class="accordion-body">
+        <!-- Accordions content -->
+      </div>
+    </div>
+
+    <!-- mutually exclusive Accordions example (with same input names) -->
+    <div class="accordion">
+      <input type="radio" id="accordion-1" name="accordion-radio" hidden>
+      <label class="accordion-header" for="accordion-1">
+        Title
+      </label>
+      <div class="accordion-body">
+        <!-- Accordions content -->
+      </div>
+    </div>
+
+  p
+    | Alternatively, you can use #[code details] and #[code summary] instead of #[code input] radio or checkbox trick.
+    | Add the #[code open] attribute to #[code details] to expand it.
+    | Microsoft Edge support is #[a(href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/detailssummary/" target="_blank") under consideration].
+
+  .vr-block
+
+  :highlightify(lang="html")
+    <!-- details and summary Accordions example -->
+    <details class="accordion" open>
+      <summary class="accordion-header">
+        <i class="icon icon-arrow-right mr-1"></i>
+        Title
+      </summary>
+      <div class="accordion-body">
+        <!-- Accordions content -->
+      </div>
+    </details>
+
+  .vr-block.vr-block-lg

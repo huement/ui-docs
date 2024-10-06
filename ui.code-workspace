@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../mojo"
+		}
+	],
+	"settings": {
+		"favorites.resources": [
+			{
+				"filePath": "bin/pug.cjs",
+				"group": "Default"
+			},
+			{
+				"filePath": "package.json",
+				"group": "Default"
+			}
+		]
+	}
+}

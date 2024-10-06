@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Album",
+    "url": "templates/album"
+  },
+  {
+    "name": "Blog",
+    "url": "templates/blog"
+  },
+  {
+    "name": "Cover",
+    "url": "templates/cover"
+  },
+  {
+    "name": "Jollybar",
+    "url": "templates/jollybar"
+  },
+  {
+    "name": "Pricing",
+    "url": "templates/pricing"
+  },
+  {
+    "name": "Showoff",
+    "url": "templates/showoff"
+  },
+  {
+    "name": "Starter",
+    "url": "templates/starter"
+  }
+]

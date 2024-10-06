@@ -1,0 +1,42 @@
+extends ../../layout/doc
+
+append config
+  - var slug = 'cursors'
+  - var parent = 'utilities'
+  - var title = 'Cursor utilities - Utilities - Mojo Framework'
+  - var metaDesc = 'Cursor utilities specify which mouse cursor to display when mouseover. Mojo Framework is a lightweight, responsive and modern CSS framework for faster and extensible development.'
+
+block content
+  +docs-heading('cursors', 'Cursor utilities')
+
+  p.lead Cursor utilities specify which mouse cursor to display when mouseover.
+
+
+  .docs-demo.row.no-gutters
+    .col-sm-6.col-md-4.mb-4.pr-md-3
+      .make-background-lightest.docs-block.cursor-hand cursor-hand
+    .col-sm-6.col-md-4.mb-4
+      .make-background-lightest.docs-block.cursor-move cursor-move
+    .col-sm-6.col-md-4.mb-4.pl-md-3
+      .make-background-lightest.docs-block.cursor-zoom-in cursor-zoom-in
+    .col-sm-6.col-md-4.mb-4.pr-md-3
+      .make-background-lightest.docs-block.cursor-zoom-out cursor-zoom-out
+    .col-sm-6.col-md-4.mb-4
+      .make-background-lightest.docs-block.cursor-not-allowed cursor-not-allowed
+    .col-sm-6.col-md-4.mb-4.pl-md-3
+      .make-background-lightest.docs-block.cursor-auto cursor-auto
+
+
+  :highlightify(lang="html")
+    <!-- cursor: hand; -->
+    <div class="cursor-hand"></div>
+    <!-- cursor: move; -->
+    <div class="cursor-move"></div>
+    <!-- cursor: zoom-in; -->
+    <div class="cursor-zoom-in"></div>
+    <!-- cursor: zoom-out; -->
+    <div class="cursor-zoom-out"></div>
+    <!-- cursor: not-allowed; -->
+    <div class="cursor-not-allowed"></div>
+    <!-- cursor: auto; -->
+    <div class="cursor-auto"></div>

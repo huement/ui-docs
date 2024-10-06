@@ -1,0 +1,283 @@
+extends ../../layout/doc
+
+append config
+  - var icon = "gear"
+  - var metaDesc = 'The Hero container shows key featured content or information.'
+  - var parent = 'components'
+  - var slug = 'hero'
+  - var title = 'Hero - Components - Mojo Framework'
+
+
+block content
+  +docs-heading('hero', 'Hero')
+
+  .docs-demo
+    p.doc-intro
+      | The hero component allows you to add a #[strong full width banner] to your webpage, which can optionally cover the full height of the page as well.
+
+    p.doc-intro
+      | The basic requirement of this component are:
+
+    ul
+      li
+        code hero
+        |  as the main container
+      li
+        code hero-body
+        |  as a direct child, in which you can put all your content
+
+    p
+      | For the
+      a(href="#fullheight-hero") fullheight hero
+      |  to work, you will also need a #[code hero-head] and a #[code hero-foot]. More info on hero sections is covered below.
+
+  +docs-subheading('examples',"Examples")
+
+  :codeblock(lang="html")
+    <section class="hero">
+      <div class="hero-body">
+        <p class="title">
+          Qute Quips
+        </p>
+        <p class="subtitle">
+          pithy purple psuedo prose
+        </p>
+      </div>
+    </section>
+
+  +docs-subheading('colors',"Color Example")
+  p
+    | As with buttons, you can choose one of the #[strong 8 different colors]!
+
+  :codeblock(lang="html")
+    <div class="hero bg-dark">
+      <div class="hero-body">
+        <p class="title">
+          deep down dark
+        </p>
+        <p class="subtitle">
+          Everyday Evermore Evening
+        </p>
+      </div>
+    </div>
+
+  .docs-demo
+    +docs-subheading('sizing',"Sizing")
+
+    p
+      | You can have even more imposing banners by using one of #[strong 5 different sizes]
+
+    ul.code-list.list-seperated
+      li
+        code is-small
+      li
+        code is-medium
+      li
+        code is-large
+      li
+        code is-halfheight
+      li
+        code is-fullheight
+
+
+  :codeblock(lang="html")
+    <div class="hero hero-small bg-primary">
+      <div class="hero-body">
+        <p class="title">
+          Small Super Suit
+        </p>
+        <p class="subtitle">
+          ready steady teddy unleady
+        </p>
+      </div>
+    </div>
+
+  .vr-block
+
+  :codeblock(lang="html")
+    <div class="hero hero-medium bg-secondary">
+      <div class="hero-body">
+        <p class="title">
+          Mr & Mrs Medium
+        </p>
+        <p class="subtitle">
+          meet meat more moar mail male
+        </p>
+      </div>
+    </div>
+
+  .vr-block.vr-block-two
+
+  +docs-subheading('tabs',"Tab Buttons")
+  p
+    | Heros are more than just a pretty face. They have support for built in navigation elements. The below example shows off how easy it is to create a complex single page, full sized layout by using the navs & tabs add-ons.
+  p
+    | The markup for this is straightforward. It is building on the basic page hierarchy used in everyday regular webpages.
+  p
+    | Instead of having just a body, you can add either a top, bottom, or both sections and fill them with tabs or a navbar. Its very versatile and modular. To get started we lay things out with a simple layout, wrap everything in a
+    code .hero
+    | class, and then instead of just a body, fill that with 3 sections
+    code .hero-head
+    | and
+    code .hero-body
+    | and
+    code .hero-foot
+    | and then the desired list of links.
+
+  :highlightify(lang="html")
+    <section class="hero hero-medium bg-warning">
+      <!-- Hero head: will stick at the top -->
+      <div class="hero-head">
+        <nav class="navbar">
+          <div class="container">
+            <div class="navbar-brand">
+              <a class="navbar-item">
+                <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">
+              </a>
+              <span class="navbar-burger" data-target="navbarMenuHeroA">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+            </div>
+            <div id="navbarMenuHeroA" class="navbar-menu">
+              <div class="navbar-end">
+                <a class="navbar-item is-active">
+                  Home
+                </a>
+                <a class="navbar-item">
+                  Examples
+                </a>
+                <a class="navbar-item">
+                  Documentation
+                </a>
+                <span class="navbar-item">
+                  <a class="button is-primary is-inverted">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Download</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- Hero content: will be in the middle -->
+      <div class="hero-body">
+        <div class="container text-centered">
+          <p class="title">
+            NavBar Example
+          </p>
+          <p class="subtitle">
+            isnt mojo just neato sweeto?
+          </p>
+        </div>
+      </div>
+      <!-- Hero footer: will stick at the bottom -->
+      <div class="hero-foot">
+        <nav class="hero-tabs">
+          <div class="container">
+            <ul class="tabs">
+              <li class="tab-item is-active"><a>Overview</a></li>
+              <li class="tab-item"><a>Modifiers</a></li>
+              <li class="tab-item"><a>Grid</a></li>
+              <li class="tab-item"><a>Elements</a></li>
+              <li class="tab-item"><a>Components</a></li>
+              <li class="tab-item"><a>Layout</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </section>
+
+  .vr-block
+
+  :codeblock(lang="html")
+    <div class="hero hero-medium bg-secondary">
+      <div class="hero-body">
+        <p class="title">
+          Mr & Mrs Medium
+        </p>
+        <p class="subtitle">
+          meet meat more moar mail male
+        </p>
+      </div>
+    </div>
+
+  .vr-block.vr-block-two
+
+  +docs-subheading('tabs',"Tab Buttons")
+  p
+    | The other option for adding in functionality is by declaring a navigation toolbar, or "navbar" if you will.
+
+  :codeblock(lang="html")
+    <section class="hero bg-primary hero-medium">
+      <!-- Hero head: will stick at the top -->
+      <div class="hero-head">
+        <nav class="navbar">
+          <div class="container">
+            <div class="navbar-brand">
+              <a class="navbar-item">
+                <img src="{{ site.url }}/images/bulma-type-white.png" alt="Logo">
+              </a>
+              <span class="navbar-burger" data-target="navbarMenuHeroA">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+            </div>
+            <div id="navbarMenuHeroA" class="navbar-menu">
+              <div class="navbar-end">
+                <a class="navbar-item is-active">
+                  Home
+                </a>
+                <a class="navbar-item">
+                  Examples
+                </a>
+                <a class="navbar-item">
+                  Documentation
+                </a>
+                <span class="navbar-item">
+                  <a class="button is-primary is-inverted">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Download</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Hero content: will be in the middle -->
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <p class="title">
+            Title
+          </p>
+          <p class="subtitle">
+            Subtitle
+          </p>
+        </div>
+      </div>
+
+      <!-- Hero footer: will stick at the bottom -->
+      <div class="hero-foot">
+        <nav class="hero-tabs">
+          <div class="container">
+            <ul class="tabs">
+              <li class="tab-item is-active"><a>Overview</a></li>
+              <li class="tab-item"><a>Modifiers</a></li>
+              <li class="tab-item"><a>Grid</a></li>
+              <li class="tab-item"><a>Elements</a></li>
+              <li class="tab-item"><a>Components</a></li>
+              <li class="tab-item"><a>Layout</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+   </section>

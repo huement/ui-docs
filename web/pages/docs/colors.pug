@@ -1,0 +1,107 @@
+extends ../../layout/doc
+
+append config
+  - var icon = "text"
+  - var slug = 'colors'
+  - var parent = 'style-guide'
+  - var title = 'Colors - Style Guide - Mojo Framework'
+  - var metaDesc = 'Color utilities are used for changing colors for text, link and background. Mojo Framework is a lightweight, responsive and modern CSS framework for faster and extensible development.'
+
+block content
+  +docs-heading('colors', 'Color Palette')
+
+  .docs-demo
+    p.doc-intro
+      | Colors are such an important part of any project. This framework makes sure they are treated with importance. There are a number of tools and functions allowing for ease of generation and/or manipulation. The tools also ensure apporpiate contrasts for legibility, and proper harmony for overally beauty.
+
+    p
+      | The colors can be pulled in via SCSS #[code $variables] and or #[code .text-color] classes, depending on the color. The main colors (red, green blue etc) have classes, while their individual color stacks (red-100, red-200, red-300 etc) are referenced via variables.
+
+    p
+      | The colors are generated via a JSON tokens file #[code colors.json] found in the #[code tokens/] directory. Once the values are configured to the desired theme, simply run the CLI program to have the new theme and stacks automatically generated and SCSS updated like magic.
+
+  .vr-block.vr-block-two
+
+  +printStacks(colorStacks)
+
+  .vr-block.vr-block-two
+
+  +docs-subheading('colors-text', 'Text colors')
+
+  .docs-demo.container
+    .row
+      .col-6
+        p
+          span.text-primary primary color
+        p
+          span.text-secondary secondary color
+        p
+          span.text-dark dark color
+        p
+          span.text-gray gray color
+        p
+          span.text-light.bg-dark.p-1.rounded light color
+        p
+          span.text-success success color
+        p
+          span.text-warning warning color
+        p
+          span.text-error error color
+      .col-6
+        p
+          a.text-primary.p-1(href="#colors") primary link
+        p
+          a.text-secondary.p-1(href="#colors") secondary link
+        p
+          a.text-dark.p-1(href="#colors") dark link
+        p
+          a.text-gray.p-1(href="#colors") gray link
+        p
+          a.text-light.bg-dark.p-1.rounded(href="#colors") light link
+        p
+          a.text-success.p-1(href="#colors") success link
+        p
+          a.text-warning.p-1(href="#colors") warning link
+        p
+          a.text-error.p-1(href="#colors") error link
+
+  :highlightify(lang="html")
+    <span class="text-primary">primary color</span>
+    <span class="text-secondary">secondary color</span>
+    <span class="text-dark">dark color</span>
+    <span class="text-gray">gray color</span>
+    <span class="text-light">light color</span>
+    <span class="text-success">success color</span>
+    <span class="text-warning">warning color</span>
+    <span class="text-error">error color</span>
+
+
+  +docs-subheading('colors-background', 'Background colors')
+
+  .docs-demo.container
+    .row
+      .col-12
+        p
+          span.bg-primary.p-1.rounded primary bg
+        p
+          span.bg-secondary.text-primary.p-1.rounded secondary bg
+        p
+          span.bg-dark.p-1.rounded dark bg
+        p
+          span.make-background-muted.p-1.rounded gray bg
+        p
+          span.bg-success.p-1.rounded success bg
+        p
+          span.bg-warning.p-1.rounded warning bg
+        p
+          span.bg-error.p-1.rounded error bg
+
+
+  :highlightify(lang="html")
+    <div class="bg-primary">primary bg</div>
+    <div class="bg-secondary">secondary bg</div>
+    <div class="bg-dark">dark bg</div>
+    <div class="bg-gray">gray bg</div>
+    <div class="bg-success">success bg</div>
+    <div class="bg-warning">warning bg</div>
+    <div class="bg-error">error bg</div>

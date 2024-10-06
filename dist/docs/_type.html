@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en.US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta property="og:url" content="https://huement.github.io/ui/">
+    <meta property="og:type" content="website">
+    <meta property="description" content="Testing out the SCSS Library with an easy to use testbed">
+    <meta property="og:title" content="Mojo Typography Laboratory">
+    <meta property="og:image" content="https://huement.github.io/ui/imgs/Logo.png">
+    <meta property="og:description" content="Testing out the SCSS Library with an easy to use testbed">
+    <meta property="og:site_name" content="Mojo Typography Laboratory - v0.5.0">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@huement/ui">
+    <meta name="twitter:creator" content="@huement/ui">
+    <meta name="twitter:title" content="Mojo Typography Laboratory">
+    <meta name="twitter:description" content="Testing out the SCSS Library with an easy to use testbed">
+    <meta name="twitter:image" content="https://huement.github.io/ui/imgs/Logo.png">
+    <meta charset="UTF-8">
+    <title>Mojo Typography Laboratory</title>
+    <meta name="description" content="Testing out the SCSS Library with an easy to use testbed">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="../favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../favicon/favicon-16x16.png" sizes="16x16">
+    <link href="../favicon/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <!-- [if lt IE 9]><script language="javascript" type="text/javascript" src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <link rel="stylesheet" href="../mojo.css?token=0.5.0" type="text/css" id="hui_css">
+    <link rel="stylesheet" href="../hi/icons.css?token=0.5.0" type="text/css" id="hui_icons">
+    <link rel="stylesheet" href="../css/docs.css" type="text/css" id="docs_css">
+  </head>
+  <body class="no-javascript">
+    <script>document.body.classList.remove('no-javascript');</script>
+    <div class="mojo docs-container container-fluid docPage">
+      <div class="row">
+        <div class="col-sm-4 col-md-3 sidebar">
+          <div class="side-container">
+            <div class="logo-container"><img class="logo img-fluid" src="../imgs/Logo.png"/></div>
+            <div class="build-container">
+              <div class="row g-0 mx-0 text-center">
+                <div class="col">
+                  <p class="build-label">Latest Build</p>
+                  <p class="build-version">0.5.0 Mon Sep 23 2024</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="docs-nav">
+            <div class="accordion-container">
+              <div class="accordion">
+                <input id="accordion-getting-started" type="checkbox" name="docs-accordion-checkbox" hidden=""/>
+                <label class="accordion-header c-hand" for="accordion-getting-started"><i class="hui hui-document-down mr-1"></i>getting-started</label>
+                <div class="accordion-body">
+                  <ul class="menu menu-nav">
+                    <li class="menu-item"><a href="../docs/installation.html">Installation</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/tokens.html">Tokens</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion">
+                <input id="accordion-style-guide" type="checkbox" name="docs-accordion-checkbox" hidden="" checked="checked"/>
+                <label class="accordion-header c-hand" for="accordion-style-guide"><i class="hui hui-document-down mr-1"></i>style-guide</label>
+                <div class="accordion-body">
+                  <ul class="menu menu-nav">
+                    <li class="menu-item"><a href="../docs/colors.html">Colors</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/templates.html">Templates</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/type-heading.html">Type-heading</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/typography.html">Typography</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/vert-rhythm.html">Vert-rhythm</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion">
+                <input id="accordion-layout" type="checkbox" name="docs-accordion-checkbox" hidden=""/>
+                <label class="accordion-header c-hand" for="accordion-layout"><i class="hui hui-document-down mr-1"></i>layout</label>
+                <div class="accordion-body">
+                  <ul class="menu menu-nav">
+                    <li class="menu-item"><a href="../docs/bs5-grid.html">Bs5-grid</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/containers.html">Containers</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/empty.html">Empty</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/gutters.html">Gutters</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/navbar.html">Navbar</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/off-canvas.html">Off-canvas</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/responsive.html">Responsive</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/tables.html">Tables</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion">
+                <input id="accordion-components" type="checkbox" name="docs-accordion-checkbox" hidden=""/>
+                <label class="accordion-header c-hand" for="accordion-components"><i class="hui hui-document-down mr-1"></i>components</label>
+                <div class="accordion-body">
+                  <ul class="menu menu-nav">
+                    <li class="menu-item"><a href="../docs/accordions.html">Accordions</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/alerts.html">Alerts</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/badges.html">Badges</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/buttons.html">Buttons</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/cards.html">Cards</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/dropdown.html">Dropdown</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/forms.html">Forms</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/hero.html">Hero</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/icons.html">Icons</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/images.html">Images</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/labels.html">Labels</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/lists.html">Lists</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/menu.html">Menu</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/modal.html">Modal</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/panels.html">Panels</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/snaps.html">Snaps</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/tabs.html">Tabs</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/tags.html">Tags</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/tiles.html">Tiles</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion">
+                <input id="accordion-utilities" type="checkbox" name="docs-accordion-checkbox" hidden=""/>
+                <label class="accordion-header c-hand" for="accordion-utilities"><i class="hui hui-document-down mr-1"></i>utilities</label>
+                <div class="accordion-body">
+                  <ul class="menu menu-nav">
+                    <li class="menu-item"><a href="../docs/_blank.html">_blank</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/cursors.html">Cursors</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/display.html">Display</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/divider.html">Divider</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/functions.html">Functions</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/loading.html">Loading</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/position.html">Position</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/shapes.html">Shapes</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/text.html">Text</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-8 col-md-9 main-content">
+          <div class="container  docs-content" id="content">
+            <div class="main-area px-xs-0 px-sm-0 px-md-2 px-lg-3 px-xl-3 px-xx-4">
+              <div class="docbar docbar-dark">
+                <div class="docbar-section">
+                  <button class="btn btn-dark m-1 btn-sm"><i class="hui hui-bacon-cheeseburger"></i></button>
+                </div>
+                <div class="docbar-section" style="flex: 2 0 0">
+                  <input class="form-input input-sm mr-2" type="text" placeholder="search"/>
+                  <div class="btns d-flex"><a class="text-white btn btn-sm mr-2 ml-1 btn-dark" href="https://github.com/huement/ui">Github</a><a class="text-white btn btn-sm mr-2 ml-1 btn-secondary" href="/index.html">@hui</a><a class="text-white btn btn-sm mr-2 ml-1 btn-primary" href="http://localhost">Huement</a>
+                  </div>
+                </div>
+              </div>
+              <div class="vr-block">&nbsp;</div>
+              <div class="container main-content">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="head-block" id="type">
+                      <h1 class="s-title">Typography<a class="anchor" href="#type" aria-hidden="true">#</a></h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <section class="bg-black positive-top headBlock">
+                <div class="vr-block site-spacer"></div>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12 my-3 py-3">
+                      <table class="table">
+                        <thead class="table-dark">
+                          <tr>
+                            <th style="width:150px">Heading</th>
+                            <th>Example</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td style="width:150px">
+                              <p><code class="highlighter-rouge">&lt;h1&gt; &lt;/h1&gt;</code></p>
+                            </td>
+                            <td><span class="h1">h1. some cool title</span></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <p><code class="highlighter-rouge">&lt;h2&gt; &lt;/h2&gt;</code></p>
+                            </td>
+                            <td><span class="h2">h2. some cool title</span></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <p><code class="highlighter-rouge">&lt;h3&gt; &lt;/h3&gt;</code></p>
+                            </td>
+                            <td><span class="h3">h3. some cool title</span></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <p><code class="highlighter-rouge">&lt;h4&gt; &lt;/h4&gt;</code></p>
+                            </td>
+                            <td><span class="h4">h4. some cool title</span></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <p><code class="highlighter-rouge">&lt;h5&gt; &lt;/h5&gt;</code></p>
+                            </td>
+                            <td><span class="h5">h5. some cool title</span></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <p><code class="highlighter-rouge">&lt;h6&gt; &lt;/h6&gt;</code></p>
+                            </td>
+                            <td><span class="h6">h6. some cool title</span></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section>
+                <div class="vr-block site-spacer"></div>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="card">
+                        <div class="card-body">
+                          <h4 class="header-title">Display headings</h4>
+                          <p class="sub-header">Using the classes<code>.display-#</code>.</p>
+                          <p class="text-muted">
+                            Traditional heading elements are designed to work best in the meat of your page content. When you need a heading to stand out, consider using a display heading—a larger, slightly more opinionated heading style.
+                            
+                          </p>
+                          <h1 class="display-1">Display 1</h1>
+                          <p class="text-muted">Suspendisse vel quam malesuada, aliquet sem sit amet, fringilla elit. Morbi tempor tincidunt tempor. Etiam id turpis viverra, vulputate sapien nec, varius sem. Curabitur ullamcorper fringilla eleifend. In ut eros hendrerit est consequat posuere et at velit.</p>
+                          <div class="clearfix"></div>
+                          <h1 class="display-2">Display 2</h1>
+                          <p class="text-muted">In nec rhoncus eros. Vestibulum eu mattis nisl. Quisque viverra viverra magna nec pulvinar. Maecenas pellentesque porta augue, consectetur facilisis diam porttitor sed. Suspendisse tempor est sodales augue rutrum tincidunt. Quisque a malesuada purus.</p>
+                          <div class="clearfix"></div>
+                          <h1 class="display-3">Display 3</h1>
+                          <p class="text-muted">Vestibulum auctor tincidunt semper. Phasellus ut vulputate lacus. Suspendisse ultricies mi eros, sit amet tempor nulla varius sed. Proin nisl nisi, feugiat quis bibendum vitae, dapibus in tellus.</p>
+                          <div class="clearfix"></div>
+                          <h1 class="display-4">Display 4</h1>
+                          <p class="text-muted">Nulla et mattis nunc. Curabitur scelerisque commodo condimentum. Mauris blandit, velit a consectetur egestas, diam arcu fermentum justo, eget ultrices arcu eros vel erat.</p>
+                          <div class="clearfix"></div>
+                          <h1 class="display-5">Display 5</h1>
+                          <p class="text-muted">Vestibulum auctor tincidunt semper. Phasellus ut vulputate lacus. Suspendisse ultricies mi eros, sit amet tempor nulla varius sed. dapibus in tellus.</p>
+                          <div class="clearfix"></div>
+                          <h1 class="display-6">Display 6</h1>
+                          <p class="text-muted">Nulla et mattis nunc. Curabitur scelerisque commodo condimentum. Mauris blandit, velit a consectetur egestas.</p>
+                          <div class="clearfix"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section>
+                <div class="vr-block site-spacer"></div>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12 offset-sm-1 col-sm-10">
+                      <p>You can use the mark tag to
+                        <mark>highlight</mark> text.
+                      </p>
+                      <p>
+                        <del>This line of text is meant to be treated as deleted text.</del>
+                      </p>
+                      <p>
+                        <s>This line of text is meant to be treated as no longer accurate.</s>
+                      </p>
+                      <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+                      <p>
+                        <u>This line of text will render as underlined</u>
+                      </p>
+                      <p><small>This line of text is meant to be treated as fine print.</small></p>
+                      <p><strong>This line rendered as bold text.</strong></p>
+                      <p><em>This line rendered as italicized text.</em></p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xl-6 mt-3 mt-xl-0">
+                      <h4 class="header-title">Contextual Text Colors</h4>
+                      <p class="sub-header">
+                        Your awesome text goes here.
+                        
+                      </p>
+                      <p class="text-custom">
+                        Etiam porta sem malesuada magna mollis euismod.
+                        
+                      </p>
+                      <p class="text-pink">
+                        Donec ullamcorper nulla non metus auctor fringilla.
+                        
+                      </p>
+                      <p class="text-muted">
+                        Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.
+                        
+                      </p>
+                      <p class="text-primary">
+                        Nullam id dolor id nibh ultricies vehicula ut id elit.
+                        
+                      </p>
+                      <p class="text-success">
+                        Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+                        
+                      </p>
+                      <p class="text-info">
+                        Maecenas sed diam eget risus varius blandit sit amet non magna.
+                        
+                      </p>
+                      <p class="text-warning">
+                        Etiam porta sem malesuada magna mollis euismod.
+                        
+                      </p>
+                      <p class="text-danger">
+                        Donec ullamcorper nulla non metus auctor fringilla.
+                        
+                      </p>
+                      <p class="text-dark">
+                        Nullam id dolor id nibh ultricies vehicula ut id elit.
+                        
+                      </p>
+                      <p class="text-purple">
+                        Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.
+                        
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="bg-black">
+                <div class="vr-block site-spacer"></div>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12 offset-sm-1 col-sm-10">
+                      <blockquote cite="Tim Berners-Lee">The Semantic Web is not a separate Web but an extension of the current one, in which information is given well-defined meaning, better enabling computers and people to work in cooperation.</blockquote>
+                      <p><em>Jelly-o jelly-o jelly</em> lollipop croissant. Carrot cake tart danish macaroon dragée gingerbread. Sugar plum cotton candy biscuit<strong>fruitcake powder liquorice</strong>. Shortbread candy pie tart pudding. Sesame snaps bear claw tart tiramisu donut chocolate cake. Cheesecake tiramisu chocolate cake dessert dessert candy candy canes apple pie marshmallow. Sweet croissant pudding toffee tootsie roll gummies tart pastry pie. Candy apple pie cake wafer tootsie roll tart icing halvah.</p>
+                      <h3>Gingerbread gummi bears</h3>
+                      <p><em>Tiramisu sweet pastry</em> danish topping ice cream caramels. Tiramisu candy liquorice jelly-o marzipan candy canes cupcake topping. Gummi bears jujubes carrot cake shortbread sesame snaps marshmallow danish pudding cotton candy.<strong>Cake jujubes biscuit</strong> topping marzipan sweet roll apple pie bonbon. Bear claw donut bear claw bonbon caramels halvah gummi bears. Gummi bears apple pie jelly-o donut sesame snaps icing marzipan.</p>
+                      <p><strong><em>Bonbon chupa chups</em></strong> donut dessert pudding. Sweet roll caramels dessert muffin croissant. Powder chocolate lollipop ice cream bonbon pie candy muffin cotton candy. Fruitcake topping chupa chups toffee jelly-o halvah. Candy soufflé toffee gummies fruitcake oat cake chocolate cake. Dessert cupcake cheesecake sweet roll bear claw. Marshmallow halvah bear claw biscuit dragée marzipan lemon drops jelly.</p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section>
+                <div class="vr-block site-spacer"></div>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12">
+                      <h1>Sweet strawberry cheesecake
+                        <p><em>Sweet muffin bear claw</em> donut chupa chups liquorice tiramisu candy canes sweet</p>
+                      </h1>
+                    </div>
+                  </div>
+                  <div class="row mt-3">
+                    <div class="col-12">
+                      <h1>Testing Heading</h1>
+                      <h2>Testing Heading</h2>
+                      <h3>Testing Heading</h3>
+                      <p>Chocolate shortbread caramels tootsie roll tiramisu sweet dessert apple pie fruitcake.<strong>Croissant icing chupa chups</strong> sweet roll cake tart fruitcake soufflé jujubes. Shortbread brownie tootsie roll ice cream pudding dessert marshmallow sesame snaps. Cake pie jujubes lemon drops sesame snaps soufflé cookie jujubes wafer. Caramels ice cream fruitcake pastry cheesecake chocolate tootsie roll cake marshmallow. Pie candy canes cupcake dragée bonbon fruitcake marzipan. Tootsie roll halvah bonbon cake muffin gummies. Bonbon cotton candy marzipan cake sesame snaps chupa chups donut dessert. Macaroon gummies macaroon biscuit chocolate carrot cake gummi bears.</p>
+                      <h2>Donut candy canes cotton candy</h2>
+                      <p><strong><em>Liquorice gingerbread tiramisu</em></strong> pie bonbon soufflé. Jujubes tootsie roll muffin gingerbread powder. Carrot cake halvah chocolate bar tart sugar plum sugar plum pastry. Jelly topping jelly beans candy canes cheesecake gingerbread pie sesame snaps sugar plum. Pie cheesecake pudding jelly brownie jelly beans halvah. Ice cream powder carrot cake bear claw cake cheesecake.</p>
+                      <p><em>Jelly-o jelly-o jelly</em> lollipop croissant. Carrot cake tart danish macaroon dragée gingerbread. Sugar plum cotton candy biscuit<strong>fruitcake powder liquorice</strong>. Shortbread candy pie tart pudding. Sesame snaps bear claw tart tiramisu donut chocolate cake. Cheesecake tiramisu chocolate cake dessert dessert candy candy canes apple pie marshmallow. Sweet croissant pudding toffee tootsie roll gummies tart pastry pie. Candy apple pie cake wafer tootsie roll tart icing halvah.</p>
+                      <h3>Gingerbread gummi bears</h3>
+                      <p><em>Tiramisu sweet pastry</em> danish topping ice cream caramels. Tiramisu candy liquorice jelly-o marzipan candy canes cupcake topping. Gummi bears jujubes carrot cake shortbread sesame snaps marshmallow danish pudding cotton candy.<strong>Cake jujubes biscuit</strong> topping marzipan sweet roll apple pie bonbon. Bear claw donut bear claw bonbon caramels halvah gummi bears. Gummi bears apple pie jelly-o donut sesame snaps icing marzipan.</p>
+                      <p><strong><em>Bonbon chupa chups</em></strong> donut dessert pudding. Sweet roll caramels dessert muffin croissant. Powder chocolate lollipop ice cream bonbon pie candy muffin cotton candy. Fruitcake topping chupa chups toffee jelly-o halvah. Candy soufflé toffee gummies fruitcake oat cake chocolate cake. Dessert cupcake cheesecake sweet roll bear claw. Marshmallow halvah bear claw biscuit dragée marzipan lemon drops jelly.</p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section>
+                <div class="vr-block site-spacer"></div>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12">
+                      <p class="text-emphasis-body">Nulla et mattis nunc. Curabitur scelerisque</p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+          <div class="vr-block vr-block-lg"></div><!-- Mojo Footer -->
+          <footer class="footer make-background-highlight-light" role="contentinfo" style="background-image:url(../imgs/SceneL@2x.png)" alt="GrungeElement">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-4 offset-md-2"><img class="img-fluid" src="../imgs/MadeWithLove.png" alt="HeartLogo"></div>
+                <div class="col-4 offset-md-2">
+                  <div class="social-wrap">
+                    <ul class="social-icons">
+                      <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                      <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                      <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                      <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div><!-- URL  -->
+    <script src="../js/bundle.js0.5.0" type="module"></script>
+  </body>
+</html>

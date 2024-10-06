@@ -1,0 +1,59 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Built Items to ignore
+bootstrap-5.3.3-examples
+
+node_modules/
+node_modules1/
+dist-ssr
+*.local
+.cache
+.cache/
+.cache/.stylelintcache/
+
+scss
+scss/
+scss/*
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Mojo Files
+_assets
+.env
+node_modules
+tsconfig 2.json
+package 2.json
+README-shards.md
+.cache/.stylelintcache
+
+# Mojo Icons
+# tokens/**/*.svg
+tokens/icons/raw/*.svg
+tokens/icons/raw/**/*.svg
+
+!*.gitkeep
+!./**/*.gitkeep
+!tokens/icons/raw/.gitkeep
+!tokens/icons/clean/.gitkeep
+bin/getFiles.cjs
+bin/upload-oc.cjs
+scss/_variables (2).scss
+scss/_bootswatch (2).scss
+
+_temp

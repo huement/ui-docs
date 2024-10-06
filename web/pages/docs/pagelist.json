@@ -1,0 +1,263 @@
+{
+  "getting-started": [
+    {
+      "icon": "gear",
+      "group": "getting-started",
+      "name": "Installation",
+      "url": "docs/installation"
+    },
+    {
+      "icon": "gear",
+      "group": "getting-started",
+      "name": "Tokens",
+      "url": "docs/tokens"
+    }
+  ],
+  "style-guide": [
+    {
+      "icon": "text",
+      "group": "style-guide",
+      "name": "Colors",
+      "url": "docs/colors"
+    },
+    {
+      "icon": "text",
+      "group": "style-guide",
+      "name": "Templates",
+      "url": "docs/templates"
+    },
+    {
+      "icon": "text",
+      "group": "style-guide",
+      "name": "Type-heading",
+      "url": "docs/type-heading"
+    },
+    {
+      "icon": "gear",
+      "group": "style-guide",
+      "name": "Typography",
+      "url": "docs/typography"
+    },
+    {
+      "icon": "gear",
+      "group": "style-guide",
+      "name": "Vert-rhythm",
+      "url": "docs/vert-rhythm"
+    }
+  ],
+  "layout": [
+    {
+      "icon": "gear",
+      "group": "layout",
+      "name": "Bs5-grid",
+      "url": "docs/bs5-grid"
+    },
+    {
+      "icon": "gear",
+      "group": "layout",
+      "name": "Containers",
+      "url": "docs/containers"
+    },
+    {
+      "icon": "gear",
+      "group": "layout",
+      "name": "Empty",
+      "url": "docs/empty"
+    },
+    {
+      "icon": "gear",
+      "group": "layout",
+      "name": "Gutters",
+      "url": "docs/gutters"
+    },
+    {
+      "icon": "gear",
+      "group": "layout",
+      "name": "Navbar",
+      "url": "docs/navbar"
+    },
+    {
+      "icon": "gear",
+      "group": "layout",
+      "name": "Off-canvas",
+      "url": "docs/off-canvas"
+    },
+    {
+      "icon": "'gear'",
+      "group": "layout",
+      "name": "Responsive",
+      "url": "docs/responsive"
+    },
+    {
+      "icon": "gear",
+      "group": "layout",
+      "name": "Tables",
+      "url": "docs/tables"
+    }
+  ],
+  "components": [
+    {
+      "icon": "gear",
+      "group": "components",
+      "name": "Accordions",
+      "url": "docs/accordions"
+    },
+    {
+      "icon": "gear",
+      "group": "components",
+      "name": "Alerts",
+      "url": "docs/alerts"
+    },
+    {
+      "icon": "gear",
+      "group": "components",
+      "name": "Badges",
+      "url": "docs/badges"
+    },
+    {
+      "icon": "gear",
+      "group": "components",
+      "name": "Buttons",
+      "url": "docs/buttons"
+    },
+    {
+      "icon": "gear",
+      "group": "components",
+      "name": "Cards",
+      "url": "docs/cards"
+    },
+    {
+      "icon": "gear",
+      "group": "components",
+      "name": "Dropdown",
+      "url": "docs/dropdown"
+    },
+    {
+      "icon": "gear",
+      "group": "components",
+      "name": "Forms",
+      "url": "docs/forms"
+    },
+    {
+      "icon": "gear",
+      "group": "components",
+      "name": "Hero",
+      "url": "docs/hero"
+    },
+    {
+      "icon": "gear",
+      "group": "components",
+      "name": "Icons",
+      "url": "docs/icons"
+    },
+    {
+      "icon": "gear",
+      "group": "components",
+      "name": "Images",
+      "url": "docs/images"
+    },
+    {
+      "icon": "gear",
+      "group": "components",
+      "name": "Labels",
+      "url": "docs/labels"
+    },
+    {
+      "icon": "gear",
+      "group": "components",
+      "name": "Lists",
+      "url": "docs/lists"
+    },
+    {
+      "icon": "gear",
+      "group": "components",
+      "name": "Menu",
+      "url": "docs/menu"
+    },
+    {
+      "icon": "gear",
+      "group": "components",
+      "name": "Modal",
+      "url": "docs/modal"
+    },
+    {
+      "icon": "gear",
+      "group": "components",
+      "name": "Panels",
+      "url": "docs/panels"
+    },
+    {
+      "icon": "gear",
+      "group": "components",
+      "name": "Snaps",
+      "url": "docs/snaps"
+    },
+    {
+      "icon": "gear",
+      "group": "components",
+      "name": "Tabs",
+      "url": "docs/tabs"
+    },
+    {
+      "icon": "gear",
+      "group": "components",
+      "name": "Tags",
+      "url": "docs/tags"
+    },
+    {
+      "icon": "gear",
+      "group": "components",
+      "name": "Tiles",
+      "url": "docs/tiles"
+    }
+  ],
+  "utilities": [
+    {
+      "icon": "gear",
+      "group": "utilities",
+      "name": "_blank",
+      "url": "docs/_blank"
+    },
+    {
+      "group": "utilities",
+      "name": "Cursors",
+      "url": "docs/cursors"
+    },
+    {
+      "group": "utilities",
+      "name": "Display",
+      "url": "docs/display"
+    },
+    {
+      "group": "utilities",
+      "name": "Divider",
+      "url": "docs/divider"
+    },
+    {
+      "icon": "gear",
+      "group": "utilities",
+      "name": "Functions",
+      "url": "docs/functions"
+    },
+    {
+      "group": "utilities",
+      "name": "Loading",
+      "url": "docs/loading"
+    },
+    {
+      "group": "utilities",
+      "name": "Position",
+      "url": "docs/position"
+    },
+    {
+      "group": "utilities",
+      "name": "Shapes",
+      "url": "docs/shapes"
+    },
+    {
+      "group": "utilities",
+      "name": "Text",
+      "url": "docs/text"
+    }
+  ]
+}

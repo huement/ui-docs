@@ -1,0 +1,24 @@
+include ../config
+block config
+include ../mixins/global
+
+append config
+    - var cssFile = package.codeName
+
+doctype html
+html(lang= lang)
+    head
+        include ./top
+
+    body(class='no-javascript')
+        script document.body.classList.remove('no-javascript');
+
+        div(class= superClass)
+            div.container-fluid.mojoWebsite.no-gutters
+
+                block content
+
+            block scriptsJS
+
+            if showDebug
+                include ../partials/debugger

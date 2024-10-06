@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "Saira";
+  src: url('fonts/saira/saira.eot');
+  src: url('fonts/saira/saira.eot') format('embedded-opentype'),
+       url('fonts/saira/saira.woff2') format('woff2'),
+       url('fonts/saira/saira.woff') format('woff'),
+       url('fonts/saira/saira.ttf') format('truetype');
+}
+
+
+body {
+  margin: 0;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 10%);
+  line-height: 1.5;
+  font-family: "Saira", "Times New Roman", serif;
+}
+
+.content-width {
+  max-width: 70ch;
+  width: calc(100% - 4rem);
+  margin: 0 auto;
+
+  h1 {
+    font-weight:  700;
+  }
+  h2 {
+    font-weight:  500;
+  }
+}
+
+main {
+  margin-bottom: 4rem;
+}
+
+header {
+  margin-bottom: 4rem;
+  padding: 2rem 0;
+  background-color: hsl(280, 50%, 40%);
+  border-bottom: 4px solid hsl(300, 50%, 50%);
+  color: hsl(300, 50%, 90%);
+}
+
+header p {
+  color: hsl(300, 50%, 85%);
+}
+
+h1, h2, h3 {
+  margin: 0;
+  line-height: 1.25;
+}
+
+h2, h3 {
+  color: hsl(280, 50%, 40%)
+}
+

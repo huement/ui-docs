@@ -1,0 +1,1044 @@
+extends ../layout/main
+
+append config
+  - var title = 'Preview | @huement/ui'
+  - var metaDesc = 'Cool starter kit for showing off various components'
+  - var prism = true
+  - var slug = 'preview'
+  - var pageCSS = 'css/pages'
+
+append scriptsJS
+  script(src=path+"js/bundle.js" type="module")
+
+block content
+  .container.main-content
+    //-
+      Navbar
+        ==================================================
+    .bs-docs-section.clearfix
+      .row
+        .col-lg-12
+          .page-header
+            h1#navbars Navbars
+          .bs-component
+            nav.navbar.navbar-expand-lg.bg-info.navbar-dark
+              .container-fluid
+                a.navbar-brand(href="#") Brand
+                ul.navbar-nav.d-flex.flex-row.me-1
+                  li.nav-item.me-3.me-lg-0
+                    a.nav-link.text-white(href="#")
+                      i.hui.hui-saturn-orbit.mx-1
+                      |  Contact
+                  li.nav-item.me-3.me-lg-0
+                    a.nav-link.text-white(href="#")
+                      i.hui.hui-beaker.mx-1
+                      |  Settings
+
+            nav.navbar.navbar-light.navbar-expand-lg.bg-primary
+              .container-fluid
+                a.navbar-brand(href="#") @huement/ui
+                button.navbar-toggler(type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+                  i.hui.hui-bacon-cheeseburger
+                .overlay.d-flex.d-lg-none
+                .collapse.navbar-collapse#navbarSupportedContent
+                  ul.navbar-nav.ml-auto
+                    li.nav-item
+                      a.nav-link.active(aria-current="page" href="#") Home
+                    li.nav-item
+                      a.nav-link(href="#")
+                        i.hui.hui-saturn-orbit
+                    li.nav-item
+                      a.nav-link(href="#") Link
+                    li.nav-item.dropdown
+                      a.nav-link.dropdown-toggle#navbarDropdown(href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false") Dropdown
+                      ul.dropdown-menu(aria-labelledby="navbarDropdown")
+                        li
+                          a.dropdown-item(href="#") Action
+                        li
+                          a.dropdown-item(href="#") Another action
+                        li
+                          hr.dropdown-divider
+                        li
+                          a.dropdown-item(href="#") Something else here
+                    li.nav-item
+                      a.nav-link(href="#" tabindex="-1" aria-disabled="true") Another Link
+                    li.nav-item
+                      a.nav-link.disabled(href="#" tabindex="-1" aria-disabled="true") Disabled
+                  form.d-flex
+                    input.form-control.mr-2(type="search" placeholder="Search" aria-label="Search")
+                    button.btn.btn-outline-success(type="submit") Search
+          .bs-component
+            nav.navbar.navbar-expand-lg.bg-primary(data-bs-theme="dark")
+              .container-fluid
+                a.navbar-brand(href="#") Navbar
+                button.navbar-toggler(type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation")
+                  span.navbar-toggler-icon
+                .collapse.navbar-collapse#navbarColor01
+                  ul.navbar-nav.me-auto
+                    li.nav-item
+                      a.nav-link.active(href="#")
+                        | Home
+
+                        span.visually-hidden (current)
+                    li.nav-item
+                      a.nav-link(href="#") Features
+                    li.nav-item
+                      a.nav-link(href="#") Pricing
+                    li.nav-item
+                      a.nav-link(href="#") About
+                    li.nav-item.dropdown
+                      a.nav-link.dropdown-toggle(data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false") Dropdown
+                      .dropdown-menu
+                        a.dropdown-item(href="#") Action
+                        a.dropdown-item(href="#") Another action
+                        a.dropdown-item(href="#") Something else here
+                        .dropdown-divider
+                        a.dropdown-item(href="#") Separated link
+                  form.d-flex
+                    input.form-control.me-sm-2(type="search" placeholder="Search")
+                    button.btn.btn-secondary.my-2.my-sm-0(type="submit") Search
+          .bs-component
+            nav.navbar.navbar-expand-lg.bg-dark(data-bs-theme="dark")
+              .container-fluid
+                a.navbar-brand(href="#") Navbar
+                button.navbar-toggler(type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation")
+                  span.navbar-toggler-icon
+                .collapse.navbar-collapse#navbarColor02
+                  ul.navbar-nav.me-auto
+                    li.nav-item
+                      a.nav-link.active(href="#")
+                        | Home
+
+                        span.visually-hidden (current)
+                    li.nav-item
+                      a.nav-link(href="#") Features
+                    li.nav-item
+                      a.nav-link(href="#") Pricing
+                    li.nav-item
+                      a.nav-link(href="#") About
+                    li.nav-item.dropdown
+                      a.nav-link.dropdown-toggle(data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false") Dropdown
+                      .dropdown-menu
+                        a.dropdown-item(href="#") Action
+                        a.dropdown-item(href="#") Another action
+                        a.dropdown-item(href="#") Something else here
+                        .dropdown-divider
+                        a.dropdown-item(href="#") Separated link
+                  form.d-flex
+                    input.form-control.me-sm-2(type="search" placeholder="Search")
+                    button.btn.btn-secondary.my-2.my-sm-0(type="submit") Search
+          .bs-component
+            nav.navbar.navbar-expand-lg.bg-light(data-bs-theme="light")
+              .container-fluid
+                a.navbar-brand(href="#") Navbar
+                button.navbar-toggler(type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation")
+                  span.navbar-toggler-icon
+                .collapse.navbar-collapse#navbarColor03
+                  ul.navbar-nav.me-auto
+                    li.nav-item
+                      a.nav-link.active(href="#")
+                        | Home
+
+                        span.visually-hidden (current)
+                    li.nav-item
+                      a.nav-link(href="#") Features
+                    li.nav-item
+                      a.nav-link(href="#") Pricing
+                    li.nav-item
+                      a.nav-link(href="#") About
+                    li.nav-item.dropdown
+                      a.nav-link.dropdown-toggle(data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false") Dropdown
+                      .dropdown-menu
+                        a.dropdown-item(href="#") Action
+                        a.dropdown-item(href="#") Another action
+                        a.dropdown-item(href="#") Something else here
+                        .dropdown-divider
+                        a.dropdown-item(href="#") Separated link
+                  form.d-flex
+                    input.form-control.me-sm-2(type="search" placeholder="Search")
+                    button.btn.btn-secondary.my-2.my-sm-0(type="submit") Search
+          .bs-component
+            nav.navbar.navbar-expand-lg.bg-body-tertiary
+              .container-fluid
+                a.navbar-brand(href="#") Navbar
+                button.navbar-toggler(type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor04" aria-controls="navbarColor04" aria-expanded="false" aria-label="Toggle navigation")
+                  span.navbar-toggler-icon
+                .collapse.navbar-collapse#navbarColor04
+                  ul.navbar-nav.me-auto
+                    li.nav-item
+                      a.nav-link.active(href="#")
+                        | Home
+
+                        span.visually-hidden (current)
+                    li.nav-item
+                      a.nav-link(href="#") Features
+                    li.nav-item
+                      a.nav-link(href="#") Pricing
+                    li.nav-item
+                      a.nav-link(href="#") About
+                    li.nav-item.dropdown
+                      a.nav-link.dropdown-toggle(data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false") Dropdown
+                      .dropdown-menu
+                        a.dropdown-item(href="#") Action
+                        a.dropdown-item(href="#") Another action
+                        a.dropdown-item(href="#") Something else here
+                        .dropdown-divider
+                        a.dropdown-item(href="#") Separated link
+                  form.d-flex
+                    input.form-control.me-sm-2(type="search" placeholder="Search")
+                    button.btn.btn-secondary.my-2.my-sm-0(type="submit") Search
+    //-
+      Buttons
+        ==================================================
+    .bs-docs-section
+      .page-header
+        .row
+          .col-lg-12
+            h1#buttons Buttons
+      .row
+        .col-lg-7
+          p.bs-component
+            button.btn.btn-primary(type="button") Primary
+            button.btn.btn-secondary(type="button") Secondary
+            button.btn.btn-success(type="button") Success
+            button.btn.btn-info(type="button") Info
+            button.btn.btn-warning(type="button") Warning
+            button.btn.btn-danger(type="button") Danger
+            button.btn.btn-light(type="button") Light
+            button.btn.btn-dark(type="button") Dark
+            button.btn.btn-link(type="button") Link
+          p.bs-component
+            button.btn.btn-primary.disabled(type="button") Primary
+            button.btn.btn-secondary.disabled(type="button") Secondary
+            button.btn.btn-success.disabled(type="button") Success
+            button.btn.btn-info.disabled(type="button") Info
+            button.btn.btn-warning.disabled(type="button") Warning
+            button.btn.btn-danger.disabled(type="button") Danger
+            button.btn.btn-light.disabled(type="button") Light
+            button.btn.btn-dark.disabled(type="button") Dark
+            button.btn.btn-link.disabled(type="button") Link
+          p.bs-component
+            button.btn.btn-outline-primary(type="button") Primary
+            button.btn.btn-outline-secondary(type="button") Secondary
+            button.btn.btn-outline-success(type="button") Success
+            button.btn.btn-outline-info(type="button") Info
+            button.btn.btn-outline-warning(type="button") Warning
+            button.btn.btn-outline-danger(type="button") Danger
+            button.btn.btn-outline-light(type="button") Light
+            button.btn.btn-outline-dark(type="button") Dark
+          .bs-component
+            .btn-group(role="group" aria-label="Button group with nested dropdown")
+              button.btn.btn-primary(type="button") Primary
+              .btn-group(role="group")
+                button#btnGroupDrop1.btn.btn-primary.dropdown-toggle(type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+                .dropdown-menu(aria-labelledby="btnGroupDrop1")
+                  a.dropdown-item(href="#") Dropdown link
+                  a.dropdown-item(href="#") Dropdown link
+            .btn-group(role="group" aria-label="Button group with nested dropdown")
+              button.btn.btn-success(type="button") Success
+              .btn-group(role="group")
+                button#btnGroupDrop2.btn.btn-success.dropdown-toggle(type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+                .dropdown-menu(aria-labelledby="btnGroupDrop2")
+                  a.dropdown-item(href="#") Dropdown link
+                  a.dropdown-item(href="#") Dropdown link
+            .btn-group(role="group" aria-label="Button group with nested dropdown")
+              button.btn.btn-info(type="button") Info
+              .btn-group(role="group")
+                button#btnGroupDrop3.btn.btn-info.dropdown-toggle(type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+                .dropdown-menu(aria-labelledby="btnGroupDrop3")
+                  a.dropdown-item(href="#") Dropdown link
+                  a.dropdown-item(href="#") Dropdown link
+            .btn-group(role="group" aria-label="Button group with nested dropdown")
+              button.btn.btn-danger(type="button") Danger
+              .btn-group(role="group")
+                button#btnGroupDrop4.btn.btn-danger.dropdown-toggle(type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+                .dropdown-menu(aria-labelledby="btnGroupDrop4")
+                  a.dropdown-item(href="#") Dropdown link
+                  a.dropdown-item(href="#") Dropdown link
+          .bs-component
+            button.btn.btn-primary.btn-lg(type="button") Large button
+            button.btn.btn-primary(type="button") Default button
+            button.btn.btn-primary.btn-sm(type="button") Small button
+        .col-lg-5
+          .bs-component
+            .d-grid.gap-2
+              button.btn.btn-lg.btn-primary(type="button") Block button
+              button.btn.btn-lg.btn-primary(type="button") Block button
+          .bs-component.mb-3
+            .btn-group(role="group" aria-label="Basic checkbox toggle button group")
+              input.btn-check#btncheck1(type="checkbox", checked, autocomplete="off")
+              label.btn.btn-primary(for="btncheck1") Checkbox 1
+              input.btn-check#btncheck2(type="checkbox" autocomplete="off")
+              label.btn.btn-primary(for="btncheck2") Checkbox 2
+              input.btn-check#btncheck3(type="checkbox" autocomplete="off")
+              label.btn.btn-primary(for="btncheck3") Checkbox 3
+          .bs-component.mb-3
+            .btn-group(role="group" aria-label="Basic radio toggle button group")
+              input.btn-check#btnradio1(type="radio" name="btnradio" autocomplete="off", checked)
+              label.btn.btn-outline-primary(for="btnradio1") Radio 1
+              input.btn-check#btnradio2(type="radio" name="btnradio" autocomplete="off", checked)
+              label.btn.btn-outline-primary(for="btnradio2") Radio 2
+              input.btn-check#btnradio3(type="radio" name="btnradio" autocomplete="off", checked)
+              label.btn.btn-outline-primary(for="btnradio3") Radio 3
+          .bs-component
+            .btn-group-vertical
+              button.btn.btn-primary(type="button") Button
+              button.btn.btn-primary(type="button") Button
+              button.btn.btn-primary(type="button") Button
+              button.btn.btn-primary(type="button") Button
+              button.btn.btn-primary(type="button") Button
+              button.btn.btn-primary(type="button") Button
+          .bs-component.mb-3
+            .btn-group(role="group" aria-label="Basic example")
+              button.btn.btn-secondary(type="button") Left
+              button.btn.btn-secondary(type="button") Middle
+              button.btn.btn-secondary(type="button") Right
+          .bs-component.mb-3
+            .btn-toolbar(role="toolbar" aria-label="Toolbar with button groups")
+              .btn-group.me-2(role="group" aria-label="First group")
+                button.btn.btn-secondary(type="button") 1
+                button.btn.btn-secondary(type="button") 2
+                button.btn.btn-secondary(type="button") 3
+                button.btn.btn-secondary(type="button") 4
+              .btn-group.me-2(role="group" aria-label="Second group")
+                button.btn.btn-secondary(type="button") 5
+                button.btn.btn-secondary(type="button") 6
+                button.btn.btn-secondary(type="button") 7
+              .btn-group(role="group" aria-label="Third group")
+                button.btn.btn-secondary(type="button") 8
+
+    //-
+      Blank TODO
+        ==================================================
+    .bs-docs-section
+      .row
+        .col-lg-12
+          .page-header
+            h1#blank TODO: Blank Section
+
+    //-
+      Tables
+        ==================================================
+    .bs-docs-section
+      .row
+        .col-lg-12
+          .page-header
+            h1#tables Tables
+          .bs-component
+            table.table.table-hover
+              thead
+                tr
+                  th(scope="col") Type
+                  th(scope="col") Column heading
+                  th(scope="col") Column heading
+                  th(scope="col") Column heading
+              tbody
+                tr.table-active
+                  th(scope="row") Active
+                  td Column content
+                  td Column content
+                  td Column content
+                tr
+                  th(scope="row") Default
+                  td Column content
+                  td Column content
+                  td Column content
+                tr.table-primary
+                  th(scope="row") Primary
+                  td Column content
+                  td Column content
+                  td Column content
+                tr.table-secondary
+                  th(scope="row") Secondary
+                  td Column content
+                  td Column content
+                  td Column content
+                tr.table-success
+                  th(scope="row") Success
+                  td Column content
+                  td Column content
+                  td Column content
+                tr.table-danger
+                  th(scope="row") Danger
+                  td Column content
+                  td Column content
+                  td Column content
+                tr.table-warning
+                  th(scope="row") Warning
+                  td Column content
+                  td Column content
+                  td Column content
+                tr.table-info
+                  th(scope="row") Info
+                  td Column content
+                  td Column content
+                  td Column content
+                tr.table-light
+                  th(scope="row") Light
+                  td Column content
+                  td Column content
+                  td Column content
+                tr.table-dark
+                  th(scope="row") Dark
+                  td Column content
+                  td Column content
+                  td Column content
+
+    //-
+      Forms
+        ==================================================
+    .bs-docs-section
+      .row
+        .col-lg-12
+          .page-header
+            h1#forms Forms
+      .row
+        .col-lg-6
+          .bs-component
+            form
+              fieldset
+                legend Legend
+                .row
+                  label.col-sm-2.col-form-label(for="staticEmail") Email
+                  .col-sm-10
+                    input.form-control-plaintext#staticEmail(type="text", readonly, value="email@example.com")
+                div
+                  label.form-label.mt-4(for="exampleInputEmail1") Email address
+                  input.form-control#exampleInputEmail1(type="email" aria-describedby="emailHelp" placeholder="Enter email")
+                  small#emailHelp.form-text.text-muted We'll never share your email with anyone else.
+                div
+                  label.form-label.mt-4(for="exampleInputPassword1") Password
+                  input.form-control#exampleInputPassword1(type="password" placeholder="Password" autocomplete="off")
+                div
+                  label.form-label.mt-4(for="exampleSelect1") Example select
+                  select.form-select#exampleSelect1
+                    option 1
+                    option 2
+                    option 3
+                    option 4
+                    option 5
+                div
+                  label.form-label.mt-4(for="exampleSelect1") Example disabled select
+                  select.form-select#exampleDisabledSelect1(disabled)
+                    option 1
+                    option 2
+                    option 3
+                    option 4
+                    option 5
+                div
+                  label.form-label.mt-4(for="exampleSelect2") Example multiple select
+                  select.form-select#exampleSelect2(multiple)
+                    option 1
+                    option 2
+                    option 3
+                    option 4
+                    option 5
+                div
+                  label.form-label.mt-4(for="exampleTextarea") Example textarea
+                  textarea.form-control#exampleTextarea(rows="3")
+                div
+                  label.form-label.mt-4(for="formFile") Default file input example
+                  input.form-control#formFile(type="file")
+                fieldset
+                  legend.mt-4 Radio buttons
+                  .form-check
+                    input.form-check-input#optionsRadios1(type="radio" name="optionsRadios" value="option1", checked)
+                    label.form-check-label(for="optionsRadios1").
+
+                      Option one is this and that—be sure to include why it's great
+
+                  .form-check
+                    input.form-check-input#optionsRadios2(type="radio" name="optionsRadios" value="option2")
+                    label.form-check-label(for="optionsRadios2").
+
+                      Option two can be something else and selecting it will deselect option one
+
+                  .form-check.disabled
+                    input.form-check-input#optionsRadios3(type="radio" name="optionsRadios" value="option3", disabled)
+                    label.form-check-label(for="optionsRadios3").
+
+                      Option three is disabled
+
+                fieldset
+                  legend.mt-4 Checkboxes
+                  .form-check
+                    input.form-check-input#flexCheckDefault(type="checkbox")
+                    label.form-check-label(for="flexCheckDefault").
+
+                      Default checkbox
+
+                  .form-check
+                    input.form-check-input#flexCheckChecked(type="checkbox", checked)
+                    label.form-check-label(for="flexCheckChecked").
+
+                      Checked checkbox
+
+                fieldset
+                  legend.mt-4 Switches
+                  .form-check.form-switch
+                    input.form-check-input#flexSwitchCheckDefault(type="checkbox")
+                    label.form-check-label(for="flexSwitchCheckDefault") Default switch checkbox input
+                  .form-check.form-switch
+                    input.form-check-input#flexSwitchCheckChecked(type="checkbox", checked)
+                    label.form-check-label(for="flexSwitchCheckChecked") Checked switch checkbox input
+                fieldset
+                  legend.mt-4 Ranges
+                  label.form-label(for="customRange1") Example range
+                  input.form-range#customRange1(type="range")
+                  label.form-label(for="disabledRange") Disabled range
+                  input.form-range#disabledRange(type="range", disabled)
+                  label.form-label(for="customRange3") Example range
+                  input.form-range#customRange3(type="range" min="0" max="5" step="0.5")
+                button.btn.btn-primary(type="submit") Submit
+        .col-lg-4.offset-lg-1
+          form.bs-component
+            div
+              fieldset(disabled)
+                label.form-label(for="disabledInput") Disabled input
+                input.form-control#disabledInput(type="text" placeholder="Disabled input here...", disabled)
+            div
+              fieldset
+                label.form-label.mt-4(for="readOnlyInput") Readonly input
+                input.form-control#readOnlyInput(type="text" placeholder="Readonly input here...", readonly)
+            .has-success
+              label.form-label.mt-4(for="inputValid") Valid input
+              input.form-control.is-valid#inputValid(type="text" value="correct value")
+              .valid-feedback Success! You've done it.
+            .has-danger
+              label.form-label.mt-4(for="inputInvalid") Invalid input
+              input.form-control.is-invalid#inputInvalid(type="text" value="wrong value")
+              .invalid-feedback Sorry, that username's taken. Try another?
+            div
+              label.col-form-label.col-form-label-lg.mt-4(for="inputLarge") Large input
+              input.form-control.form-control-lg#inputLarge(type="text" placeholder=".form-control-lg")
+            div
+              label.col-form-label.mt-4(for="inputDefault") Default input
+              input.form-control#inputDefault(type="text" placeholder="Default input")
+            div
+              label.col-form-label.col-form-label-sm.mt-4(for="inputSmall") Small input
+              input.form-control.form-control-sm#inputSmall(type="text" placeholder=".form-control-sm")
+            div
+              label.form-label.mt-4 Input addons
+              div
+                .input-group.mb-3
+                  span.input-group-text $
+                  input.form-control(type="text" aria-label="Amount (to the nearest dollar)")
+                  span.input-group-text .00
+                .input-group.mb-3
+                  input.form-control(type="text" placeholder="Recipient\'s username" aria-label="Recipient\'s username" aria-describedby="button-addon2")
+                  button.btn.btn-primary#button-addon2(type="button") Button
+            div
+              label.form-label.mt-4 Floating labels
+              .form-floating.mb-3
+                input.form-control#floatingInput(type="email" placeholder="name@example.com")
+                label(for="floatingInput") Email address
+              .form-floating
+                input.form-control#floatingPassword(type="password" placeholder="Password" autocomplete="off")
+                label(for="floatingPassword") Password
+    //-
+      Navs
+        ==================================================
+    .bs-docs-section
+      .row
+        .col-lg-12
+          .page-header
+            h1#navs Navs
+      .row.mb-5
+        .col-lg-6
+          h2#nav-tabs Tabs
+          .bs-component
+            ul.nav.nav-tabs
+              li.nav-item
+                a.nav-link.active(data-bs-toggle="tab" href="#home") Home
+              li.nav-item
+                a.nav-link(data-bs-toggle="tab" href="#profile") Profile
+              li.nav-item
+                a.nav-link.disabled(href="#") Disabled
+              li.nav-item.dropdown
+                a.nav-link.dropdown-toggle(data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false") Dropdown
+                .dropdown-menu
+                  h6.dropdown-header Dropdown header
+                  a.dropdown-item(href="#") Action
+                  a.dropdown-item(href="#") Another action
+                  a.dropdown-item(href="#") Something else here
+                  .dropdown-divider
+                  a.dropdown-item(href="#") Separated link
+            #myTabContent.tab-content
+              .tab-pane.fade.show.active#home
+                p Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.
+              .tab-pane.fade#profile
+                p Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit.
+              .tab-pane.fade#dropdown1
+                p Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork.
+              .tab-pane.fade#dropdown2
+                p Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater.
+        .col-lg-6
+          h2#nav-pills Pills
+          .bs-component
+            ul.nav.nav-pills
+              li.nav-item
+                a.nav-link.active(href="#") Active
+              li.nav-item.dropdown
+                a.nav-link.dropdown-toggle(data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false") Dropdown
+                .dropdown-menu
+                  h6.dropdown-header Dropdown header
+                  a.dropdown-item(href="#") Action
+                  a.dropdown-item(href="#") Another action
+                  a.dropdown-item(href="#") Something else here
+                  .dropdown-divider
+                  a.dropdown-item(href="#") Separated link
+              li.nav-item
+                a.nav-link(href="#") Link
+              li.nav-item
+                a.nav-link.disabled(href="#") Disabled
+          br
+          .bs-component
+            ul.nav.nav-pills.flex-column
+              li.nav-item
+                a.nav-link.active(href="#") Active
+              li.nav-item.dropdown
+                a.nav-link.dropdown-toggle(data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false") Dropdown
+                .dropdown-menu
+                  h6.dropdown-header Dropdown header
+                  a.dropdown-item(href="#") Action
+                  a.dropdown-item(href="#") Another action
+                  a.dropdown-item(href="#") Something else here
+                  .dropdown-divider
+                  a.dropdown-item(href="#") Separated link
+              li.nav-item
+                a.nav-link(href="#") Link
+              li.nav-item
+                a.nav-link.disabled(href="#") Disabled
+      .row.mb-5
+        .col-lg-6
+          h2#nav-breadcrumbs Breadcrumbs
+          .bs-component
+            ol.breadcrumb
+              li.breadcrumb-item.active Home
+            ol.breadcrumb
+              li.breadcrumb-item
+                a(href="#") Home
+              li.breadcrumb-item.active Library
+            ol.breadcrumb
+              li.breadcrumb-item
+                a(href="#") Home
+              li.breadcrumb-item
+                a(href="#") Library
+              li.breadcrumb-item.active Data
+        .col-lg-6
+          h2#pagination Pagination
+          .bs-component
+            div
+              ul.pagination
+                li.page-item.disabled
+                  a.page-link(href="#") «
+                li.page-item.active
+                  a.page-link(href="#") 1
+                li.page-item
+                  a.page-link(href="#") 2
+                li.page-item
+                  a.page-link(href="#") 3
+                li.page-item
+                  a.page-link(href="#") 4
+                li.page-item
+                  a.page-link(href="#") 5
+                li.page-item
+                  a.page-link(href="#") »
+            div
+              ul.pagination.pagination-lg
+                li.page-item.disabled
+                  a.page-link(href="#") «
+                li.page-item.active
+                  a.page-link(href="#") 1
+                li.page-item
+                  a.page-link(href="#") 2
+                li.page-item
+                  a.page-link(href="#") 3
+                li.page-item
+                  a.page-link(href="#") 4
+                li.page-item
+                  a.page-link(href="#") 5
+                li.page-item
+                  a.page-link(href="#") »
+            div
+              ul.pagination.pagination-sm
+                li.page-item.disabled
+                  a.page-link(href="#") «
+                li.page-item.active
+                  a.page-link(href="#") 1
+                li.page-item
+                  a.page-link(href="#") 2
+                li.page-item
+                  a.page-link(href="#") 3
+                li.page-item
+                  a.page-link(href="#") 4
+                li.page-item
+                  a.page-link(href="#") 5
+                li.page-item
+                  a.page-link(href="#") »
+      .row
+        .col-lg-6
+          h2#nav-underline Underline
+          .bs-component
+            ul.nav.nav-underline
+              li.nav-item
+                a.nav-link.active(aria-current="page" href="#") Active
+              li.nav-item
+                a.nav-link(href="#") Link
+              li.nav-item
+                a.nav-link(href="#") Link
+              li.nav-item
+                a.nav-link.disabled(aria-disabled="true") Disabled
+    //-
+      Indicators
+        ==================================================
+    .bs-docs-section
+      .row
+        .col-lg-12
+          .page-header
+            h1#indicators Indicators
+      .row
+        .col-lg-12
+          h2 Alerts
+          .bs-component
+            .alert.alert-dismissible.alert-warning
+              button.btn-close(type="button" data-bs-dismiss="alert")
+              h4.alert-heading Warning!
+              p.mb-0
+                | Best check yo self, you're not looking too good. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna,
+                a.alert-link(href="#") vel scelerisque nisl consectetur et
+                | .
+      .row
+        .col-lg-4
+          .bs-component
+            .alert.alert-dismissible.alert-danger
+              button.btn-close(type="button" data-bs-dismiss="alert")
+              strong Oh snap!
+              |
+              a.alert-link(href="#") Change a few things up
+              |  and try submitting again.
+
+        .col-lg-4
+          .bs-component
+            .alert.alert-dismissible.alert-success
+              button.btn-close(type="button" data-bs-dismiss="alert")
+              strong Well done!
+              |  You successfully read
+              a.alert-link(href="#") this important alert message
+              | .
+
+        .col-lg-4
+          .bs-component
+            .alert.alert-dismissible.alert-info
+              button.btn-close(type="button" data-bs-dismiss="alert")
+              strong Heads up!
+              |  This
+              a.alert-link(href="#") alert needs your attention
+              | , but it's not super important.
+
+      .row
+        .col-lg-4
+          .bs-component
+            .alert.alert-dismissible.alert-primary
+              button.btn-close(type="button" data-bs-dismiss="alert")
+              strong Oh snap!
+              |
+              a.alert-link(href="#") Change a few things up
+              |  and try submitting again.
+
+        .col-lg-4
+          .bs-component
+            .alert.alert-dismissible.alert-secondary
+              button.btn-close(type="button" data-bs-dismiss="alert")
+              strong Well done!
+              |  You successfully read
+              a.alert-link(href="#") this important alert message
+              | .
+
+        .col-lg-4
+          .bs-component
+            .alert.alert-dismissible.alert-light
+              button.btn-close(type="button" data-bs-dismiss="alert")
+              strong Heads up!
+              |  This
+              a.alert-link(href="#") alert needs your attention
+              | , but it's not super important.
+
+      div
+        h2 Badges
+        .bs-component.mb-4
+          span.badge.bg-primary Primary
+          span.badge.bg-secondary Secondary
+          span.badge.bg-success Success
+          span.badge.bg-danger Danger
+          span.badge.bg-warning Warning
+          span.badge.bg-info Info
+          span.badge.bg-light Light
+          span.badge.bg-dark Dark
+        .bs-component
+          span.badge.rounded-pill.bg-primary Primary
+          span.badge.rounded-pill.bg-secondary Secondary
+          span.badge.rounded-pill.bg-success Success
+          span.badge.rounded-pill.bg-danger Danger
+          span.badge.rounded-pill.bg-warning Warning
+          span.badge.rounded-pill.bg-info Info
+          span.badge.rounded-pill.bg-light Light
+          span.badge.rounded-pill.bg-dark Dark
+    //-
+      Containers
+        ==================================================
+    .bs-docs-section
+      .row
+        .col-lg-12
+          .page-header
+            h1#containers Containers
+      .row
+        .col-lg-12
+          h2 List groups
+      .row
+        .col-lg-4
+          .bs-component
+            ul.list-group
+              li.list-group-item.d-flex.justify-content-between.align-items-center
+                | Cras justo odio
+                span.badge.bg-primary.rounded-pill 14
+              li.list-group-item.d-flex.justify-content-between.align-items-center
+                | Dapibus ac facilisis in
+                span.badge.bg-primary.rounded-pill 2
+              li.list-group-item.d-flex.justify-content-between.align-items-center
+                | Morbi leo risus
+                span.badge.bg-primary.rounded-pill 1
+        .col-lg-4
+          .bs-component
+            ul.list-group
+              li.list-group-item.list-group-item-primary.d-flex.justify-content-between.align-items-center
+                | Cras justo odio
+                span.badge.bg-primary.rounded-pill 14
+              li.list-group-item.list-group-item-secondary.d-flex.justify-content-between.align-items-center
+                | Dapibus ac facilisis in
+                span.badge.bg-primary.rounded-pill 2
+              li.list-group-item.list-group-item-success.d-flex.justify-content-between.align-items-center
+                | Morbi leo risus
+                span.badge.bg-primary.rounded-pill 1
+              li.list-group-item.list-group-item-info.d-flex.justify-content-between.align-items-center
+                | Cras justo odio
+                span.badge.bg-primary.rounded-pill 5
+              li.list-group-item.list-group-item-warning.d-flex.justify-content-between.align-items-center
+                | Dapibus ac facilisis in
+                span.badge.bg-primary.rounded-pill 4
+              li.list-group-item.list-group-item-danger.d-flex.justify-content-between.align-items-center
+                | Morbi leo risus
+                span.badge.bg-primary.rounded-pill 9
+              li.list-group-item.list-group-item-light.d-flex.justify-content-between.align-items-center
+                | Morbi leo risus
+                span.badge.bg-primary.rounded-pill 8
+              li.list-group-item.list-group-item-dark.d-flex.justify-content-between.align-items-center
+                | Morbi leo risus
+                span.badge.bg-primary.rounded-pill 0
+        .col-lg-4
+          .bs-component
+            ul.list-group
+              li.list-group-item.d-flex.justify-content-between.align-items-center
+                | Cras justo odio
+    //-
+      Dialogs
+        ==================================================
+    .bs-docs-section
+      .row
+        .col-lg-12
+          .page-header
+            h1#dialogs Dialogs
+      .row
+        .col-lg-6
+          h2 Modals
+          .bs-component
+            .modal
+              .modal-dialog(role="document")
+                .modal-content
+                  .modal-header
+                    h5.modal-title Modal title
+                    button.btn-close(type="button" data-bs-dismiss="modal" aria-label="Close")
+                      span(aria-hidden="true")
+                  .modal-body
+                    p Modal body text goes here.
+                  .modal-footer
+                    button.btn.btn-primary(type="button") Save changes
+                    button.btn.btn-secondary(type="button" data-bs-dismiss="modal") Close
+          h2 Offcanvas
+          .bs-component
+            a.btn.btn-primary(data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample").
+
+              Link with href
+
+            button.btn.btn-primary(type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample").
+
+              Button with data-bs-target
+
+            .offcanvas.offcanvas-start#offcanvasExample(tabindex="-1" aria-labelledby="offcanvasExampleLabel")
+              .offcanvas-header
+                h5.offcanvas-title#offcanvasExampleLabel Offcanvas
+                button.btn-close.text-reset(type="button" data-bs-dismiss="offcanvas" aria-label="Close")
+              .offcanvas-body
+                div.
+
+                  Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+
+                .dropdown.mt-3
+                  button.btn.btn-secondary.dropdown-toggle#dropdownMenuButton(type="button" data-bs-toggle="dropdown").
+
+                    Dropdown button
+
+                  ul.dropdown-menu(aria-labelledby="dropdownMenuButton")
+                    li
+                      a.dropdown-item(href="#") Action
+                    li
+                      a.dropdown-item(href="#") Another action
+                    li
+                      a.dropdown-item(href="#") Something else here
+        .col-lg-6
+          h2 Popovers
+          .bs-component.mb-5
+            button.btn.btn-secondary(type="button" title="Popover Title" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.") Left
+            button.btn.btn-secondary(type="button" title="Popover Title" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.") Top
+            button.btn.btn-secondary(type="button" title="Popover Title" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.") Bottom
+            button.btn.btn-secondary(type="button" title="Popover Title" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.") Right
+          h2 Tooltips
+          .bs-component.mb-5
+            button.btn.btn-secondary(type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left") Left
+            button.btn.btn-secondary(type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top") Top
+            button.btn.btn-secondary(type="button" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tooltip on bottom") Bottom
+            button.btn.btn-secondary(type="button" data-bs-toggle="tooltip" data-bs-placement="right" title="Tooltip on right") Right
+          h2 Toasts
+          .bs-component
+            .toast.show(role="alert" aria-live="assertive" aria-atomic="true")
+              .toast-header
+                strong.me-auto Bootstrap
+                small 11 mins ago
+                button.btn-close.ms-2.mb-1(type="button" data-bs-dismiss="toast" aria-label="Close")
+                  span(aria-hidden="true")
+              .toast-body.
+
+                Hello, world! This is a toast message.
+
+    //-
+      Cards
+        ==================================================
+    .bs-docs-section.clearfix
+      .row
+        .col-lg-12
+          .page-header
+            h1#navbars Cards
+      .row
+        .col-md-6
+          .bs-component
+            .card.text-white.bg-success.mb-3
+              .card-header Header
+              .card-body
+                h5.card-title Success card title
+                p.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
+            .card.text-white.bg-danger.mb-3
+              .card-header Header
+              .card-body
+                h5.card-title Danger card title
+                p.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
+            .card.text-dark.bg-warning.mb-3
+              .card-header Header
+              .card-body
+                h5.card-title Warning card title
+                p.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
+            .card.text-dark.bg-info.mb-3
+              .card-header Header
+              .card-body
+                h5.card-title Info card title
+                p.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
+
+        .col-md-6
+          .bs-component
+            .card.text-white.bg-primary.mb-3
+              .card-header Header
+              .card-body
+                h5.card-title Primary card title
+                p.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
+            .card.text-white.bg-secondary.mb-3
+              .card-header Header
+              .card-body
+                h5.card-title Secondary card title
+                p.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
+            .card.text-dark.bg-light.mb-3
+              .card-header Header
+              .card-body
+                h5.card-title Light card title
+                p.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
+            .card.text-white.bg-dark.mb-3
+              .card-header Header
+              .card-body
+                h5.card-title Dark card title
+                p.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
+
+    //-
+      Accordions
+        ==================================================
+    .bs-docs-section.clearfix
+      .row
+        .col-lg-12
+          .page-header
+            h1#navbars Accordians
+        .row
+          .col-md-6
+            .bs-component
+              .accordion#accordionExample
+                .accordion-item
+                  .accordion-header
+                    button.accordion-button(type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne").
+
+                      Accordion Item #1
+
+                  #collapseOne.accordion-collapse.collapse.show(data-bs-parent="#accordionExample")
+                    .accordion-body
+                      strong This is the first item's accordion body.
+                      |  It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
+
+                      code .accordion-body
+                      | , though the transition does limit overflow.
+
+                .accordion-item
+                  .accordion-header
+                    button.accordion-button.collapsed(type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo").
+
+                      Accordion Item #2
+
+                  #collapseTwo.accordion-collapse.collapse(data-bs-parent="#accordionExample")
+                    .accordion-body
+                      strong This is the second item's accordion body.
+                      |  It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
+
+                      code .accordion-body
+                      | , though the transition does limit overflow.
+
+                .accordion-item
+                  .accordion-header
+                    button.accordion-button.collapsed(type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree").
+
+                      Accordion Item #3
+
+                  #collapseThree.accordion-collapse.collapse(data-bs-parent="#accordionExample")
+                    .accordion-body
+                      strong This is the third item's accordion body.
+                      |  It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
+
+                      code .accordion-body
+                      | , though the transition does limit overflow.
+          .col-md-6
+            .bs-component
+
+    #source-modal.modal.fade(tabindex="-1")
+      .modal-dialog.modal-lg
+        .modal-content
+          .modal-header
+            h4.modal-title Source Code
+            button.btn.btn-primary.btn-copy(type="button")
+              i.bi.bi-clipboard
+              |  Copy Code
+          .modal-body
+            pre.language-html
+              code

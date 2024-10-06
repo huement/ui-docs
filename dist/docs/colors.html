@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en.US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta property="og:url" content="https://huement.github.io/ui/">
+    <meta property="og:type" content="website">
+    <meta property="description" content="Color utilities are used for changing colors for text, link and background. Mojo Framework is a lightweight, responsive and modern CSS framework for faster and extensible development.">
+    <meta property="og:title" content="Colors - Style Guide - Mojo Framework">
+    <meta property="og:image" content="https://huement.github.io/ui/imgs/Logo.png">
+    <meta property="og:description" content="Color utilities are used for changing colors for text, link and background. Mojo Framework is a lightweight, responsive and modern CSS framework for faster and extensible development.">
+    <meta property="og:site_name" content="Colors - Style Guide - Mojo Framework - v0.5.0">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@huement/ui">
+    <meta name="twitter:creator" content="@huement/ui">
+    <meta name="twitter:title" content="Colors - Style Guide - Mojo Framework">
+    <meta name="twitter:description" content="Color utilities are used for changing colors for text, link and background. Mojo Framework is a lightweight, responsive and modern CSS framework for faster and extensible development.">
+    <meta name="twitter:image" content="https://huement.github.io/ui/imgs/Logo.png">
+    <meta charset="UTF-8">
+    <title>Colors - Style Guide - Mojo Framework</title>
+    <meta name="description" content="Color utilities are used for changing colors for text, link and background. Mojo Framework is a lightweight, responsive and modern CSS framework for faster and extensible development.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="../favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../favicon/favicon-16x16.png" sizes="16x16">
+    <link href="../favicon/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <!-- [if lt IE 9]><script language="javascript" type="text/javascript" src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <link rel="stylesheet" href="../mojo.css?token=0.5.0" type="text/css" id="hui_css">
+    <link rel="stylesheet" href="../hi/icons.css?token=0.5.0" type="text/css" id="hui_icons">
+    <link rel="stylesheet" href="../css/docs.css" type="text/css" id="docs_css">
+  </head>
+  <body class="no-javascript">
+    <script>document.body.classList.remove('no-javascript');</script>
+    <div class="mojo docs-container container-fluid docPage">
+      <div class="row">
+        <div class="col-sm-4 col-md-3 sidebar">
+          <div class="side-container">
+            <div class="logo-container"><img class="logo img-fluid" src="../imgs/Logo.png"/></div>
+            <div class="build-container">
+              <div class="row g-0 mx-0 text-center">
+                <div class="col">
+                  <p class="build-label">Latest Build</p>
+                  <p class="build-version">0.5.0 Mon Sep 23 2024</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="docs-nav">
+            <div class="accordion-container">
+              <div class="accordion">
+                <input id="accordion-getting-started" type="checkbox" name="docs-accordion-checkbox" hidden=""/>
+                <label class="accordion-header c-hand" for="accordion-getting-started"><i class="hui hui-document-down mr-1"></i>getting-started</label>
+                <div class="accordion-body">
+                  <ul class="menu menu-nav">
+                    <li class="menu-item"><a href="../docs/installation.html">Installation</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/tokens.html">Tokens</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion">
+                <input id="accordion-style-guide" type="checkbox" name="docs-accordion-checkbox" hidden="" checked="checked"/>
+                <label class="accordion-header c-hand" for="accordion-style-guide"><i class="hui hui-document-down mr-1"></i>style-guide</label>
+                <div class="accordion-body">
+                  <ul class="menu menu-nav">
+                    <li class="menu-item"><a class="active" href="../docs/colors.html">Colors</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/templates.html">Templates</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/type-heading.html">Type-heading</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/typography.html">Typography</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/vert-rhythm.html">Vert-rhythm</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion">
+                <input id="accordion-layout" type="checkbox" name="docs-accordion-checkbox" hidden=""/>
+                <label class="accordion-header c-hand" for="accordion-layout"><i class="hui hui-document-down mr-1"></i>layout</label>
+                <div class="accordion-body">
+                  <ul class="menu menu-nav">
+                    <li class="menu-item"><a href="../docs/bs5-grid.html">Bs5-grid</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/containers.html">Containers</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/empty.html">Empty</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/gutters.html">Gutters</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/navbar.html">Navbar</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/off-canvas.html">Off-canvas</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/responsive.html">Responsive</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/tables.html">Tables</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion">
+                <input id="accordion-components" type="checkbox" name="docs-accordion-checkbox" hidden=""/>
+                <label class="accordion-header c-hand" for="accordion-components"><i class="hui hui-document-down mr-1"></i>components</label>
+                <div class="accordion-body">
+                  <ul class="menu menu-nav">
+                    <li class="menu-item"><a href="../docs/accordions.html">Accordions</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/alerts.html">Alerts</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/badges.html">Badges</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/buttons.html">Buttons</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/cards.html">Cards</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/dropdown.html">Dropdown</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/forms.html">Forms</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/hero.html">Hero</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/icons.html">Icons</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/images.html">Images</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/labels.html">Labels</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/lists.html">Lists</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/menu.html">Menu</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/modal.html">Modal</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/panels.html">Panels</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/snaps.html">Snaps</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/tabs.html">Tabs</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/tags.html">Tags</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/tiles.html">Tiles</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion">
+                <input id="accordion-utilities" type="checkbox" name="docs-accordion-checkbox" hidden=""/>
+                <label class="accordion-header c-hand" for="accordion-utilities"><i class="hui hui-document-down mr-1"></i>utilities</label>
+                <div class="accordion-body">
+                  <ul class="menu menu-nav">
+                    <li class="menu-item"><a href="../docs/_blank.html">_blank</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/cursors.html">Cursors</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/display.html">Display</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/divider.html">Divider</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/functions.html">Functions</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/loading.html">Loading</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/position.html">Position</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/shapes.html">Shapes</a>
+                    </li>
+                    <li class="menu-item"><a href="../docs/text.html">Text</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-8 col-md-9 main-content">
+          <div class="container  docs-content" id="content">
+            <div class="main-area px-xs-0 px-sm-0 px-md-2 px-lg-3 px-xl-3 px-xx-4">
+              <div class="docbar docbar-dark">
+                <div class="docbar-section">
+                  <button class="btn btn-dark m-1 btn-sm"><i class="hui hui-bacon-cheeseburger"></i></button>
+                </div>
+                <div class="docbar-section" style="flex: 2 0 0">
+                  <input class="form-input input-sm mr-2" type="text" placeholder="search"/>
+                  <div class="btns d-flex"><a class="text-white btn btn-sm mr-2 ml-1 btn-dark" href="https://github.com/huement/ui">Github</a><a class="text-white btn btn-sm mr-2 ml-1 btn-secondary" href="/index.html">@hui</a><a class="text-white btn btn-sm mr-2 ml-1 btn-primary" href="http://localhost">Huement</a>
+                  </div>
+                </div>
+              </div>
+              <div class="vr-block">&nbsp;</div>
+              <div class="head-block" id="colors">
+                <h1 class="s-title">Color Palette<a class="anchor" href="#colors" aria-hidden="true">#</a></h1>
+              </div>
+              <div class="docs-demo">
+                <p class="doc-intro">Colors are such an important part of any project. This framework makes sure they are treated with importance. There are a number of tools and functions allowing for ease of generation and/or manipulation. The tools also ensure apporpiate contrasts for legibility, and proper harmony for overally beauty.</p>
+                <p>The colors can be pulled in via SCSS <code>$variables</code> and or <code>.text-color</code> classes, depending on the color. The main colors (red, green blue etc) have classes, while their individual color stacks (red-100, red-200, red-300 etc) are referenced via variables.</p>
+                <p>The colors are generated via a JSON tokens file <code>colors.json</code> found in the <code>tokens/</code> directory. Once the values are configured to the desired theme, simply run the CLI program to have the new theme and stacks automatically generated and SCSS updated like magic.</p>
+              </div>
+              <div class="vr-block vr-block-two"></div>
+              <div class="container colorMain">
+                <div class="row gy-4">
+                  <div class="col-6 col-sm-4">
+                    <h3 class="colorTitle">red</h3>
+                    <div class="colorBlock" style="background-color:#9C0027">
+                      <p class="colorLabel text-white">100</p>
+                    </div>
+                    <div class="colorBlock" style="background-color:#B0002C">
+                      <p class="colorLabel text-white">200</p>
+                    </div>
+                    <div class="colorBlock" style="background-color:#C40031">
+                      <p class="colorLabel text-white">300</p>
+                    </div>
+                    <div class="colorBlock" style="background-color:#D90338">
+                      <p class="colorLabel text-white">400</p>
+                    </div>
+                    <div class="colorBlock" style="background-color:#EC174C">
+                      <p class="colorLabel text-white">500</p>
+                    </div>
+                    <div class="colorBlock" style="background-color:#FF2B60">
+                      <p class="colorLabel">600</p>
+                    </div>
+                    <div class="colorBlock" style="background-color:#FF4070">
+                      <p class="colorLabel">700</p>
+                    </div>
+                    <div class="colorBlock" style="background-color:#FF547F">
+                      <p class="colorLabel">800</p>
+                    </div>
+                    <div class="colorBlock" style="background-color:#FF698E">
+                      <p class="colorLabel">900</p>
+                    </div>
+                  </div>
+                  <div class="col-6 col-sm-4">
+                    <h3 class="colorTitle">orange</h3>
+                    <div class="colorBlock" style="background-color:#AB3600">
+                      <p class="colorLabel text-white">100</p>
+                    </div>
+                    <div class="colorBlock" style="background-color:#BF4208">
+                      <p class="colorLabel text-white">200</p>
+                    </div>
+                    <div class="colorBlock" style="background-color:#D4561C">
+                      <p class="colorLabel text-white">300</p>
+                    </div>
+                    <div class="colorBlock" style="background-color:#E86B30">
+                      <p class="colorLabel text-white">400</p>
+                    </div>
+                    <div class="colorBlock" style="background-color:#FD8046">
+                      <p class="colorLabel text-white">500</p>
+                    </div>
+                    <div class="colorBlock" style="background-color:#FF8E59">
+                      <p class="colorLabel">600</p>
+                    </div>
+                    <div class="colorBlock" style="background-color:#FF9C6E">
+                      <p class="colorLabel">700</p>
+                    </div>
+                    <div class="colorBlock" style="background-color:#FFAA82">
+                      <p class="colorLabel">800</p>
+                    </div>
+                    <div class="colorBlock" style="background-color:#FFB896">
+                      <p class="colorLabel">900</p>
+                    </div>
+                  </div>
+                  <div class="col-6 col-sm-4">
+                    <h3 class="colorTitle">yellow</h3>
+                    <div class="colorBlock" style="background-color:#ABAD00">
+                      <p class="colorLabel text-white">100</p>
+                    </div>
+                    <div class="colorBlock" style="background-color:#BFC200">
+                      <p class="colorLabel text-white">200</p>
+                    </div>
+                    <div class="colorBlock" style="background-color:#D3D600">
+                      <p class="colorLabel text-white">300</p>
+                    </div>
+                    <div class="colorBlock" style="background-color:#E7EB00">
+                      <p class="colorLabel text-white">400</p>
+                    </div>
+                    <div class="colorBlock" style="background-color:#FBFE12">
+                      <p class="colorLabel text-white">500</p>
+                    </div>
+                    <div class="colorBlock" style="background-color:#FBFF26">
+                      <p class="colorLabel">600</p>
+                    </div>
+                    <div class="colorBlock" style="background-color:#FCFF3B">
+                      <p class="colorLabel">700</p>
+                    </div>
+                    <div class="colorBlock" style="background-color:#FCFF4F">
+                      <p class="colorLabel">800</p>
+                    </div>
+                    <div class="colorBlock" style="background-color:#FCFF63">
+                      <p class="colorLabel">900</p>
+                    </div>
+                  </div>
+                  <div class="col-6 col-sm-4">
+                    <h3 class="colorTitle">green</h3>
+                    <div class="colorBlock" style="background-color:#00AB06">
+                      <p class="colorLabel text-white">100</p>
+                    </div>
+                    <div class="colorBlock" style="background-color:#00BF06">
+                      <p class="colorLabel text-white">200</p>
+                    </div>
+                    <div class="colorBlock" style="background-color:#00D407">
+                      <p class="colorLabel text-white">300</p>
+                    </div>
+                    <div class="colorBlock" style="background-color:#0FE817">
+                      <p class="colorLabel text-white">400</p>
+                    </div>
+                    <div class="colorBlock" style="background-color:#24FC2D">
+                      <p class="colorLabel text-white">500</p>
+                    </div>
+                    <div class="colorBlock" style="background-color:#38FF3F">
+                      <p class="colorLabel">600</p>
+                    </div>
+                    <div class="colorBlock" style="background-color:#4DFF52">
+                      <p class="colorLabel">700</p>
+                    </div>
+                    <div class="colorBlock" style="background-color:#61FF66">
+                      <p class="colorLabel">800</p>
+                    </div>
+                    <div class="colorBlock" style="background-color:#75FF7A">
+                      <p class="colorLabel">900</p>
+                    </div>
+                  </div>
+                  <div class="col-6 col-sm-4">
+                    <h3 class="colorTitle">cyan</h3>
+                    <div class="colorBlock" style="background-color:#004654">
+                      <p class="colorLabel text-white">100</p>
+                    </div>
+                    <div class="colorBlock" style="background-color:#005769">
+                      <p class="colorLabel text-white">200</p>
+                    </div>
+                    <div class="colorBlock" style="background-color:#00687D">
+                      <p class="colorLabel text-white">300</p>
+                    </div>
+                    <div class="colorBlock" style="background-color:#007991">
+                      <p class="colorLabel text-white">400</p>
+                    </div>
+                    <div class="colorBlock" style="background-color:#028AA6">
+                      <p class="colorLabel text-white">500</p>
+                    </div>
+                    <div class="colorBlock" style="background-color:#179FBA">
+                      <p class="colorLabel">600</p>
+                    </div>
+                    <div class="colorBlock" style="background-color:#2BB3CF">
+                      <p class="colorLabel">700</p>
+                    </div>
+                    <div class="colorBlock" style="background-color:#40C8E3">
+                      <p class="colorLabel">800</p>
+                    </div>
+                    <div class="colorBlock" style="background-color:#54DCF7">
+                      <p class="colorLabel">900</p>
+                    </div>
+                  </div>
+                  <div class="col-6 col-sm-4">
+                    <h3 class="colorTitle">blue</h3>
+                    <div class="colorBlock" style="background-color:#009985">
+                      <p class="colorLabel text-white">100</p>
+                    </div>
+                    <div class="colorBlock" style="background-color:#03AD97">
+                      <p class="colorLabel text-white">200</p>
+                    </div>
+                    <div class="colorBlock" style="background-color:#17C2AB">
+                      <p class="colorLabel text-white">300</p>
+                    </div>
+                    <div class="colorBlock" style="background-color:#2BD6BF">
+                      <p class="colorLabel text-white">400</p>
+                    </div>
+                    <div class="colorBlock" style="background-color:#41EAD4">
+                      <p class="colorLabel text-white">500</p>
+                    </div>
+                    <div class="colorBlock" style="background-color:#54FFE8">
+                      <p class="colorLabel">600</p>
+                    </div>
+                    <div class="colorBlock" style="background-color:#69FFEB">
+                      <p class="colorLabel">700</p>
+                    </div>
+                    <div class="colorBlock" style="background-color:#7DFFEE">
+                      <p class="colorLabel">800</p>
+                    </div>
+                    <div class="colorBlock" style="background-color:#91FFF0">
+                      <p class="colorLabel">900</p>
+                    </div>
+                  </div>
+                  <div class="col-6 col-sm-4">
+                    <h3 class="colorTitle">ultra</h3>
+                    <div class="colorBlock" style="background-color:#1D0045">
+                      <p class="colorLabel text-white">100</p>
+                    </div>
+                    <div class="colorBlock" style="background-color:#250059">
+                      <p class="colorLabel text-white">200</p>
+                    </div>
+                    <div class="colorBlock" style="background-color:#2E006E">
+                      <p class="colorLabel text-white">300</p>
+                    </div>
+                    <div class="colorBlock" style="background-color:#360082">
+                      <p class="colorLabel text-white">400</p>
+                    </div>
+                    <div class="colorBlock" style="background-color:#3E0097">
+                      <p class="colorLabel text-white">500</p>
+                    </div>
+                    <div class="colorBlock" style="background-color:#5314AB">
+                      <p class="colorLabel">600</p>
+                    </div>
+                    <div class="colorBlock" style="background-color:#6729BF">
+                      <p class="colorLabel">700</p>
+                    </div>
+                    <div class="colorBlock" style="background-color:#7C3DD4">
+                      <p class="colorLabel">800</p>
+                    </div>
+                    <div class="colorBlock" style="background-color:#9052E8">
+                      <p class="colorLabel">900</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="vr-block vr-block-two"></div>
+              <h2 class="s-subtitle" id="colors-text">Text colors<a class="anchor" href="#colors-text" aria-hidden="true">#</a></h2>
+              <div class="docs-demo container">
+                <div class="row">
+                  <div class="col-6">
+                    <p><span class="text-primary">primary color</span></p>
+                    <p><span class="text-secondary">secondary color</span></p>
+                    <p><span class="text-dark">dark color</span></p>
+                    <p><span class="text-gray">gray color</span></p>
+                    <p><span class="text-light bg-dark p-1 rounded">light color</span></p>
+                    <p><span class="text-success">success color</span></p>
+                    <p><span class="text-warning">warning color</span></p>
+                    <p><span class="text-error">error color</span></p>
+                  </div>
+                  <div class="col-6">
+                    <p><a class="text-primary p-1" href="#colors">primary link</a></p>
+                    <p><a class="text-secondary p-1" href="#colors">secondary link</a></p>
+                    <p><a class="text-dark p-1" href="#colors">dark link</a></p>
+                    <p><a class="text-gray p-1" href="#colors">gray link</a></p>
+                    <p><a class="text-light bg-dark p-1 rounded" href="#colors">light link</a></p>
+                    <p><a class="text-success p-1" href="#colors">success link</a></p>
+                    <p><a class="text-warning p-1" href="#colors">warning link</a></p>
+                    <p><a class="text-error p-1" href="#colors">error link</a></p>
+                  </div>
+                </div>
+              </div><pre class='code ' data-lang='html'><code><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-primary"</span>&gt;</span>primary color<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-secondary"</span>&gt;</span>secondary color<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-dark"</span>&gt;</span>dark color<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-gray"</span>&gt;</span>gray color<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-light"</span>&gt;</span>light color<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-success"</span>&gt;</span>success color<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-warning"</span>&gt;</span>warning color<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-error"</span>&gt;</span>error color<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+
+</code></pre>
+              <h2 class="s-subtitle" id="colors-background">Background colors<a class="anchor" href="#colors-background" aria-hidden="true">#</a></h2>
+              <div class="docs-demo container">
+                <div class="row">
+                  <div class="col-12">
+                    <p><span class="bg-primary p-1 rounded">primary bg</span></p>
+                    <p><span class="bg-secondary text-primary p-1 rounded">secondary bg</span></p>
+                    <p><span class="bg-dark p-1 rounded">dark bg</span></p>
+                    <p><span class="make-background-muted p-1 rounded">gray bg</span></p>
+                    <p><span class="bg-success p-1 rounded">success bg</span></p>
+                    <p><span class="bg-warning p-1 rounded">warning bg</span></p>
+                    <p><span class="bg-error p-1 rounded">error bg</span></p>
+                  </div>
+                </div>
+              </div><pre class='code ' data-lang='html'><code>&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"bg-primary"</span>&gt;primary bg&lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"bg-secondary"</span>&gt;secondary bg&lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"bg-dark"</span>&gt;dark bg&lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"bg-gray"</span>&gt;gray bg&lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"bg-success"</span>&gt;success bg&lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"bg-warning"</span>&gt;warning bg&lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"bg-error"</span>&gt;<span class="hljs-keyword">error</span> bg&lt;/<span class="hljs-keyword">div</span>&gt;</code></pre>
+            </div>
+          </div>
+          <div class="vr-block vr-block-lg"></div><!-- Mojo Footer -->
+          <footer class="footer make-background-highlight-light" role="contentinfo" style="background-image:url(../imgs/SceneL@2x.png)" alt="GrungeElement">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-4 offset-md-2"><img class="img-fluid" src="../imgs/MadeWithLove.png" alt="HeartLogo"></div>
+                <div class="col-4 offset-md-2">
+                  <div class="social-wrap">
+                    <ul class="social-icons">
+                      <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                      <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                      <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                      <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div><!-- URL  -->
+  </body>
+</html>

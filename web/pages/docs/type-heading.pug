@@ -1,0 +1,143 @@
+extends ../../layout/doc
+
+append config
+  - var icon = "text"
+  - var metaDesc = 'Documentation and examples for heading typography, H1-6 Tags, Display titles, subtitles and other related elements.'
+  - var parent = 'style-guide'
+  - var slug = 'type-headings'
+  - var title = 'Typography Headings - Style Guide - Mojo Framework'
+
+
+block content
+  +docs-heading('headings', 'Headings')
+
+  p.doc-intro
+    | Responsive Headings are easily implemented with the help of the Mojo Framework. A lot of love and care has gone into making sure your headings look sharp, scale across viewports, and do an amazing job of presenting information.
+
+  :markdownify()
+    ## Global settings
+
+    Mojo sets basic global display, typography, and link styles. When more control is needed, check out the [textual utility classes]("/utilities/text").
+
+    - Use a [native font stack]("/content/reboot#native-font-stack") that selects the best `font-family` for each OS and device.
+    - For a more inclusive and accessible type scale, we use the browser's default root `font-size` (typically 16px) so visitors can customize their browser defaults as needed.
+    - Use the `$font-family-base`, `$font-size-base`, and `$line-height-base` attributes as our typographic base applied to the `<body>`.
+    - Set the global link color via `$link-color` and apply link underlines only on `:hover`.
+    - Use `$body-bg` to set a `background-color` on the `<body>` (`#fff` by default).
+
+    These styles can be found within `_reboot.scss`, and the global variables are defined in `_variables.scss`. Make sure to set `$font-size-base` in `rem`.
+
+    ## Headings
+
+    All HTML headings, `<h1>` through `<h6>`, are available.
+
+
+  table.heading-example
+    thead
+      tr
+        th Heading
+        th Example
+    tbody
+      tr
+        td
+          | &lt;h1&gt;&lt;/h1&gt;
+        td
+          h1 h1. Mojo Typography
+      tr
+        td
+          | &lt;h2&gt;&lt;/h2&gt;
+        td
+          h2 h2. Mojo Typography
+      tr
+        td
+          | &lt;h3&gt;&lt;/h3&gt;
+        td
+          h3 h3. Mojo Typography
+      tr
+        td
+          | &lt;h4&gt;&lt;/h4&gt;
+        td
+          h4 h4. Mojo Typography
+      tr
+        td
+          | &lt;h5&gt;&lt;/h5&gt;
+        td
+          h5 h5. Mojo Typography
+      tr
+        td
+          | &lt;h6&gt;&lt;/h6&gt;
+        td
+          h6 h6. Mojo Typography
+
+  .vr-block.vr-block-lg
+
+
+  :highlightify(lang="html")
+    <h1>h1. Mojo Typography</h1>
+    <h2>h2. Mojo Typography</h2>
+    <h3>h3. Mojo Typography</h3>
+    <h4>h4. Mojo Typography</h4>
+    <h5>h5. Mojo Typography</h5>
+    <h6>h6. Mojo Typography</h6>
+
+  .vr-block.vr-block-lg
+
+  :markdownify()
+    .h1` through `.h6` classes are also available, for when you want to match the font styling of a heading but cannot use the associated HTML element.
+
+  .vr-block.vr-block-lg
+
+  :codeblock(lang="html",class="padded")
+    <p class="h1">h1. Mojo Typography</p>
+    <p class="h2">h2. Mojo Typography</p>
+    <p class="h3">h3. Mojo Typography</p>
+    <p class="h4">h4. Mojo Typography</p>
+    <p class="h5">h5. Mojo Typography</p>
+    <p class="h6">h6. Mojo Typography</p>
+
+  .vr-block.vr-block-lg
+
+  :markdownify()
+    ### Customizing headings
+    Use the included utility classes to recreate the small secondary heading text from Mojo 3.
+
+  .vr-block.vr-block-lg
+
+  :codeblock(lang="html",class="padded")
+    <h3>
+      Fancy display heading
+      <small class="text-muted">With faded secondary text</small>
+    </h3>
+
+  .vr-block.vr-block-lg
+
+  :markdownify()
+    ## Display headings
+
+    Traditional heading elements are designed to work best in the meat of your page content. When you need a heading to stand out, consider using a **display heading**—a larger, slightly more opinionated heading style. Keep in mind these headings are not responsive by default, but it's possible to enable [responsive font sizes](#responsive-font-sizes).
+
+  .bd-example.bd-example-type
+    table.table
+      tbody
+        tr
+          td
+            span.display-1 Display 1
+        tr
+          td
+            span.display-2 Display 2
+        tr
+          td
+            span.display-3 Display 3
+        tr
+          td
+            span.display-4 Display 4
+
+  .vr-block.vr-block-lg
+
+  :highlightify(lang="html")
+    <h1 class="display-1">Display 1</h1>
+    <h1 class="display-2">Display 2</h1>
+    <h1 class="display-3">Display 3</h1>
+    <h1 class="display-4">Display 4</h1>
+
+  .vr-block.vr-block-lg

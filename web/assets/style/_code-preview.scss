@@ -1,0 +1,153 @@
+///
+/// This file controls how source code is viewed and highlighted. There are two main areas.
+///   1. The basic pre / code view when highlighting code
+///   2. Fancy split view [ HTML Preview | Source Code ] widget
+///
+
+/// Regular Highlight / Pre / Code Markup
+
+///
+/// Documentation Code Preview
+/// HTML Preview + Escaped Pre Code
+///
+/// Anything created via pug-filters.js is styled in this file.
+///
+
+.code {
+  margin-top: _rem($vertical-unit * 2);
+  margin-bottom: _rem($vertical-unit * 8);
+
+  .hljs-tag {
+    color: $light;
+  }
+
+  .hljs-comment {
+    color: $gray-500;
+  }
+
+  .hljs-title,
+  .hljs-class,
+  .hljs-string,
+  .hljs-number {
+    color: map.get($mojo-cyan, light);
+  }
+
+  .hljs-name,
+  .hljs-attribute,
+  .hljs-variable,
+  .hljs-keyword,
+  .hljs-built_in {
+    color: $success;
+  }
+
+  .hljs-value,
+  .hljs-hexcolor {
+    color: $warning;
+  }
+}
+
+// Main Wrapper
+
+.documentation-content {
+  @include block-box($sz_5, 5rem);
+
+  background: $body;
+
+  .mojo-docblock {
+    position: relative;
+
+    display: block;
+
+    width: 100%;
+    margin: $sz_6 auto;
+    padding: 0;
+
+    border: $border-width solid $border-color;
+    border-radius: $border-radius-sm;
+
+    .mojo-doclabel {
+      font-size: 0.75rem;
+
+      position: absolute;
+      top: -1.25rem;
+      left: 2rem;
+      clear: none;
+      height: 30px;
+
+      padding: $sz_2;
+
+      color: $gray-400;
+      border-radius: $sz_2;
+      background: $body;
+    }
+
+    // HTML Preview
+    .preview-wrapper {
+      padding: $sz_3;
+
+      .mojo-preview {
+        margin: 0 auto;
+        padding: 0;
+
+        // UNIQUE PREVIEW STYLINGS
+        &.row-previews {
+          .row > .col,
+          .row > [class^="col-"] {
+            padding-top: 0.75rem;
+            padding-bottom: 0.75rem;
+
+            border: 1px solid rgba(86, 61, 124, 0.2);
+            background-color: rgba(86, 61, 124, 0.15);
+          }
+
+          .row + .row {
+            margin-top: 1rem;
+          }
+        }
+
+        .flex-items-top,
+        .flex-items-middle,
+        .flex-items-bottom {
+          min-height: 6rem;
+          background-color: rgba(255, 0, 0, 0.1);
+        }
+      }
+    }
+
+    // Pre Code
+    .mojo-highlight {
+      margin: 0 auto;
+      padding: $sz_3;
+
+      border-top: $border-width solid $border-color;
+
+      pre.code {
+        border-radius: $border-radius-sm;
+        margin-bottom: 0;
+        margin-top: 0;
+
+        background: $gray-800;
+      }
+    }
+  }
+
+  .docs-content {
+    pre.code {
+      background: $gray-800;
+    }
+  }
+
+  &.padded {
+    .preview-wrapper {
+      padding: $sz_5 $sz_6;
+    }
+  }
+
+  @include media-breakpoint-up(lg, $grid-breakpoints) {
+    &.padded {
+      .mojo-preview {
+        padding: $sz_4 $sz_5;
+      }
+    }
+  }
+}

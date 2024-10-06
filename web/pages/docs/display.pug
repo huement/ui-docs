@@ -1,0 +1,41 @@
+extends ../../layout/doc
+
+append config
+  - var slug = 'display'
+  - var parent = 'utilities'
+  - var title = 'Display utilities - Utilities - Mojo Framework'
+  - var metaDesc = 'Display utilities are used for display and hidden things. Mojo Framework is a lightweight, responsive and modern CSS framework for faster and extensible development.'
+
+block content
+  +docs-heading('display', 'Display utilities')
+
+  p.lead
+    | A group of utilities that control how content is, you guessed it, displayed!
+
+  p
+    | Display utilities are used for display and hidden things. Simply add the class
+    code make-{display}
+    |   to whatever you are targeting.
+
+  :highlightify(lang="html")
+    <!-- display: block; -->
+    <div class="make-block"></div>
+    <!-- display: inline; -->
+    <div class="make-inline"></div>
+    <!-- display: inline-block; -->
+    <div class="make-inline-block"></div>
+    <!-- display: flex; -->
+    <div class="make-flex"></div>
+    <!-- display: inline-flex; -->
+    <div class="make-inline-flex"></div>
+    <!-- display: none; -->
+    <div class="make-none"></div>
+    <div class="make-hide"></div>
+    <!-- visibility: visible; -->
+    <div class="make-visible"></div>
+    <!-- visibility: hidden; -->
+    <div class="make-invisible"></div>
+    <!-- hide text contents -->
+    <div class="text-hide"></div>
+    <!-- assistive text for screen reader -->
+    <div class="text-assistive"></div>

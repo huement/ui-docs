@@ -1,0 +1,107 @@
+extends ../../layout/doc
+
+append config
+  - var icon = "gear"
+  - var slug = 'snaps'
+  - var parent = 'components'
+  - var title = 'Snaps - Components - Mojo Framework'
+  - var metaDesc = 'Snaps are repeatable or extendable information blocks.'
+
+block content
+  +docs-heading('snaps', 'Snaps')
+
+  p.doc-intro
+    | Snaps are repeatable or extendable information blocks.
+
+  .docs-demo.container
+    .row
+      .col-sm-9.col-12
+        .snap
+          .snap-icon
+            figure.avatar.avatar-lg
+              img(src="../imgs/avatar-3.png" alt="Avatar")
+          .snap-content
+            p.snap-title The Avengers
+            p.snap-subtitle
+              | Earth's Mightiest Heroes joined forces to take on threats that were too big for any one hero to tackle...
+          .snap-action
+            .btn-group
+              button.btn.btn-primary Join
+              button.btn Contact
+      .col-sm-9.col-12
+        .snap
+          .snap-icon
+            figure.avatar.avatar-lg
+              img(src="../imgs/avatar-2.png" alt="Avatar")
+          .snap-content
+            p.snap-title The S.H.I.E.L.D.
+            p.snap-subtitle The Strategic Homeland Intervention, Enforcement, and Logistics Division...
+            p
+              button.btn.btn-primary.btn-sm Join
+              button.btn.btn-sm Contact
+
+  p
+    | Add a container with the #[code snap] class.
+    | And add child elements with the #[code snap-icon], #[code snap-content] or/and #[code snap-action] classes.
+    | The #[code snap-icon] and #[code snap-action] are optional.
+  p
+    | There are #[code snap-title] and #[code snap-subtitle] classes for title and subtitle text styles.
+
+
+  :highlightify(lang="html")
+    <div class="snap">
+      <div class="snap-icon">
+        <div class="example-snap-icon">
+          <i class="icon icon-file centered"></i>
+        </div>
+      </div>
+      <div class="snap-content">
+        <p class="snap-title">The Avengers</p>
+        <p class="snap-subtitle">Earth's Mightiest Heroes joined forces to take on threats that were too big for any one hero to tackle...</p>
+      </div>
+      <div class="snap-action">
+        <button class="btn btn-primary">Join</button>
+      </div>
+    </div>
+
+  .docs-demo
+    +docs-subheading('snaps-compact', 'Compact snaps')
+
+    p
+      | There is compact version of Tiles component, which is often used as contact and file info blocks.
+    p
+      | Add the #[code snap-centered] class to the container #[code snap].
+      | The #[code snap-icon], #[code snap-content] and #[code snap-action] will be vertically centered.
+
+  .docs-demo.container
+    .row
+      .col-12.col-md-9
+        .snap.snap-centered
+          .snap-icon
+            .example-snap-icon
+              i.icon.icon-mail.centered
+          .snap-content
+            .snap-title spectre-docs.pdf
+            small.snap-subtitle.text-gray 14MB · Public · 1 Jan, 2017
+          .snap-action
+            button.btn.btn-link.btn-action
+              i.icon.icon-more-vert
+
+
+  :highlightify(lang="html")
+    <div class="snap snap-centered">
+      <div class="snap-icon">
+        <div class="example-snap-icon">
+          <i class="icon icon-file centered"></i>
+        </div>
+      </div>
+      <div class="snap-content">
+        <div class="snap-title">spectre-docs.pdf</div>
+        <small class="snap-subtitle text-gray">14MB · Public · 1 Jan, 2017</small>
+      </div>
+      <div class="snap-action">
+        <button class="btn btn-link">
+          <i class="icon icon-more-vert"></i>
+        </button>
+      </div>
+    </div>

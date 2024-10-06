@@ -1,0 +1,54 @@
+extends ../../layout/doc
+
+append config
+  - var icon = "gear"
+  - var metaDesc = 'Learn how to implement and use the Mojo Framework. There are a number of ways get started and/or get customizing!'
+  - var parent = 'getting-started'
+  - var slug = 'installation'
+  - var title = 'Installation - Getting Started - Mojo Framework'
+  - var prismjs = true
+
+
+block content
+  +docs-heading('installation', 'Installation')
+
+  p.doc-intro
+    | Mojo is a CSS library. This means it provides CSS classes to help you style your HTML code.
+    | To use Mojo, you can either use the pre-compiled .css file or install the .sass files so you can customize it to your needs.
+
+  p Download the codebase anyway you like. One quick and easy way is to simply clone the repo.
+
+  :highlightify(lang="shell")
+    git clone https://github.com/huement/mojo
+    git checkout dev
+    yarn install
+    yarn mojo
+
+  p
+    | Using the stylings is as simple as adding some
+    code  CSS
+    |  to your
+    code  HTML
+    |  and adding the
+    strong  scoped superclass
+    |  to your markup.
+
+
+  :highlightify(lang="html")
+    <head>
+      <link href="themes/prism.css" rel="stylesheet" />
+    </head>
+    <body class='mojo'>
+      <!-- mojo html goes here -->
+    </body>
+
+  .alert.info
+    | Mojo is scoped. Without the superclass you wont see any of the framework stylings!
+
+  p
+    | One of the advantages of using Mojo is that it is scoped. So it wont conflict with anything else. Making it the perfect option if you need to drop it into an existing project.
+    | The scoped nature also allows you to experiment with multiple stylings and mock things up with greater ease in new projects as well, as conflicts will be no existent.
+
+  h3 Design Tokens
+  p
+    | One of the greatest things about Mojo is the ease with which it can be customized. This is handled primarily through design tokens and a style dictionary. If you dont know what that means, dont worry, its amounts to basically updating some values in a JSON file and rebuilding the library with your new variables.

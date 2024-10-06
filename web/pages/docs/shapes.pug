@@ -1,0 +1,26 @@
+extends ../../layout/doc
+
+append config
+  - var slug = 'shapes'
+  - var parent = 'utilities'
+  - var title = 'Shape utilities - Utilities - Mojo Framework'
+  - var metaDesc = 'Shape utilities are used for changing element shapes. Mojo Framework is a lightweight, responsive and modern CSS framework for faster and extensible development.'
+
+block content
+  +docs-heading('shapes', 'Shape utilities')
+
+  p.lead Shape utilities are used for changing element shapes.
+
+  .docs-demo.columns
+    .column.col-6.text-center
+      .bg-primary.text-light.docs-shape.s-rounded.centered
+        | s-rounded
+    .column.col-6.text-center
+      .bg-primary.text-light.docs-shape.rounded-circle.centered
+        | rounded-circle
+
+  :highlightify(lang="html")
+    <!-- rounded element -->
+    <div class="s-rounded"></div>
+    <!-- circle element -->
+    <div class="rounded-circle"></div>

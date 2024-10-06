@@ -1,0 +1,65 @@
+extends ../../layout/doc
+
+append config
+  - var icon = "gear"
+  - var metaDesc = 'The Hero container shows key featured content or information. Mojo Framework is a lightweight, responsive and modern CSS framework for faster and extensible development.'
+  - var parent = 'utilities'
+  - var slug = 'blank'
+  - var title = 'Blank - Layout - Mojo Framework'
+
+
+block content
+  +docs-heading('blank', 'Blank')
+
+  p.doc-intro
+    | Blank container shows key featured content or information.
+
+  .docs-demo.container
+    .row
+      .col
+        .hero.make-bg-gray
+          .hero-body
+            h1 Hero title
+            p This is a hero example
+
+
+  :highlightify(lang="html")
+    <div class="hero bg-gray">
+      <div class="hero-body">
+        <h1>Hero title</h1>
+        <p>This is a hero example</p>
+      </div>
+    </div>
+
+  .vr-block.vr-block-two
+
+  +docs-subheading('live-example', 'Live Example')
+
+  .docs-demo
+    p.half-lead
+      | If you are looking for a filled toggle style of tabs, instead checkout the button group elements which looks and functions the same was as a filled in tab group.
+
+  .docs-demo
+    .row
+      .col
+        p.half-lead.p-5.bg-info
+          | When an alert is dismissed
+
+  p
+    | Use #[code hero-sm] and #[code hero-lg] to the hero container for smaller and larger padding.
+
+
+  :codeblock(lang="html", previewClass="row-previews")
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          One of three columns
+        </div>
+        <div class="col-sm">
+          One of three columns
+        </div>
+        <div class="col-sm">
+          One of three columns
+        </div>
+      </div>
+    </div>

@@ -1,0 +1,48 @@
+extends ../../layout/doc
+
+append config
+  - var icon = "gear"
+  - var slug = 'labels'
+  - var parent = 'components'
+  - var title = 'Labels - Components - Mojo Framework'
+  - var metaDesc = 'Labels are formatted text tags for highlighted, informative information.'
+
+block content
+  +docs-heading('labels', 'Labels')
+
+  p.doc-intro
+    |  Labels are formatted text tags for highlighted, informative information.
+
+  .docs-demo.container
+    .row
+      .col-12
+        span.label.mr-1 default label
+        span.label.label-primary.mr-1 primary label
+        span.label.label-secondary.mr-1 secondary label
+        span.label.label-success.mr-1 success label
+        span.label.label-warning.mr-1 warning label
+        span.label.label-error error label
+
+  p
+    | Add the #[code label] class to #{'<span>'} or #{'<small>'} elements.
+    | You can add another class #[code label-primary], #[code label-secondary], #[code label-success], #[code label-warning] and #[code label-error] for colored labels.
+
+  :highlightify(lang="html")
+    <!-- normal labels -->
+    <span class="label">default label</span>
+    <span class="label label-primary">primary label</span>
+
+  +docs-subheading('labels-rounded', 'Rounded labels')
+
+  .docs-demo.container
+    .row
+      .col-12
+        span.label.label-rounded.mr-1 default label
+        span.label.label-rounded.label-primary primary label
+
+  p
+    | Add the #[code label-rounded] class to have rounded labels.
+
+  :highlightify(lang="html")
+    <!-- rounded labels -->
+    <span class="label label-rounded label-primary">primary label</span>
