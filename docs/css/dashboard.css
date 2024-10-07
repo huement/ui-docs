@@ -1,0 +1,236 @@
+/**!
+ * Mojo  v0.0.16 (https://github.com/huement/mojo/)
+ * Copyright 2023-* Huement (https://huement.com)
+ * Licensed under Mozilla Public License 2 [MPL-2.0] (https://github.com/huement/mojo/blob/main/LICENSE)
+ *  Based on:
+ *    Shards v3.0.0 (https://github.com/DesignRevision/shards-ui)
+ *    Bootstrap v5.3.2 (https://getbootstrap.com/)
+ */
+body {
+  background-color: #1f1f1f !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.demo .row {
+  margin-bottom: 15px;
+}
+.demo [class^=col-] {
+  background-color: #e3f2f7;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.main-content {
+  padding-top: 100px;
+}
+
+.navbar.z-max {
+  z-index: 10;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+.navbar.z-max .navbar-nav {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+}
+
+.oversized-logo {
+  height: 70px;
+  width: auto;
+}
+
+.circle-block {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.promo-block .img-center {
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+  display: block;
+}
+
+.social-wrap .social-icons {
+  width: 216px;
+  position: relative;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+.social-wrap .social-icons li a {
+  position: relative;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #1f1f1f;
+  border-color: #1f1f1f;
+}
+
+.bg-cyan-light {
+  background: #2ef9de !important;
+}
+
+.footer {
+  margin-top: 200px;
+}
+
+.footer-logo {
+  width: 210px;
+  height: auto;
+  position: relative;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  z-index: 2;
+  margin-top: -10.5rem;
+  margin-left: 10.5rem;
+}
+
+.footer-circle {
+  margin-left: auto;
+  margin-right: auto;
+  right: 0;
+  z-index: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100px;
+  width: 200px;
+  border-radius: 150px 150px 0 0;
+}
+
+.z-max {
+  z-index: 9999 !important;
+}
+
+.page-header {
+  margin-top: 50px;
+}
+
+.bi {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+}
+
+/*
+ * Sidebar
+ */
+@media (min-width: 768px) {
+  .sidebar .offcanvas-lg {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 48px;
+  }
+  .navbar-search {
+    display: block;
+  }
+}
+.sidebar .nav-link {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.sidebar .nav-link.active {
+  color: #2470dc;
+}
+
+.sidebar-heading {
+  font-size: 0.75rem;
+}
+
+/*
+ * Navbar
+ */
+.navbar .form-control {
+  padding: 0.75rem 1rem;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+.b-example-divider {
+  width: 100%;
+  height: 3rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: solid rgba(0, 0, 0, 0.15);
+  border-width: 1px 0;
+  box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1), inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+}
+
+.b-example-vr {
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 100vh;
+}
+
+.bi {
+  vertical-align: -0.125em;
+  fill: currentColor;
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.btn-bd-primary {
+  --bd-violet-bg: #712cf9;
+  --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: var(--bs-white);
+  --bs-btn-bg: var(--bd-violet-bg);
+  --bs-btn-border-color: var(--bd-violet-bg);
+  --bs-btn-hover-color: var(--bs-white);
+  --bs-btn-hover-bg: #6528e0;
+  --bs-btn-hover-border-color: #6528e0;
+  --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+  --bs-btn-active-color: var(--bs-btn-hover-color);
+  --bs-btn-active-bg: #5a23c8;
+  --bs-btn-active-border-color: #5a23c8;
+}
+
+.bd-mode-toggle {
+  z-index: 1500;
+}
+
+.bd-mode-toggle .dropdown-menu .active .bi {
+  display: block !important;
+}
+
+/*# sourceMappingURL=dashboard.css.map */

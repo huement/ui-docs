@@ -1,0 +1,122 @@
+/**!
+ * Mojo  v0.0.16 (https://github.com/huement/mojo/)
+ * Copyright 2023-* Huement (https://huement.com)
+ * Licensed under Mozilla Public License 2 [MPL-2.0] (https://github.com/huement/mojo/blob/main/LICENSE)
+ *  Based on:
+ *    Shards v3.0.0 (https://github.com/DesignRevision/shards-ui)
+ *    Bootstrap v5.3.2 (https://getbootstrap.com/)
+ */
+body {
+  background-color: #1f1f1f !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.demo .row {
+  margin-bottom: 15px;
+}
+.demo [class^=col-] {
+  background-color: #e3f2f7;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.main-content {
+  padding-top: 100px;
+}
+
+.navbar.z-max {
+  z-index: 10;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+.navbar.z-max .navbar-nav {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+}
+
+.oversized-logo {
+  height: 70px;
+  width: auto;
+}
+
+.circle-block {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.promo-block .img-center {
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+  display: block;
+}
+
+.social-wrap .social-icons {
+  width: 216px;
+  position: relative;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+.social-wrap .social-icons li a {
+  position: relative;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #1f1f1f;
+  border-color: #1f1f1f;
+}
+
+.bg-cyan-light {
+  background: #2ef9de !important;
+}
+
+.footer {
+  margin-top: 200px;
+}
+
+.footer-logo {
+  width: 210px;
+  height: auto;
+  position: relative;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  z-index: 2;
+  margin-top: -10.5rem;
+  margin-left: 10.5rem;
+}
+
+.footer-circle {
+  margin-left: auto;
+  margin-right: auto;
+  right: 0;
+  z-index: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100px;
+  width: 200px;
+  border-radius: 150px 150px 0 0;
+}
+
+.z-max {
+  z-index: 9999 !important;
+}
+
+.page-header {
+  margin-top: 50px;
+}
+
+/*# sourceMappingURL=pages.css.map */
